@@ -1,0 +1,46 @@
+/*ie6 <3 .... */
+#user-login-form .form-image-button{padding:0; margin:1px 0 0 0px}
+#edit-pass-wrapper input{width:155px;}
+#ting-search-form div.example{clear:none;}
+
+#pagebody {background:transparent url(../images/bg-page_ie6.gif) repeat-y scroll top center;}
+
+
+
+
+body.node-type-page .panel-left {margin:0 0 0 10px; }
+ul.menu li.leaf {margin :0 0 0 35px;}
+.panel-left ul.menu li ul li.first{padding:0 0 0 0;margin:0 0 0 35px; }
+
+/*carousel*/
+.jcarousel-skin-ting-search-carousel {width:724px; }
+.jcarousel-skin-ting-search-carousel .jcarousel-clip-horizontal {width:666px; height:180px;}
+.jcarousel-skin-ting-search-carousel .jcarousel-item { padding: 0; }
+.jcarousel-skin-ting-search-carousel .jcarousel-item a:hover .info { text-decoration: none; cursor: pointer; }
+.ting-search-carousel .subtitle {margin:10px 0 0px 10px; }
+.jcarousel-skin-ting-search-carousel .jcarousel-prev-horizontal {left:-275px}
+.jcarousel-skin-ting-search-carousel .jcarousel-next-horizontal {right:-45px}
+/*active skifter*/
+ul.search-results li{display:none;}
+  ul.search-results li.active{display:block;}
+  ul.search-results li .jcarousel-skin-ting-search-carousel li{display:block;}
+
+
+#content-inner{margin:0;}
+.panel-left .view{position:relative;left:0px; }
+.panel-threecol-33-34-33-stacked .panel-right {width:229px; overflow:hidden;}
+.ting-search-carousel{position:relative; left:0px;}
+
+
+/* ___________ IE6 IFRAME FIX ________ */
+.ui-datepicker-cover {
+  display: none; /*sorry for IE5*/
+  display/**/: block; /*sorry for IE5*/
+  position: absolute; /*must have*/
+  z-index: -1; /*must have*/
+  filter: mask(); /*must have*/
+  top: -4px; /*must have*/
+  left: -4px; /*must have*/ /* LTR */
+  width: 200px; /*must have*/
+  height: 200px; /*must have*/
+}

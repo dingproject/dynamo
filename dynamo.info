@@ -1,0 +1,51 @@
+name        = Dynamo
+description = Københanvs bibloteker FTW!
+screenshot  = screenshot.png
+version     = dev 1.1
+core        = 6.x
+engine      = phptemplate
+base theme  = mothership
+
+;--------------------- regions -----------------------------
+regions[account]        = account
+regions[search]         = search
+regions[header]         = header
+regions[left]           = left sidebar
+regions[right]          = right sidebar
+regions[footer]         = footer
+regions[footer_one]     = footer one
+regions[footer_two]     = footer two
+regions[footer_three]   = footer three
+regions[footer_four]    = footer four
+
+;--------------------- features ----------------------------
+;features[] = logo
+features[] = name
+;features[] = node_user_picture
+;features[] = comment_user_picture
+;features[] = search
+features[] = favicon
+;features[] = slogan
+features[] = primary_links
+features[] = secondary_links
+
+;--------------------- styles ------------------------------
+stylesheets[all][]  = style/reset.css
+stylesheets[all][]  = style/layout.css
+stylesheets[all][]  = style/jcarousel.css
+stylesheets[all][]  = style/typography.css
+stylesheets[all][]  = style/dynamo.css
+stylesheets[all][]  = style/biblo.css
+stylesheets[all][]  = style/search.css
+stylesheets[all][]  = style/ting.css
+stylesheets[all][]  = style/user.css
+stylesheets[all][]  = style/developer.css
+
+;------------------ conditional styles---------------------
+ie stylesheets[if IE 7][all][] = style/ie7.css
+ie stylesheets[if IE 6][all][] = style/ie6.css
+
+;--------------------- scripts ----------------------------
+scripts[] = script/jquery.infieldlabel.min.js
+scripts[] = script/jquery.jcarousel.js
+scripts[] = script.js

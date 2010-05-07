@@ -1,0 +1,139 @@
+/* =======================================
+  style reset.css
+	resets the browser & specific drupal annoiances ;)
+* ------------------------------------- */
+
+/*-base reset---*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight: inherit;font-style: inherit;font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table{border-collapse: collapse; border-spacing:0}
+table, td, th {vertical-align:top;text-align:left;font-weight:normal;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+/* -----clearfix -----*/
+.clearfix:after {content: "."; display: block; height: 0;  clear: both; visibility: hidden;}
+.clearfix {display:inline-block;} /*ie7 dosnt validate - but fixes the prob ...*/
+.clearfix {display:block;} /*opera & safari */
+* html .clearfix {height: 1%;}/* IE6 */
+* html .clearfix {zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/* ----- content blocks ----- */
+/*TODO is both left & inline nesessary - min- height? is it 1% instead*/
+
+.clear{clear: both; display: block;}
+.left{float:left; display:inline; min-height: 1px; background-color: transparent;} 
+.right{float:right; display:inline; min-height: 1px; background-color: transparent;} 
+.clean{overflow:hidden; display:block;}
+
+:focus{outline:0}
+
+/* =======================================
+ * Drupal6 overwrites
+* ------------------------------------- */
+
+/*
+ list
+------------------------------------- */
+ul, ul li, .item-list ul li{list-style: none; margin:0; padding:0;}
+ul, .item-list ul{margin:0; padding:0;}
+li{list-style: none}
+
+li.leaf,
+li.expanded,
+li.collapsed
+{
+  list-style: none outside none;
+}
+
+.block ul{padding:0;}
+.node ol {margin: 0 0 0 5px; }
+.node ul {margin: 0 0 10px 10px;}
+.node ul li {list-style: square inside}
+
+.breadcrumb {margin:0;}
+ul.breadcrumb li{display:inline; margin:0 0 0 10px;}
+
+
+/* 
+ tables
+------------------------------------- */
+tr.even, tr.odd {background-color:transparent; border-bottom:0px solid #CCCCCC; padding:0;}
+tbody {border-top: 0px solid #ccc;}
+tbody th {border-bottom: 0px solid #ccc;}
+thead th {border-bottom: 0px solid #ccc;  padding: 0;}
+td.active{background:transparent;}
+
+
+/* 
+drupal overwrites to add some sanity  
+------------------------------------- */
+/*messages*/
+div.messages{font-size:12px; line-height:18px; padding:10px; margin:10px; color:#036; background:#bdf; border:1px solid #ace;}
+div.warning{color:#840; background:#fe6;border-color:#ed5;}
+div.error {color:white; background:#e63; border-color:#d52;}
+div.status{color:#360; background:#cf8; border-color:#be7;}
+div.messages a,div.messages  a:link,div.messages  a:visited, div.messages a:active {color:#fff; text-decoration: underline;}
+div.messages a:hover,div.messages  a:focus {}
+
+
+/* =====================================
+drupal Messages
+/*--------------------------------------*/
+#drupal-messages{background:#333; padding:0 20px 20px;}
+	div.messages{margin:0; padding:20px;}
+	#messages-hide{}
+	#messages-hide a {background:#999 url(../images/status-error.png) no-repeat 5px 3px; 
+		float:right; margin:20px; padding:2px 10px 2px 30px;
+		-moz-border-radius: 5px; -webkit-border-radius: 5px; 
+		border: 1px solid #888;
+		color:#fff;
+	}
+	#messages-hide a:hover{background:#777 url(../images/status-error.png) no-repeat 5px 3px; }
+
+
+/*tabs*/
+.tabs ul li {display:inline;;}
+.tabs ul li a{background-color: #ddd; color:#999; }
+.tabs ul li.active a{background-color: #fff; color:#000;}
+
+
+/*blocks edit*/
+div.block.with-block-editing{position: relative;}
+div.block.with-block-editing div.edit{background-color: #eee; border: 1px solid #ddd; display: none; position: absolute; right: 0; top: 0; z-index: 40; padding: 0 2px; font-size: 9px;}
+div.block.with-block-editing:hover div.edit{display: block; background: #ccc;}
+div.edit a:link, div.edit a:visited {color:#333}
+div.edit a:hover{color: #333;}
+
+
+
+
+/* =====================================
+ 	blocks configuration
+* ------------------------------------- */
+body.page-admin table.sticky-header{background:#606;}
+body.page-admin table.sticky-header th{font-weight:bold; color:#f0f}
+body.page-admin td.region{color:#000; background:#999; text-align:center;}
+body.page-admin #block-admin-display-form td.block{color:#000; font-weight:bold;	}
+body.page-admin .block-region{background-color:#606; text-align:center; color:#f0f;}
+
+.draggable a.tabledrag-handle {
+	cursor:move;
+	float:left;
+	height:1.7em;
+	margin:-0.4em 0 -0.4em -0.5em;
+	padding:0.42em 1.5em 0.42em 0.5em;
+	text-decoration:none;
+}
+
+.section-admin tr.even, .section-admin tr.odd {
+	background-color:#EEEEEE;
+	border-bottom:1px solid #CCCCCC;
+	padding:0.1em 0.6em;
+}
+
+.draggable a:link, .draggable a:visited {color:#900; margin:0 10px;}
+.draggable a:hover{color: #900;}
+

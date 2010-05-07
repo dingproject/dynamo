@@ -1,0 +1,244 @@
+/**
+ * Her kan i give den gas drenge.
+ */
+
+/* kasperg: Added to show AJAX loader for autocomplete */
+#ting-search-form label { margin-left: 0; padding-left: 30px; background: url(../images/magnifier.png) no-repeat 9px 2px; }
+#ting-search-form .ac_loading { background: #FFF url(../images/ajax-loader-micro.gif) no-repeat 470px center; }
+
+
+/* rasmus: added styles for event node */
+.node-type-event .alert { padding: 10px; font-size: 16px; font-weight: bold; color: black; background-color: yellow; } /* hot damn it's ugly! */
+#ting-search-results .node-teaser-event .alert { padding: 10px; background-color: yellow; }
+#ting-search-results .node-teaser-event .meta .field-datetime { color: #B41630; font-size: 12px; }
+#content .node-event .field-teaser { margin-bottom: 12px; }
+#content .node-event .meta div.taxonomy  { display: block !important; }
+#content .node-event .content .field-datetime { color: #666; font-weight: bold; }
+
+/* rasmus: similar events */
+.pane-similar_events_title h4.title { margin-left: 20px; }
+
+/* christian: added styles for materialevisning - mostly copied from above */
+#ting-object .ting-overview .picture { text-align: center; }
+#ting-object .ting-overview { margin-bottom: 20px; }
+#ting-object .ting-overview p { color: #646765; }
+#ting-object .ting-overview .creator { color: #878787; margin-bottom: 10px; }
+#ting-object .ting-overview .byline { font-weight: normal; font-style: italic; }
+#ting-object .buttons { clear: both; }
+#ting-object .object-information .abstract { padding-bottom: 12px; }
+#ting-object .object-information .title { font-weight: normal; }
+#ting-object .object-information .title:after { content: ":"; }
+#ting-object .object-information .item-list { border-top: 0; padding: 0; }
+#ting-object .object-information .item-list span { display: block; }
+
+/* christian: show ting objects and collections on blog items etc. */
+.field-ting-refs{ padding:20px 0 0 0px; width: 650px;}
+	.field-ting-refs ul li{background:transparent url(../images/bg-divider.png) no-repeat left top; margin:0 0 20px 0px;  padding:10px 0 10px 10px; list-style-position: outside; clear:both; }
+	.field-ting-refs div.picture{float:left; background:#ddd; width:80px; margin:0 12px 0 0; line-height:0;}
+	.field-ting-refs div.record{margin-left:92px; width:525px;}
+	.field-ting-refs h4{display:inline;}
+	.field-ting-refs span{font-weight: bold;}
+	.field-ting-refs .types{float: right;}
+	.field-ting-refs .types li,.types li{clear:none; display:inline; float:left; margin:0 10px 0 0; padding:0; background:none;}
+		.field-ting-refs .types li, .types li{font-size: 10px; padding:1px 3px; color: #fff; margin: 1px}
+		.field-ting-refs .types li.available,.types li.available{background-color:#71bf44; color:#fff;}
+		.field-ting-refs .types li.out,.types li.out{background-color: #f85f26; color:#fff;}
+		.field-ting-refs .types li.reserved,ul.types li.reserved{ background-color: #560036; /*#bc0028*/ color:#fff;}	
+		
+		.field-ting-refs .subjects li{clear:none; display:inline; float:left; margin:0 10px 0 0; padding:0; background:none; }
+		.field-ting-refs .subjects h4{float: left; margin: 0 10px 0 0; font-size: 10px; color:#bbb;}
+		.field-ting-refs .subjects li{display:inline; font-size: 10px; color:#bbb;}
+.field-ting-refs .subjects ul { clear:none; } /* overskriv ".node .content ul" i stylec.css  */
+ul.field-ting-refs { margin:0 ! important ; padding: 0 ! important; }
+ul.field-ting-refs li { clear:both; margin:0 0 20px 0; padding:10px 0 10px 10px; list-style-type: none ! important; }
+.field-ting-refs img { margin: 0 ! important }
+.field-ting-refs { font-family:Arial,sans-serif; } /* dubliker regel i ui.all.css, override typography.css */
+
+/* christian: legend on search result page */
+#ting-search-legend { margin-top: 10px; font-size: 11px; font-family: verdana, sans-serif; margin-left: 5px; }
+#ting-search-legend ul, #ting-search-legend li { display: inline; padding: 0 10px 0 0; background: none; color: #999; }
+#ting-search-legend .marker { font-size: 100%; padding-right: 4px; }
+#ting-search-legend .available{color:#71bf44; }
+#ting-search-legend .out{color: #f85f26; }
+#ting-search-legend .reserved{ color: #560036; }
+#ting-search-summary, #content-search-summary { color: #666; margin-top: 20px; font-size: 11px; font-family: verdana; margin-left: 5px; }
+#ting-search-summary span, #content-search-summary span { font-weight: bold; }
+
+
+a.alternative:link, a.alternative:visited { color: #000; }
+/*.more-link { background: transparent url(../images/pil.png) no-repeat scroll right center; padding:0 12px 0 0; } "remove", morten said */
+
+/* mikl: A few tweaks for the search results page */
+
+/**
+ * Spinner position needs a bit of tweaking, right now it's jammed
+ * between the text and the edge of the tab.
+ */
+#ting-search-tabs li.spinning a {
+  background-image: url(../images/ajax-loader-micro.gif);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+/* Now using an em instead of a span with a class */
+#ting-search-tabs li .count em {
+  color: #900;
+}
+
+/* Disabled tabs needs to look disabled */
+#ting-search-tabs li.ui-tabs-disabled a {
+  cursor: default; /* Use the standard arrow to make it not look clickable */
+  color: #999;
+}
+
+/** kasperg: More compact tab titles **/
+#ting-search-tabs li { padding: 0; }
+
+
+/* christian: style topic view */
+.topic-field-text, .topic-field-link { background:transparent url(../images/bg-divider.png) no-repeat scroll left top; padding: 5px 0; }
+
+/* christian: style topic list */
+.panel-left .pane-topic_list h3 { margin-left: 20px; }
+
+/* christian: style recommendation list */
+/*.panel-left .pane-recommendation_list h3 { margin-left: 20px; }*/
+
+
+/* christian */
+.panel-left .pane-library_pc_booking h3 { margin-left: 20px; }
+iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
+
+/* kasperg: Recommendation lists */
+/* TODO: Clear object information properly */
+.page-ting #ting-object,
+.page-ting #ting-collection { display: inline-block; }
+
+
+/* kasperg: Dim facet browser links when loading */
+#ting-search-results .loading #ting-facet-browser li { color: #999; }
+
+/* staff list i panel-middle (portal libraries) */
+
+.panel-middle .view-library-staff-list ul{padding:0 0 0 10px;}
+.panel-middle .view-library-staff-list ul li,.panel-left .view-library-staff-list ul li.first{width:145px; height:170px; float:left; background:none; padding:10px;}
+.view-library-staff-list li .field-image-fid{width:120px; height:120px; background:#ddd;}
+.panel-middle .view-library-staff-list ul {
+  padding:0 0 0 10px;
+  margin-right: -40px; /* make room for pictures in 3 "columns" (not real columns, just floated divs that line up like columns) */
+}
+
+#ting-search-sort {float:right; clear:both; margin: 42px 50px 0 0; color:#666666; font-size:11px;  }
+
+/* mikl: unavailable type tag on search result */
+#ting-search-result .ting-search-collection-types .unavailable {
+  background-color: #f85f26;
+  color:#fff;
+}
+
+
+/* Jesper K: alma låner status side */
+.pane-alma_user_reservations_details .col-selection,
+.pane-alma_user_loans_details .col-selection,
+.pane-alma_user_debts_details .col-selection { width: 35px; }
+
+.pane-alma_user_reservations_details .col-image,
+.pane-alma_user_loans_details .col-image { width: 35px; }
+
+.pane-alma_user_reservations_details .col-reservation,
+.pane-alma_user_reservations_details .col-valied-to,
+.pane-alma_user_reservations_details .col-pickup-by,
+.pane-alma_user_loans_details .col-loan-date,
+.pane-alma_user_loans_details .col-due-date,
+.pane-alma_user_debts_details .col-date { width: 70px;}
+
+.pane-alma_user_reservations_details .col-pickup-branch { width: 100px;}
+.pane-alma_user_reservations_details .col-queue-number { width: 70px;}
+.pane-alma_user_reservations_details .col-pickup-number { width: 30px;}
+
+.pane-alma_user_debts_details .col-amount { width: 60px;}
+.pane-alma_user_debts_details td.amount {
+  text-align: right;
+  padding-right: 4px;
+}
+
+.pane-alma_user_debts_details td.note,
+.pane-alma_user_debts_details td.date {
+  padding-right: 16px;
+}
+
+#alma-user-forms-debts-details td .form-item {
+  margin:0;
+  padding:0;
+}
+
+#alma-user-forms-debts-details tbody td {
+  border-bottom:1px solid #D1D9D7;
+  padding:5px;
+}
+
+.pane-alma_user_reservations_details td.queue_no {
+  text-align: right;
+  padding-right: 4px;
+}
+
+.pane-alma_user_reservations_details td.pickup_expire_date {
+  text-align: right;
+  padding-right: 4px;
+}
+
+.pane-alma_user_loans_details table caption,
+.pane-alma_user_reservations_details table caption {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 0 5px 0;
+  text-align: left;
+  color:#790f21;
+}
+
+.pane-alma_user_loans_details table,
+.pane-alma_user_reservations_details table { margin-bottom: 16px; }
+
+.pane-alma_user_reservations_details h3, .pane-alma_user_loans_details h3{ color: #790f21;}
+.pane-alma_user_reservations_details h3 { padding-top: 25px; }
+
+.pane-alma_user_reservations_details .update-controls-button .edit-update{
+  height: 25px;
+  margin-right: 24px;
+  float: left;
+  clear: none;
+}
+
+.pane-alma_user_reservations_details .update-controls-button .edit-remove{
+  height: 25px;
+  float: left;
+  clear: none;
+}
+
+.pane-alma_user_reservations_details .update-controls-button .edit-remove #edit-remove {
+  border: 0;
+  background-color: #FFF;
+  height: 24px;
+  padding-left: 24px;
+  color: #006A87;
+  cursor: pointer;
+  background: transparent url('../images/trash.png') no-repeat 0 50%;
+}
+
+#alma-user-forms-loan-details td.image,
+#alma-user-forms-reservation-details td.image {
+  overflow: hidden;
+  text-align: center;
+}
+
+/** mikl: Login form in jQuery UI dialog **/
+.ui-dialog #user-login-form {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-dialog #user-login-form .form-image-button {
+  margin-top: 13px;
+}
+

@@ -1,0 +1,68 @@
+/* =====================================
+ jcarousel
+/*--------------------------------------*/
+/*standard elements dont touch anything ;)*/
+.jcarousel-container {position: relative;}
+.jcarousel-clip {z-index: 2;padding: 0;margin: 0;overflow: hidden;position: relative;}
+.jcarousel-list {z-index: 1;overflow: hidden;position: relative;top: 0;left: 0;margin: 0;padding: 0;}
+.jcarousel-list li,.jcarousel-item {float: left;list-style: none; width: 75px;height: 75px;}
+.jcarousel-next {z-index: 3;display: none;}
+.jcarousel-prev {z-index: 3;display: none;}
+
+/* =====================================
+frontpage
+/*--------------------------------------*/
+/*here we gogo */
+.jcarousel-skin-biblo{margin:0 0 0 -17px; width:994px; background:transparent url(../images/bg-carousel.png) repeat-x left top;}
+.jcarousel-skin-biblo .jcarousel-container{width: 960px; height:199px; margin:0 auto; }
+.jcarousel-skin-biblo .jcarousel-item {width: 940px;height: 180px; }
+
+/** Horizontal  */
+.jcarousel-skin-biblo .jcarousel-container-horizontal {}
+.jcarousel-skin-biblo .jcarousel-clip-horizontal {width: 900px; height:180px; padding:10px 20px 0 20px;}
+
+.jcarousel-skin-biblo .jcarousel-next-horizontal{position: absolute; top: 75px; right: -17px; width: 35px; height: 35px; cursor: pointer; background: transparent url(../images/knapper.png) no-repeat 0 -35px;}
+	.jcarousel-skin-biblo .jcarousel-next-horizontal:hover {background-position: -35px -35px;}
+	.jcarousel-skin-biblo .jcarousel-next-horizontal:active {background-position: -70px -35px;}
+	.jcarousel-skin-biblo .jcarousel-next-disabled-horizontal,
+	.jcarousel-skin-biblo .jcarousel-next-disabled-horizontal:hover,
+	.jcarousel-skin-biblo .jcarousel-next-disabled-horizontal:active {cursor: default; background-position: -105px -35px;}
+
+.jcarousel-skin-biblo .jcarousel-prev-horizontal {position: absolute; top: 75px; left: -17px; width: 35px; height: 35px; cursor: pointer; background: transparent url(../images/knapper.png) no-repeat 0 0;}
+	.jcarousel-skin-biblo .jcarousel-prev-horizontal:hover {background-position: -35px 0;}
+	.jcarousel-skin-biblo .jcarousel-prev-horizontal:active {background-position: -70px 0;}
+	.jcarousel-skin-biblo .jcarousel-prev-disabled-horizontal,
+	.jcarousel-skin-biblo .jcarousel-prev-disabled-horizontal:hover,
+	.jcarousel-skin-biblo .jcarousel-prev-disabled-horizontal:active {cursor: default; background-position: -105px 0;}
+
+#frontpagecarousel-controller{background:#f3f5f5; border-top: 1px solid #c2c4c4;margin:0 0 0 2px; width:958px; height:20px;}
+#frontpagecarousel-controller li{float:left; padding:0px 17px; height:18px; margin:-1px 2px 0 0;background:#d1d9d7; border-top: 1px solid #a7aeac}
+#frontpagecarousel-controller li.active{background:#918f91; border-top: 1px solid #918f91}
+
+/* =====================================
+similar events
+/*--------------------------------------*/
+/*here we gogo */
+.jcarousel-skin-events{width:670px;}
+.jcarousel-skin-events .jcarousel-container{width: 610px; height:199px; margin:0 auto;} 
+.jcarousel-skin-events .jcarousel-item {width: 140px;height: 200px; margin:0 5px;}
+
+/** Horizontal  */
+.jcarousel-skin-events .jcarousel-container-horizontal {}
+.jcarousel-skin-events .jcarousel-clip-horizontal {width: 580px; height:180px; padding:10px 20px 0 0px; }
+
+.jcarousel-skin-events .jcarousel-next-horizontal{position: absolute; top: 75px; right: -20px; width: 35px; height: 35px; cursor: pointer; background: transparent url(../images/knapper.png) no-repeat 0 -35px;}
+	.jcarousel-skin-events .jcarousel-next-horizontal:hover {background-position: -35px -35px;}
+	.jcarousel-skin-events .jcarousel-next-horizontal:active {background-position: -70px -35px;}
+	.jcarousel-skin-events .jcarousel-next-disabled-horizontal,
+	.jcarousel-skin-events .jcarousel-next-disabled-horizontal:hover,
+	.jcarousel-skin-events .jcarousel-next-disabled-horizontal:active {cursor: default; background-position: -105px -35px;}
+
+.jcarousel-skin-events .jcarousel-prev-horizontal {position: absolute; top: 75px; left: -30px; width: 35px; height: 35px; cursor: pointer; background: transparent url(../images/knapper.png) no-repeat 0 0;}
+	.jcarousel-skin-events .jcarousel-prev-horizontal:hover {background-position: -35px 0;}
+	.jcarousel-skin-events .jcarousel-prev-horizontal:active {background-position: -70px 0;}
+	.jcarousel-skin-events .jcarousel-prev-disabled-horizontal,
+	.jcarousel-skin-events .jcarousel-prev-disabled-horizontal:hover,
+	.jcarousel-skin-events .jcarousel-prev-disabled-horizontal:active {cursor: default; background-position: -105px 0;}
+
+.jcarousel-skin-events{font-size:11px;}

@@ -1,0 +1,107 @@
+/* ===================================== 
+	Style: search
+	search results
+* ------------------------------------- */
+#ting-search-results{width:716px; float:left;}
+#ting-search-sidebar{width:244px; float:right;}
+#ting-search-sidebar .campaign{padding:0 0 10px 8px; width:215px; overflow:hidden; }
+
+	#ting-search-tabs li{margin-left:3px;  padding:1px 3px 3px 5px;  display:inline; 	border: 1px solid #ccc; background: #fff;font-size:11px; text-transform: uppercase;}
+	#ting-search-tabs li.active{border-top: 1px solid #ccc; border-left: 1px solid #ccc;  border-right: 1px solid #ccc; border-bottom: 1px solid #f3f5f4; background: #f3f5f4;}
+	#ting-search-tabs li a{color: #000;}
+	#ting-search-tabs li .count-value{color: #900;}
+
+#ting-result, #content-result{background:transparent url(../images/bg-search.jpg) no-repeat left top; padding: 10px 0 0 5px;}
+
+
+/*facet browser*/
+#ting-facet-browser{width: 680px; padding: 7px 0 0 7px ; background:transparent url(../images/bg-facetbrowser.png) no-repeat left top;}
+	.jcarousel-skin-ding-facet-browser .jcarousel-clip-horizontal {width:652px;}
+
+	#ting-facet-browser li li.odd {background: #fff;  border-color: transparent #eee transparent transparent; }
+	#ting-facet-browser li li.even { background:none #f3f5f5; border-color: transparent #e4e5e5 transparent #f9fafa; }
+
+	/*footer*/
+	#ting-facet-browser .resize.expand {background:transparent url(../images/bg-facetbrowser-footer-down.png) no-repeat center bottom;}
+	#ting-facet-browser .resize.contract {background:transparent url(../images/bg-facetbrowser-footer-up.png) no-repeat center bottom;}
+
+	#ting-facet-browser a.resize {
+	width: 660px; height: 24px;
+		position: absolute; left: 4px; bottom: -24px; display: block;  text-indent: -9999px; z-index: 9999;
+		background:transparent url(../images/bg-facetbrowser-footer.png) no-repeat center bottom;
+	}
+	
+	/*browser selected colors*/
+	#ting-facet-browser li.selected, #ting-facet-browser li.selected *{color:#000 !important;}
+	#ting-facet-browser li.selected {background:#A7AFB8 none repeat scroll 0 0 !important; border-color:#eee !important;}
+
+/*results*/
+#content form #search-form{padding:0 0 0 20px;}
+
+#ting-search-result{ padding:20px 0 0 0px; width: 650px;}
+	#ting-search-result ul li{background:transparent url(../images/bg-divider.png) no-repeat left top; margin:0 0 20px 0px;  padding:10px 0 10px 10px; list-style-position: outside; clear:both; }
+	#ting-search-result div.picture{float:left; background:#ddd; width:80px; margin:0 12px 10px 0; line-height:0;}
+	#ting-search-result div.record{margin-left:92px; width:525px;}
+	#ting-search-result h4{display:inline;}
+	#ting-search-result .types{float: right; width:200px;}
+	#ting-search-result .types ul{float:right;}
+	#ting-search-result .types li,.types li{clear:none; display:inline; float:left; margin:0 10px 0 0; padding:0; background:none;}
+		#ting-search-result .types li, .types li{font-size: 10px; padding:1px 3px; color: #fff; margin: 1px}
+		#ting-search-result .types li,.types li{background-color:#eee; color:#aaa;}
+		#ting-search-result .types li.available,.types li.available{background-color:#71bf44; color:#fff;}
+		#ting-search-result .types li.out,.types li.out{background-color: #f85f26; color:#fff;}
+		#ting-search-result .types li.reserved,ul.types li.reserved{ background-color: #560036; /*#bc0028*/ color:#fff;}	
+		
+		#ting-search-result .subjects li{clear:none; display:inline; float:left; margin:0 10px 0 0; padding:0; background:none; }
+		#ting-search-result .subjects h4{float: left; margin: 0 10px 0 0; font-size: 10px; color:#bbb;}
+		#ting-search-result .subjects li{display:inline; font-size: 10px; color:#bbb;}
+
+#content-result .taxonomy ul li{float:left; background:none; padding:0 10px 0 0;}
+#content-result .taxonomy ul {display:block;}
+#content-result .meta .time{padding:0 5px 0 0;}
+/*libary & teasers */
+#content-result{padding:20px 0 0 0px; }
+	#content-result .node-teaser{padding:10px 0 20px 10px; width:670px; background:transparent url(../images/bg-divider.png) no-repeat left bottom;}
+	#content-result .node-teaser .picture{margin:10px 10px 0 0;}
+	#content-result .node-teaser .content{width:505px;}
+	#content-result .node-teaser .content h3{margin:10px 0 0 0;}
+  #content-search-result .node-teaser .content h3{margin:10px 0 0 0;}
+	#content-result .node-teaser-library .picture{margin:0 10px 0 0;}
+	#content-result .node-teaser-library .content{width:335px;}
+
+
+	#content-result .meta div{ display:inline;}
+
+.ui-tabs-panel {border:none;}
+
+/*spinner*/	
+#ting-search-spinner{margin: 10px auto 10px auto; text-align: center; width: 220px;}
+#ting-search-spinner .spinner {background: url(../images/ajax-loader.gif) no-repeat; margin-top: 10px; height: 19px;width: 220px;}
+
+.page-search .tabs{display:none;}
+
+#ting-collection .collection span.title, .item-list span.title{margin:0 5px 0 0;}
+
+.collection{background:transparent url(../images/bg-divider.png) no-repeat left top; margin:5px 0px; padding:5px 0;}
+	.collection .picture{width:80px; height:150px; margin: 0 10px 0 0; display:block; float:left; background:#eee; overflow:hidden;}
+	.collection .content{width:330px;margin:0 10px 0 0; float:left;}
+	.collection .content{font-size:10px; line-height:14px;}
+.collection .creator{font-weight:bold;}
+.collection .content ul li {margin:0 0 0 5px; background-image:none; padding:3px;}
+	.collection .cart{width:70px; float:left;}
+		.collection .cart li{width:80px; float:left;}
+
+.ting-overview .picture{width:180px; display:block; background:#eee; }
+.ting-overview .button{float:left;}
+.ting-overview .left-column{width:200px;}
+.ting-overview .right-column{width:310px;}
+
+.object-information{width:490px; padding:10px; margin:20px 0; clear:both; background:#e8eceb; font-size:10px; color:#050505;}
+	.object-information	.item-list{clear:both; border-top: 1px solid #CCCECE; padding:10px 0 20px 0;}
+		.object-information .title{width:80px; display:block; float:left; font-weight: bold;}
+		.object-information span.item-list{width:300px; display:block; float:left; clear:none; border:none; padding:0;}
+	.object-information h3{width:100px; display:block; float:left; font-weight: normal;}
+	.object-information .subject span{display:block;}
+.object-otherversions {background:transparent url(../images/bg-divider.png) no-repeat left top; margin:20px 0 0 0; padding:5px 0 0 0;}
+
+

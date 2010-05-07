@@ -1,0 +1,138 @@
+/* =====================================
+	Dynamo style.css
+	------------------------------------
+	fonts & sizes
+/*--------------------------------------*/
+body{font-size: 13px; line-height:17px; color:#666}
+body, caption, th, td, input, textarea, select, option, legend, fieldset {font-family: Verdana, Arial, sans-serif;}
+h1, h2, h3, h4, h5, h6{font-weight: normal; color: #050505;}
+h1{font-size: 21px; line-height: 26px; color: #050505;}
+h2{font-size: 20px; line-height: 26px; color: #050505;}
+h3{font-size: 17px; line-height: 20px; color: #050505;}
+h4{font-size: 14px; font-weight: bold; color: #050505;}
+h5{font-size: 14px; font-weight: bold; color: #333;}
+h6{font-size: 14px; font-weight: bold; color: #333;}
+p {margin-bottom: 0.5em;}
+
+h2 a, h2 a:link,h2 a:visited,h2 a:active,
+h3 a, h3 a:link,h3 a:visited,h3 a:active
+{
+ color:#050505;
+}
+h4 a, h4 a:link,h4 a:visited,h4 a:active{font-size:12px; line-height:15px; color:#050505;}
+
+.content-left h3{padding:5px 0 10px 0;}
+/*-- form --*/
+textarea{font-size: 11px;}
+
+/*-- code --*/
+code, tt, pre { padding: 1px; background-color: #efefef;  font-family: "Bitstream Vera Sans Mono", Monaco, "Lucida Console", monospace;  font-size: 10px;}
+
+/* ===================================== 
+account
+* ------------------------------------- */
+#account{color:#fff;font-size:11px;}
+#account a{color:#fff;font-size:11px;}
+#user-login-form label{font-size:9px; color:#000;}
+	#edit-search-block-form-1-wrapper input{font-size:14px; color:#929292;}
+	#edit-search-block-form-1-wrapper p{font-size:9px; color:#dfa1ab;}
+
+/*-- links --*/
+a, a:link, a:visited, a:active {text-decoration: none; color:#006a87;}
+a:hover{text-decoration: underline !important}
+
+li a.active{}
+
+.meta{color:#999999; padding:2px 0 0 0;}
+.meta a,.meta a:link,.meta a:visited,.meta a:active {text-decoration: none; color:#006a87;} /*999*/
+.author a,.author a:link,.author a:visited,.author a:active {text-decoration: none; color:#006a87;}
+
+.comment,
+.taxonomy,
+.meta,
+.view-empty,
+.view-event-list .libary-tag,
+.view .field-library-ref-nid,
+.view .created, 
+.view .name
+{
+	font-size:10px; line-height:15px;
+}
+
+#path,
+.subject a,
+.more-link a,
+.pane-event_list li div,
+.pane-event_list h4 a,
+.pane-library_feature_list ul li,
+.view-feature-list li div.title a
+{
+	font-size:10px; line-height:17px;
+}
+
+.view-event-list li div.title,
+.view-event-list .time,
+.view-event-list li div.title a{
+	font-size:11px; line-height:15px; font-weight:bold;
+}
+
+#frontpagecarousel-controller li{color:#fff; 	font-size:11px; line-height:15px;}
+#frontpagecarousel-controller li a{	font-size:11px; line-height:15px; color:#050505;}
+
+/*TODO kun i hæjre baren*/
+.pane-library_location .vcard{font-size:11px; line-height:17px;}
+.pane-library_location .vcard .fn{font-weight:bold;}
+
+#twocol-right .pane-article_list,
+.pane-comment-0,
+.office-hours-week
+{
+	font-size:11px; line-height:20px;
+}
+
+.pane-article_list h3,
+.pane-blog_category_list h3,
+.pane-library_feature_list h3,
+.pane-library_hours h3,
+.pane-comment-0 h3
+{
+	font-size:11px; line-height:20px; font-weight:bold;
+}
+
+.subject a{color:#fff; background-color: #b41630; padding: 0 2px; text-transform: uppercase; font-size:9px; line-height:9px;}
+
+.view-article-list p{padding:10px 0 0 0;}
+.node-article .content {padding:10px 0 0 0;}
+
+.libary-openstatus{	font-size:10px; line-height:17px; text-transform: uppercase; color:#fff;}
+
+#pagefooter{font-size:10px; line-height:13px;}
+#pagefooter h3,
+.pane-event_list h3,
+.pane-library_feature_list h3
+{
+	font-size:12px; line-height:20px;
+  font-family: "Gills sans light", Verdana, Arial, sans-serif; text-transform: uppercase;
+	font-weight: normal;
+}
+
+.pane-node_comment_form h3, 
+.pane-node_comments h3
+{
+  font-size:14px;
+}
+
+/* Feed icon */
+.feed-icon span {
+  margin-left: 2px;
+  position: relative;
+  top: -13px;
+}
+
+.feed-icon a:hover span {
+  text-decoration: underline;
+}
+
+.feed-icon a:hover {
+  text-decoration: none !important;
+}
