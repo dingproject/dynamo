@@ -38,14 +38,14 @@ account
 	#edit-search-block-form-1-wrapper p{font-size:9px; color:#dfa1ab;}
 
 /*-- links --*/
-a, a:link, a:visited, a:active {text-decoration: none; color:#006a87;}
+a, a:link, a:visited, a:active {text-decoration: none; color:#9CB333;}
 a:hover{text-decoration: underline !important}
 
 li a.active{}
 
 .meta{color:#999999; padding:2px 0 0 0;}
-.meta a,.meta a:link,.meta a:visited,.meta a:active {text-decoration: none; color:#006a87;} /*999*/
-.author a,.author a:link,.author a:visited,.author a:active {text-decoration: none; color:#006a87;}
+.meta a,.meta a:link,.meta a:visited,.meta a:active {text-decoration: none; color:#9CB333;} /*999*/
+.author a,.author a:link,.author a:visited,.author a:active {text-decoration: none; color:#9CB333;}
 
 .comment,
 .taxonomy,
@@ -99,7 +99,7 @@ li a.active{}
 	font-size:11px; line-height:20px; font-weight:bold;
 }
 
-.subject a{color:#fff; background-color: #b41630; padding: 0 2px; text-transform: uppercase; font-size:9px; line-height:9px;}
+.subject a{color:#fff; background-color: #9CB333; padding: 0 2px; text-transform: uppercase; font-size:9px; line-height:9px;}
 
 .view-article-list p{padding:10px 0 0 0;}
 .node-article .content {padding:10px 0 0 0;}

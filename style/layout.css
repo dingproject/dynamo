@@ -4,16 +4,16 @@
 
 /*--------------------------------------*/
 
-body{background:#e5e5e5 url(../images/bg.png) repeat-x 0 0;}
+body{background:#e5e5e5;}
 body.admin{background-position: 0 30px }
 #container{background:transparent url(../images/bg-header.png) no-repeat center 0;}
 #page{width:994px; margin: 0 auto;}
 #page{overflow:hidden;} /*might have consequenses*/
 
 /* sitename */	
-#site-name {text-indent: -9999em; margin: 0px 17px 0 720px; padding:17px 0 0 0; height:22px;}
-	body.admin-menu #site-name {margin: 12px 17px 0 720px;}
-	#site-name a{height:24px; width:252px; display: block; overflow:hidden; background:transparent url(../images/logo.png) no-repeat 0 0;}
+#site-name {text-indent: -9999em; margin: 0px 17px 0 660px; padding:9px 0 0 0; height:30px;}
+	body.admin-menu #site-name {margin: 12px 17px 0 660px;}
+	#site-name a{height:30px; width:312px; display: block; overflow:hidden; background:transparent url(../images/logo.png) no-repeat 0 0;}
 
 /* header */
 #pageheader{background:transparent url(../images/bg-header.png) no-repeat center -39px; margin:0 0 0 1px; min-height:200px;}
@@ -37,10 +37,10 @@ body.admin{background-position: 0 30px }
 	#ting-search-form label{margin:3px 0 0 30px; font-size:13px; font-weight:normal;} 
 	#ting-search-form #edit-keys-wrapper{margin:0;}
 	#ting-search-form .form-image-button{float:left; display:block; height:29px; width:94px; }
-  #ting-search-form div.example {display: block; color: #eccdd3; font-size:10px; color:#eccdd3;}
+  #ting-search-form div.example {display: block; color: #e5e5e5; font-size:10px; }
   #ting-search-form div.example p {float: left;}
   #ting-search-form div.example li {float: left;  margin-left: 0.5em;}
-  #ting-search-form div.example li a {color: #eccdd3;}
+  #ting-search-form div.example li a {color: #e5e5e5;}
   #ting-search-form div.example li a:hover {color: #fff;}
 
 /*
@@ -59,7 +59,7 @@ body.admin{background-position: 0 30px }
 		#edit-pass-wrapper input{width:155px;}
 	#edit-remember-me-wrapper{width:155px; float:left;}
 		#edit-remember-me-wrapper label{color:#fff; margin:0;}
-	#user-login-form .form-image-button{width:60px;height:20px; padding:0; margin:0px 0 0 8px; display:block; float:left;overflow:hidden; background:transparent url(../images/accountlogin.png) no-repeat right center;}
+	#user-login-form .form-image-button{width:60px;height:20px; padding:0; margin:0px 0 0 8px; display:block; float:left;overflow:hidden;}
 
 	#user-login-form ul{clear:both;}
 	#user-login-form ul li{float:left; margin:0 10px 0 0;}
@@ -97,13 +97,13 @@ body.admin{background-position: 0 30px }
 /*
   Menu 
 --------------------------------------*/
-#navigation{margin:0; overflow:hidden; height:30px; font-family: "Gill Sans",  sans-serif; text-transform: uppercase;}
+#navigation{margin:0; overflow:hidden; height:30px; text-transform: uppercase;}
 	#navigation li {padding:0 0px 0 10px; margin:0 20px; height:30px; list-style: none; float:left; position: relative;}
-	#navigation li.first{margin:0 20px 0 0;}
-	#navigation li a{margin:0; padding:6px 10px 0 0; height:30px; display: block; float:left; font-weight:normal;}
-	#navigation li.active {background:url(../images/menu-left.png) no-repeat left top; }
-	#navigation li.active a{color:#eee; background: url(../images/menu-right.png) no-repeat right top; font-weight:normal;}
-	#navigation a {color:#fff;}
+	#navigation li.first{margin:0 20px 0 0; padding:0 0px 0 20px;}
+	#navigation li a{margin:0; padding:6px 0 0 0; display: block; float:left; font-weight:normal;}
+	#navigation a { display: block; color: #D1E02B; border-bottom:1px dotted #9CB333; }
+	#navigation li.active a, 
+	#navigation a:hover {color:#eee; border-bottom: 0 none; text-decoration: none !important; } /** Need to override text decoration in typography.css **/
 
 /* left navigation */	
 #content-left{border-right: 1px solid #d1d9d7;}

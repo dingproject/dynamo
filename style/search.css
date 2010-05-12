@@ -18,6 +18,7 @@
 #ting-facet-browser{width: 680px; padding: 7px 0 0 7px ; background:transparent url(../images/bg-facetbrowser.png) no-repeat left top;}
 	.jcarousel-skin-ding-facet-browser .jcarousel-clip-horizontal {width:652px;}
 
+	#ting-facet-browser li li {color: #9CB333;}
 	#ting-facet-browser li li.odd {background: #fff;  border-color: transparent #eee transparent transparent; }
 	#ting-facet-browser li li.even { background:none #f3f5f5; border-color: transparent #e4e5e5 transparent #f9fafa; }
 

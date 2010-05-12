@@ -6,6 +6,7 @@
 	------------------------------------
 	colors:
 	------------------------------------
+	limegreen:  #9CB333
 	blue:	 			#006A87
 	blue/gray:	#D1D9D7
 	black: 			#050505
@@ -28,6 +29,7 @@ tr.even a{}
 form{clear: both;}
 form div{position:relative }
 #search label, #account label{position:absolute; top:0; left:0; color:#000;}
+#account #edit-remember-me-wrapper label {color: #e5e5e5;}
 form div.description{font-size:10px; line-height:12px; color:#999; padding:5px; width:400px;}
 
 #content form .form-item{margin:0 0 0 0; padding:10px 0; }
@@ -50,7 +52,7 @@ ul.pager li{margin:0 10px 0 0;}
 #pager, ul.pager{height:30px; margin:0 0 20px 0; padding:0 0 0 10px; clear:both; background:transparent url(../images/bg-pager.gif) no-repeat left top; font-size:10px;}
 /*-- search  --*/
 #pager a{margin:3px 0 0 0; cursor: pointer}
-	#pager a,#pager  a:link, #pager a:active {text-decoration: none; color:#006A87;}
+	#pager a,#pager  a:link, #pager a:active {text-decoration: none; color:#9CB333;}
  	#pager a:visited{color:#050505}
 	#pager a:hover, #ting-result-pager a:focus { text-decoration: underline; color:#666; cursor: pointer;}
 	#ting-result-pager li.current a,#ting-result-pager li.current a:link,	#ting-result-pager li.current a:active,	#ting-result-pager li.current a:visited	{color:#000; font-weight:bold;}
@@ -86,7 +88,7 @@ ul.pager li{margin:0 10px 0 0;}
 	  width:32px; height:28px; float:left; padding:3px 0px 0 0px;  background:transparent url(../images/bg-pager-link-active.gif) no-repeat left top;
 	}
   ul.pager li.pager-item a{padding:6px 10px;}
-  ul.pager li a{padding:6px 0px; color:#006A87;}
+  ul.pager li a{padding:6px 0px; color:#9CB333;}
 
 
 /* =====================================
@@ -149,7 +151,7 @@ Campaigns
 .view-user-comments-list .subject a:link,
 .view-user-comments-list .subject a:visited, 
 .view-user-comments-list .subject a:active{
-  background:none; color:#006a87; text-transform: none; font-size:10px;
+  background:none; color:#9CB333; text-transform: none; font-size:10px;
 }
 
 /* =====================================
