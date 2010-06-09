@@ -8,12 +8,6 @@
 */
 function dynamo_theme($existing, $type, $theme, $path) {
  return array(
-   'ding_panels_content_library_title' => array(
-     'template' => 'ding_panels_content_libary_title',     
-   ),
-   'ding_panels_content_library_location' => array(
-     'template' => 'ding_panels_content_libary_location',
-   ),
 	'ting_search_form' => array(
 		'arguments'=> array('form' => NULL),
 		),
