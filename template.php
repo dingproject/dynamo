@@ -461,7 +461,7 @@ function format_danmarc2($string){
  * @return string 
  */
 function dynamo_feed_icon($url) {
-  if ($image = theme('image', 'sites/all/themes/dynamo/images/feed.png', t('RSS feed'), t('RSS feed'))) {
+  if ($image = theme('image', drupal_get_path('theme', 'dynamo').'/images/feed.png', t('RSS feed'), t('RSS feed'))) {
     // Transform view expose query string in to drupal style arguments -- ?library=1 <-> /1
     if ($pos = strpos($url, '?')) {
       $base = substr($url, 0, $pos);
