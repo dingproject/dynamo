@@ -8,12 +8,6 @@
 */
 function dynamo_theme($existing, $type, $theme, $path) {
  return array(
-   'ding_panels_content_library_title' => array(
-     'template' => 'ding_panels_content_libary_title',     
-   ),
-   'ding_panels_content_library_location' => array(
-     'template' => 'ding_panels_content_libary_location',
-   ),
 	'ting_search_form' => array(
 		'arguments'=> array('form' => NULL),
 		),
@@ -587,7 +581,13 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
       if (count($cells)) {
         // Add odd/even class
         $class = $flip[$class];
-        array_push($attributes['class'], $class);
+
+        // TODO: This code looks broken. I've added the is_array check
+        // to prevent errors, but I don't know if it'll ever be true.
+        // mikl, 2010-05-24
+        if (is_array($attributes['class'])) {
+          array_push($attributes['class'], $class);
+        }
 
         // Build row
         $output .= ' <tr' . drupal_attributes($attributes) . '>';
