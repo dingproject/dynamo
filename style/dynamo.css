@@ -95,7 +95,7 @@ ul.pager li{margin:0 10px 0 0;}
 Panels BOX css styles
 /*--------------------------------------*/
 .ding-box-pane{width:228px; background:transparent url(../images/sprite-box.png) repeat-y 0 0; overflow:hidden;}
-	.ding-box-pane h3{color:#050505; width:228px; padding:8px 0 4px 20px; margin:0;height:18px; font-size:11px; line-height:20px; font-weight:bold; background:transparent url(../images/sprite-box.png) no-repeat -230px -30px; overflow:hidden;}
+	.ding-box-pane h3{color:#050505; width:228px; padding:8px 0 4px 20px; margin:0;height:18px; font-size:11px; line-height:20px; font-weight:normal; background:transparent url(../images/sprite-box.png) no-repeat -230px -30px; overflow:hidden; text-transform: uppercase;}
 	.ding-box-pane ul{width:228px; padding:8px 0px; min-height:30px; background:transparent url(../images/sprite-box.png) no-repeat -700px bottom; overflow:hidden;}
 	.ding-box-pane ul.links{background:none;}
 	.ding-box-pane .pane-library_hours{width:228px; padding:0 0 8px 0px; min-height:30px; background:transparent url(../images/sprite-box.png) no-repeat -700px bottom; overflow:hidden;}
