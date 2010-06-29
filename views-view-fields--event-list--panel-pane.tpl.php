@@ -1,11 +1,10 @@
  <!-- views-view-fields  event-list  page.tpl.php  (panel pane)-->
 <?php 
-
   // Convert the date value to timestamp
   $date = theme('event_information',
                 strtotime($fields['field_datetime_value']->raw . 'Z'),
                 strtotime($fields['field_datetime_value']->raw . 'Z'),
-                $fields['field_entry_price_value']->content);
+                $fields['field_entry_price_value']->raw);
   //$date = strtotime($fields['field_datetime_value']->raw . 'Z');
 ?>
 <div class="node-teaser clearfix">
