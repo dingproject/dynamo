@@ -493,9 +493,15 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
   // Add sticky headers, if applicable.
   if (count($header)) {
     drupal_add_js('misc/tableheader.js');
+
     // Add 'sticky-enabled' class to the table to identify it for JS.
     // This is needed to target tables constructed by this function.
-    array_push($attributes['class'], 'sticky-enabled');
+    if (is_array($attributes['class'])) {
+      array_push($attributes['class'], 'sticky-enabled');
+    }
+    else {
+      $attributes['class'] = array('sticky-enabled');
+    }
   }
 
   $output = '<table' . drupal_attributes($attributes) . ">\n";
