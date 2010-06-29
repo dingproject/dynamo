@@ -83,6 +83,9 @@ function dynamo_preprocess_node(&$variables) {
     }
     $variables['event_price'] = $info['price'];
   }
+
+  // Added by mikl, since the classes coming from mothership are broken.
+  $variables['classes'] = ' ding-node';
 }
 
 /**
