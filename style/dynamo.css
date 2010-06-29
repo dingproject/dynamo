@@ -210,7 +210,7 @@ div.more-link{padding:0 20px 0 0; }
   .jcarousel-skin-ting-search-carousel .jcarousel-clip-horizontal {width:666px;}
   .jcarousel-skin-ting-search-carousel .jcarousel-item {width:111px}
   .ting-search-carousel .search-results .info {width:100px;}
-  .ting-search-carousel .subtitle {font-size:47px;margin:10px 0 0px 40px; float:left; overflow:hidden; width:200px;}
+  .ting-search-carousel .subtitle {font-size:42px; font-weight: normal; margin:10px 0 0px 40px; float:left; overflow:hidden; width:200px;}
   .ting-search-carousel .search-controller li.active a {color:#fff;}
 
 .view-footer{margin:10px 0 10px 20px; clear:both;;}
