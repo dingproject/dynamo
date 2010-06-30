@@ -85,7 +85,7 @@ function dynamo_preprocess_node(&$variables) {
   }
 
   // Added by mikl, since the classes coming from mothership are broken.
-  $variables['classes'] = ' ding-node';
+  $variables['classes'] .= ' ding-node';
 }
 
 /**
