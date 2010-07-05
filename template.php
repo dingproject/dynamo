@@ -76,13 +76,16 @@ function dynamo_preprocess_node(&$variables) {
     }
 
     // Style date and price
-    $info = theme('event_information', $start, $end);
+    $info = theme('event_information', $start, $end, $node->field_entry_price[0]['value']);
     $variables['event_date'] = $info['date'];
     if ($info['time'] != NULL) {
       $variables['event_time'] = $info['time'];
     }
     $variables['event_price'] = $info['price'];
   }
+
+  // Added by mikl, since the classes coming from mothership are broken.
+  $variables['classes'] .= ' ding-node';
 }
 
 /**
@@ -493,9 +496,15 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
   // Add sticky headers, if applicable.
   if (count($header)) {
     drupal_add_js('misc/tableheader.js');
+
     // Add 'sticky-enabled' class to the table to identify it for JS.
     // This is needed to target tables constructed by this function.
-    array_push($attributes['class'], 'sticky-enabled');
+    if (is_array($attributes['class'])) {
+      array_push($attributes['class'], 'sticky-enabled');
+    }
+    else {
+      $attributes['class'] = array('sticky-enabled');
+    }
   }
 
   $output = '<table' . drupal_attributes($attributes) . ">\n";
@@ -606,7 +615,10 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
   return $output;
 }
 
-function dynamo_event_information($start, $end, $price) {
+/**
+ * Implementation of theme_event_information().
+ */
+function dynamo_event_information($start, $end, $price = 0) {
   $output = array();
 
   // Maybe swap end and start (problem with views event_list)
@@ -633,10 +645,9 @@ function dynamo_event_information($start, $end, $price) {
   if (format_date($start, 'custom', "Hi") == '0000') {
     $output['time'] = NULL;
   }
-
   /* Price */
 	if ($price > 0){
-    $output['price'] = check_plain($price) ." ". t('Kr');
+    $output['price'] = 'kr. ' . number_format($price, 2, ',', '.');
 	} 
   else {
     $output['price'] = t('Free');
@@ -644,3 +655,4 @@ function dynamo_event_information($start, $end, $price) {
 
   return $output;
 }
+
