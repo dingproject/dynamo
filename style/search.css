@@ -84,7 +84,7 @@
 #ting-collection .collection span.title, .item-list span.title{margin:0 5px 0 0;}
 
 .collection{background:transparent url(../images/bg-divider.png) no-repeat left top; margin:5px 0px; padding:5px 0;}
-	.collection .picture{width:80px; height:150px; margin: 0 10px 0 0; display:block; float:left; background:#eee; overflow:hidden;}
+	.collection .picture{width:80px; height:150px; margin: 0 10px 0 0; display:block; float:left; overflow:hidden;}
 	.collection .content{width:330px;margin:0 10px 0 0; float:left;}
 	.collection .content{font-size:10px; line-height:14px;}
 .collection .creator{font-weight:bold;}
@@ -92,7 +92,7 @@
 	.collection .cart{width:70px; float:left;}
 		.collection .cart li{width:80px; float:left;}
 
-.ting-overview .picture{width:180px; display:block; background:#eee; }
+.ting-overview .picture{width:180px; display:block; }
 .ting-overview .button{float:left;}
 .ting-overview .left-column{width:200px;}
 .ting-overview .right-column{width:310px;}
