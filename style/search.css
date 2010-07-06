@@ -41,7 +41,7 @@
 
 #ting-search-result{ padding:20px 0 0 0px; width: 650px;}
 	#ting-search-result ul li{background:transparent url(../images/bg-divider.png) no-repeat left top; margin:0 0 20px 0px;  padding:10px 0 10px 10px; list-style-position: outside; clear:both; }
-	#ting-search-result div.picture{float:left; background:#ddd; width:80px; margin:0 12px 10px 0; line-height:0;}
+	#ting-search-result div.picture{float:left; width:80px; margin:0 12px 10px 0; line-height:0;}
 	#ting-search-result div.record{margin-left:92px; width:525px;}
 	#ting-search-result h4{display:inline;}
 	#ting-search-result .types{float: right; width:200px;}
