@@ -499,11 +499,11 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
 
     // Add 'sticky-enabled' class to the table to identify it for JS.
     // This is needed to target tables constructed by this function.
-    if (is_array($attributes['class'])) {
-      array_push($attributes['class'], 'sticky-enabled');
+    if (isset($attributes['class'])) {
+      $attributes['class'] .= ' sticky-enabled';
     }
     else {
-      $attributes['class'] = array('sticky-enabled');
+      $attributes['class'] = 'sticky-enabled';
     }
   }
 
