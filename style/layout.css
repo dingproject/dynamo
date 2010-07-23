@@ -53,10 +53,11 @@ body.admin{background-position: 0 30px }
 	#user-login-form .form-text{height:16px; padding:1px 0 0 5px; margin:0; background-color: #fff; border-top: 1px solid #ddd; border-left: 1px solid #ddd; }
 	#user-login-form label{margin:1px 0 0 5px;}
 
-	#edit-name-wrapper{width:215px;}
-	  #edit-name-wrapper input{width:215px;}
-	#edit-pass-wrapper{width:155px; float:left;}
-		#edit-pass-wrapper input{width:155px;}
+  /* prefix #user-login-form as these fields are used in other forms */
+	#user-login-form #edit-name-wrapper{width:215px;}
+	  #user-login-form #edit-name-wrapper input{width:215px;}
+	#user-login-form #edit-pass-wrapper{width:155px; float:left;}
+		#user-login-form #edit-pass-wrapper input{width:155px;}
 	#edit-remember-me-wrapper{width:155px; float:left;}
 		#edit-remember-me-wrapper label{color:#fff; margin:0;}
 	#user-login-form .form-image-button{width:60px;height:20px; padding:0; margin:0px 0 0 8px; display:block; float:left;overflow:hidden;}
