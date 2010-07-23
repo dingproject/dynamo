@@ -130,6 +130,9 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 	#alma-user-forms-loan-details table .form-item-checkbox{display:inline;}
 
   #alma-user-forms-loan-details .form-button{ float: left; margin: 0 10px 10px 0; }
+  #alma-user-forms-loan-details .loan_date,
+  #alma-user-forms-loan-details .due_date { white-space: nowrap; }
+  
   .pane-alma_user_reservations_details { clear: left; }
 
 /*
@@ -144,6 +147,10 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 #alma-user-forms-reservation-details table{font-size:11px; width: 680px;}
 #alma-user-forms-reservation-details table tbody td{border-bottom: 1px solid #eee; padding:5px;}
 #alma-user-forms-reservation-details td.image img{ width:20px; overflow:hidden;}
+
+#alma-user-forms-reservation-details .pickup_expire_date,
+#alma-user-forms-reservation-details .create_date,
+#alma-user-forms-reservation-details .valid_to { white-space: nowrap; }
 
 #alma-user-forms-reservation-details .date-clear-block,
 #alma-user-forms-reservation-details #edit-new-pickup-branch-wrapper {
@@ -168,3 +175,4 @@ body.page-user #content-main form{margin:0 0 30px 0;}
   #reservations-active th.count-5 {width:50px;}  
   #reservations-active th.count-6 {width:50px;}
 
+#alma_user_forms_debts_details .date { white-space: nowrap; }
