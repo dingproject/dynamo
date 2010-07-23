@@ -1,19 +1,19 @@
 /* =====================================
-	Dynamo biblo style.css
-	------------------------------------
- 	library pages 
-	------------------------------------
-	
-	main library page (http://biblo.local/biblioteker)
-		blogs 
-		events at a library
+  Dynamo biblo style.css
+  ------------------------------------
+  library pages 
+  ------------------------------------
+  
+  main library page (http://biblo.local/biblioteker)
+    blogs 
+    events at a library
 /*--------------------------------------*/
 .node-teaser .content{width:510px; margin:0 5px 0 0; float:left;}
-.node-teaser .picture, .view-event-list .picture{	width:120px; height:120px; margin:0 20px 0 0; float:left; background:#eee;}
+.node-teaser .picture, .view-event-list .picture{ width:120px; height:120px; margin:0 20px 0 0; float:left; background:#eee;}
 
 
 .panel-pane .node-teaser .content{width:540px; margin:0; float:left; padding:0; overflow:hidden;}
-.panel-pane .node-teaser .picture{	width:120px; height:120px; margin:0 20px 0 0; float:left; background:#eee;}
+.panel-pane .node-teaser .picture{  width:120px; height:120px; margin:0 20px 0 0; float:left; background:#eee;}
 
 body.page-biblioteker .panel-pane .node-teaser .content{margin:0; float:left; padding:0; overflow:hidden;}
 body.page-biblioteker .panel-left .view ul li{padding:10px 0 10px 10px;}
@@ -24,38 +24,39 @@ body.ding-blog .panel-pane .node-teaser .content{width:700px; margin:0; float:le
 
 body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
 /* ==========================================================================
-	library overview (http://biblo.local/biblioteker)
+  library overview (http://biblo.local/biblioteker)
 /*----------------------------------------------------------------------------*/
 .ding-library-map {width:680px;}
 .view-library-list .node-teaser-library{width:680px;}
 .view-library-list .node-teaser-library .picture{width:120px; height:120px; margin:0 20px 0 0; float:left; background:#eee;}
 .view-library-list .node-teaser-library .content{width:360px; margin:0 5px 0 0; float:left;}
 
-	li.first .node-teaser-library{background: none; padding:10px 0}
-		.node-teaser-library .content h3{padding:0 0 5px 0;}
-		.node-teaser-library .content .link-card{padding:0 0 3px 0;}
-		/*lib status*/
-		.node-teaser-library .content .libary-openstatus{padding:0 5px; color:#fff; width:40px;}
-		.node-teaser-library .content .open{background:#71bf44; width:30px;}
-		.node-teaser-library .content .closed{background:#6b0046;  width:44px}
+  li.first .node-teaser-library{background: none; padding:10px 0}
+    .node-teaser-library .content h3{padding:0 0 5px 0;}
+    .node-teaser-library .content .link-card{padding:0 0 3px 0;}
+    /*lib status*/
+    .node-teaser-library .content .libary-openstatus{padding:0 5px; color:#fff; width:40px;}
+    .node-teaser-library .content .open{background:#71bf44; width:30px;}
+    .node-teaser-library .content .closed{background:#6b0046;  width:44px}
 
-	/*adresse*/
-	.node-teaser-library .vcard div{clear:both;}
-	.node-teaser-library .vcard  span.type{width:60px; display:block; float:left;}
-	.node-teaser-library .vcard .geo{display:none;}
+  /*adresse*/
+  .node-teaser-library .vcard div{clear:both;}
+  .node-teaser-library .vcard  span.type{width:60px; display:block; float:left;}
+  .node-teaser-library .vcard .geo{display:none;}
 
   /*opening hours*/
-	.node-teaser-library .office-hours-week{width:175px; float:left;}
-  	.node-teaser-library .office-hours-week .week-info{background:#d1d9d7}
-  	.node-teaser-library .office-hours-week .odd,	.node-teaser-library .office-hours-week .even{padding:0 5px;} 
-  	.node-teaser-library .office-hours-week .day{width:70px; display:block; float:left; }
-  	.node-teaser-library .office-hours-week	.week-info strong{margin:0 5px; font-weight:normal; }
-  	.node-teaser-library .office-hours-week .week-info{padding:0 0 0 5px; font-size:10px;}
-  	.node-teaser-library .office-hours-week .week-info a.prev{margin:0; font-weight:bold;}
-  	.node-teaser-library .office-hours-week .week-info a.prev{width:15px; height:20px;}
-  	.node-teaser-library .office-hours-week .week-info a.next{width:15px; height:20px;}
+  .office-hours-week .hours {clear: right; float: right;}
+  .node-teaser-library .office-hours-week{width:175px; float:left;}
+    .node-teaser-library .office-hours-week .week-info{background:#d1d9d7}
+    .node-teaser-library .office-hours-week .odd, .node-teaser-library .office-hours-week .even{padding:0 5px;} 
+    .node-teaser-library .office-hours-week .day{width:70px; display:block; float:left; }
+    .node-teaser-library .office-hours-week .week-info strong{margin:0 5px; font-weight:normal; }
+    .node-teaser-library .office-hours-week .week-info{padding:0 0 0 5px; font-size:10px;}
+    .node-teaser-library .office-hours-week .week-info a.prev{margin:0; font-weight:bold;}
+    .node-teaser-library .office-hours-week .week-info a.prev{width:15px; height:20px;}
+    .node-teaser-library .office-hours-week .week-info a.next{width:15px; height:20px;}
   /*opening hours lib page*/
-	.pane-library_hours .office-hours-week .day{width:100px; display:block; float:left; }
+  .pane-library_hours .office-hours-week .day{width:100px; display:block; float:left; }
 
 /*calender pane*/
 #event-list .panel-pane{margin:0 5px;}
@@ -83,8 +84,8 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
 
 
 /*features pane*/
-.ding-box-pane .pane-library_feature_list ul.item-list{padding:8px 0 8px 12px;}	
-	.ding-box-pane .pane-library_feature_list ul.item-list li{width:95px; float:left; margin:0 ; padding:0 0 0 15px; background:transparent url(../images/ok.png) no-repeat left 3px; }
+.ding-box-pane .pane-library_feature_list ul.item-list{padding:8px 0 8px 12px;} 
+  .ding-box-pane .pane-library_feature_list ul.item-list li{width:95px; float:left; margin:0 ; padding:0 0 0 15px; background:transparent url(../images/ok.png) no-repeat left 3px; }
 
 /*event*/
 #content .node-event .content .field-datetime {}
@@ -96,58 +97,58 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
 #event-similar div{height:100px; margin:0 0 20px 0; width:120px; overflow:hidden;  font-size:11px; line-height:12px;}
 #event-similar .date{height:20px; font-weight:bold;}
 /* ==========================================================================
-	library Right bars
+  library Right bars
 /*----------------------------------------------------------------------------*/
 /*biblo adresse*/
 .library-info{width:228px; background:transparent url(../images/sprite-box.png) repeat-y 0px 0;}
- 	.library-info-inner{background:transparent url(../images/sprite-box.png) no-repeat -460px 0; min-height:170px;}
-	.library-info .vcard{padding:15px; overflow:hidden;}
-	.library-info .links{padding: 0 15px;}
-	.library-info .library-map{width:228px; padding:15px 15px 10px 15px; overflow:hidden; background:transparent url(../images/sprite-box.png) no-repeat -700px bottom;} 
-	.library-info .library-map-inner{width:194px; height:140px; background:#eee;}
+  .library-info-inner{background:transparent url(../images/sprite-box.png) no-repeat -460px 0; min-height:170px;}
+  .library-info .vcard{padding:15px; overflow:hidden;}
+  .library-info .links{padding: 0 15px;}
+  .library-info .library-map{width:228px; padding:15px 15px 10px 15px; overflow:hidden; background:transparent url(../images/sprite-box.png) no-repeat -700px bottom;} 
+  .library-info .library-map-inner{width:194px; height:140px; background:#eee;}
 
 /*opening hours*/
-	.pane-library_hours .office-hours-week .even,	.pane-library_hours .office-hours-week .odd{width:190px; padding:0 10px; margin:0 10px;}
-	.pane-library_hours .office-hours-week .week-info{margin:0 0 0 20px;}
-	.week-info a.prev{ color:#757575;}
-	.week-info a.next{color:#757575;}
-	.office-hours-week .odd{background:#f3f5f5;}
-	.office-hours-week .even{background:#fff;}
+  .pane-library_hours .office-hours-week .even, .pane-library_hours .office-hours-week .odd{width:190px; padding:0 10px; margin:0 10px;}
+  .pane-library_hours .office-hours-week .week-info{margin:0 0 0 20px;}
+  .week-info a.prev{ color:#757575;}
+  .week-info a.next{color:#757575;}
+  .office-hours-week .odd{background:#f3f5f5;}
+  .office-hours-week .even{background:#fff;}
 
-	/* biblo external links*/
-	.pane-library_location ul.links {margin:10px 0 0 0;}
-	.pane-library_location ul.links li{display:block; padding:0;}
-		.pane-library_location ul.links li a{background:transparent url(../images/icons/arrow.png) no-repeat left center; padding:0px 0 5px 20px; font-size:10px;}
-		/*icons for the links*/
-		.pane-library_location ul.links li a.rejseplanen{background:transparent url(../images/icons/rejseplanen.gif) no-repeat}
-		.pane-library_location ul.links li a.findvej{background:transparent url(../images/icons/findvej.png) no-repeat}
-		.pane-library_location ul.links li a.blogger{background:transparent url(../images/icons/blogger.png) no-repeat}
-		.pane-library_location ul.links li a.delicious{background:transparent url(../images/icons/delicious.png) no-repeat}
-		.pane-library_location ul.links li a.facebook{background:transparent url(../images/icons/facebook.png) no-repeat}
-		.pane-library_location ul.links li a.feed{background:transparent url(../images/icons/feed.png) no-repeat}
-		.pane-library_location ul.links li a.flickr{background:transparent url(../images/icons/flickr.png) no-repeat}
-		.pane-library_location ul.links li a.friendfeed{background:transparent url(../images/icons/friendfeed.png) no-repeat}
-		.pane-library_location ul.links li a.linkedin{background:transparent url(../images/icons/linkedin.png) no-repeat}
-		.pane-library_location ul.links li a.livejournal{background:transparent url(../images/icons/livejournal.png) no-repeat}
-		.pane-library_location ul.links li a.myspace{background:transparent url(../images/icons/myspace.png) no-repeat}
-		.pane-library_location ul.links li a.netvibes{background:transparent url(../images/icons/netvibes.png) no-repeat}
-		.pane-library_location ul.links li a.newsvine{background:transparent url(../images/icons/newsvine.png) no-repeat}
-		.pane-library_location ul.links li a.picasa{background:transparent url(../images/icons/picasa.png) no-repeat}
-		.pane-library_location ul.links li a.stumbleupon{background:transparent url(../images/icons/stumbleupon.png) no-repeat}
-		.pane-library_location ul.links li a.twitter{background:transparent url(../images/icons/twitter.png) no-repeat}
-		.pane-library_location ul.links li a.vimeo{background:transparent url(../images/icons/vimeo.png) no-repeat}
-		.pane-library_location ul.links li a.wordpress{background:transparent url(../images/icons/wordpress.png) no-repeat}
-		.pane-library_location ul.links li a.youtube{background:transparent url(../images/icons/youtube.png) no-repeat}
+  /* biblo external links*/
+  .pane-library_location ul.links {margin:10px 0 0 0;}
+  .pane-library_location ul.links li{display:block; padding:0;}
+    .pane-library_location ul.links li a{background:transparent url(../images/icons/arrow.png) no-repeat left center; padding:0px 0 5px 20px; font-size:10px;}
+    /*icons for the links*/
+    .pane-library_location ul.links li a.rejseplanen{background:transparent url(../images/icons/rejseplanen.gif) no-repeat}
+    .pane-library_location ul.links li a.findvej{background:transparent url(../images/icons/findvej.png) no-repeat}
+    .pane-library_location ul.links li a.blogger{background:transparent url(../images/icons/blogger.png) no-repeat}
+    .pane-library_location ul.links li a.delicious{background:transparent url(../images/icons/delicious.png) no-repeat}
+    .pane-library_location ul.links li a.facebook{background:transparent url(../images/icons/facebook.png) no-repeat}
+    .pane-library_location ul.links li a.feed{background:transparent url(../images/icons/feed.png) no-repeat}
+    .pane-library_location ul.links li a.flickr{background:transparent url(../images/icons/flickr.png) no-repeat}
+    .pane-library_location ul.links li a.friendfeed{background:transparent url(../images/icons/friendfeed.png) no-repeat}
+    .pane-library_location ul.links li a.linkedin{background:transparent url(../images/icons/linkedin.png) no-repeat}
+    .pane-library_location ul.links li a.livejournal{background:transparent url(../images/icons/livejournal.png) no-repeat}
+    .pane-library_location ul.links li a.myspace{background:transparent url(../images/icons/myspace.png) no-repeat}
+    .pane-library_location ul.links li a.netvibes{background:transparent url(../images/icons/netvibes.png) no-repeat}
+    .pane-library_location ul.links li a.newsvine{background:transparent url(../images/icons/newsvine.png) no-repeat}
+    .pane-library_location ul.links li a.picasa{background:transparent url(../images/icons/picasa.png) no-repeat}
+    .pane-library_location ul.links li a.stumbleupon{background:transparent url(../images/icons/stumbleupon.png) no-repeat}
+    .pane-library_location ul.links li a.twitter{background:transparent url(../images/icons/twitter.png) no-repeat}
+    .pane-library_location ul.links li a.vimeo{background:transparent url(../images/icons/vimeo.png) no-repeat}
+    .pane-library_location ul.links li a.wordpress{background:transparent url(../images/icons/wordpress.png) no-repeat}
+    .pane-library_location ul.links li a.youtube{background:transparent url(../images/icons/youtube.png) no-repeat}
 
 
 /*tagadelic*/
 .pane-tagadelic-2{width:200px; overflow:hidden; padding:20px 0 0 20px;}
-	.pane-library_title{display:block;}
-	.pane-library_title .picture{margin:0 0 15px 0;}
+  .pane-library_title{display:block;}
+  .pane-library_title .picture{margin:0 0 15px 0;}
 
 
 /* =======================================
-	pages
+  pages
 /* ------------------------------------- */
 
 ul.menu{list-style-position:inside; font-size:12px;}
@@ -160,21 +161,21 @@ li.active-trail > a
 
 ul.menu li.leaf a{font-weight:normal;}
 ul.menu li.collapsed{padding:0;}
-	ul.menu li.collapsed a{background:transparent url(../images/bullet_toggle_plus.gif) no-repeat left 0px; padding:0 0 0 15px;}
+  ul.menu li.collapsed a{background:transparent url(../images/bullet_toggle_plus.gif) no-repeat left 0px; padding:0 0 0 15px;}
 
 ul.menu li.expanded{list-style: none inside;}
-	ul.menu li.expanded a{background:transparent url(../images/bullet_toggle_minus.gif) no-repeat left 0px; padding:0 0 0 15px;}
+  ul.menu li.expanded a{background:transparent url(../images/bullet_toggle_minus.gif) no-repeat left 0px; padding:0 0 0 15px;}
 
 ul.menu li.expanded ul.menu {margin:0 0 0 10px;}
 ul.menu li.leaf a{background:none; padding:0;}
 
-ul.menu li ul{}	
-	ul.menu li ul li{list-style-type: none;}
+ul.menu li ul{} 
+  ul.menu li ul li{list-style-type: none;}
 
 ul.menu li.expanded ul.menu li.expanded{margin:0 0 0 0px}
 ul.menu li.expanded ul.menu li.expanded a{display:block}
 
-.panel-left ul.menu li.first{background:none;}		
+.panel-left ul.menu li.first{background:none;}    
 /**/
 .view-blog-category-list ul li div{display:inline;}
 .view-blog-category-list ul li div.node-count{font-size:10px;}
@@ -199,8 +200,8 @@ ul.menu li.expanded ul.menu li.expanded a{display:block}
 
 .event-info {margin:0 0 20px 0;}
 .content .event-info{margin:0;}
-	.event-info .event-date{margin:0 5px 0 0;}
-	.event-info .event-price{font-weight:bold;}
+  .event-info .event-date{margin:0 5px 0 0;}
+  .event-info .event-price{font-weight:bold;}
 
 
 .content .field-teaser{margin:10px 0;}
@@ -213,32 +214,32 @@ ul.menu li.expanded ul.menu li.expanded a{display:block}
 /*medarbjedere*/
 .panel-left .view-library-staff-list ul{padding:0 0 0 10px;}
 .panel-left .view-library-staff-list ul li,.panel-left .view-library-staff-list ul li.first{width:145px; height:170px; float:left; background:none; padding:10px;}
-	.view-library-staff-list li .field-image-fid{width:120px; height:120px; background:#ddd;}
+  .view-library-staff-list li .field-image-fid{width:120px; height:120px; background:#ddd;}
 
 
 .panel-middle .pane-topic_list{margin:0 0 0 20px;}
 .panel-middle .pane-topic_list h2{}
 /* =======================================
-	comment
+  comment
 /* ------------------------------------- */
 div.indented{margin:0 0 0 20px;}
 div.comment {width: auto; margin:0 0 10px 0; padding:5px 5px 5px 0;}
-	div.comment blockquote {border: 1px solid #dedede; background:#fff; font-size:10px; padding:0 10px 10px 10px;}
-	div.comment blockquote h4{margin: 10px 10px 5px 0px;}
-	div.comment blockquote h4.new a{color:#000;}
-	div.comment blockquote p {margin: 0 10px;}
-	div.comment blockquote ul li {list-style-position: inside; margin:0 0 0 10px; list-style-type: disc;}
-	div.comment blockquote ol li {list-style-position: inside; margin:0 0 0 10px;}
-	div.comment ul.links{text-align:right; margin: 5px 10px}
-	div.comment ul.links li{display:inline;}
-	div.comment .meta {position:relative; margin:-1px 0 0 10px; padding:10px 0 0 30px ;background: transparent  url(../images/tip.gif) no-repeat 35px 0; font-style:normal;}
-	div.comment .meta .author{color:#999;}
-	div.comment .meta .date{color:#999;}
+  div.comment blockquote {border: 1px solid #dedede; background:#fff; font-size:10px; padding:0 10px 10px 10px;}
+  div.comment blockquote h4{margin: 10px 10px 5px 0px;}
+  div.comment blockquote h4.new a{color:#000;}
+  div.comment blockquote p {margin: 0 10px;}
+  div.comment blockquote ul li {list-style-position: inside; margin:0 0 0 10px; list-style-type: disc;}
+  div.comment blockquote ol li {list-style-position: inside; margin:0 0 0 10px;}
+  div.comment ul.links{text-align:right; margin: 5px 10px}
+  div.comment ul.links li{display:inline;}
+  div.comment .meta {position:relative; margin:-1px 0 0 10px; padding:10px 0 0 30px ;background: transparent  url(../images/tip.gif) no-repeat 35px 0; font-style:normal;}
+  div.comment .meta .author{color:#999;}
+  div.comment .meta .date{color:#999;}
 
-	#comment-form .form-textarea{width:650px;}
-	#comment-form .form-buttons{text-align:right;}
-		#comment-form .form-button{display:inline;}
-		
+  #comment-form .form-textarea{width:650px;}
+  #comment-form .form-buttons{text-align:right;}
+    #comment-form .form-button{display:inline;}
+    
 
 /*panels node*/
 .page-comment .comment,
@@ -246,7 +247,7 @@ div.comment {width: auto; margin:0 0 10px 0; padding:5px 5px 5px 0;}
 .pane-node_content, 
 .pane-node_comments,
 .pane-node_comment_form{
-	margin:0 20px 20px 0px;
+  margin:0 20px 20px 0px;
 }
 
 
