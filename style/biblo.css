@@ -35,7 +35,7 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
     .node-teaser-library .content h3{padding:0 0 5px 0;}
     .node-teaser-library .content .link-card{padding:0 0 3px 0;}
     /*lib status*/
-    .node-teaser-library .content .libary-openstatus{padding:0 5px; color:#fff; width:40px;}
+    .node-teaser-library .content .library-openstatus{padding:0 5px; color:#fff; width:40px;}
     .node-teaser-library .content .open{background:#71bf44; width:30px;}
     .node-teaser-library .content .closed{background:#6b0046;  width:44px}
 
@@ -182,8 +182,8 @@ ul.menu li.expanded ul.menu li.expanded a{display:block}
 
 
 /*events*/
-.pane-event_list-panel_pane_1 .view-event-list .libary-tag div,
-.pane-event_list-panel_pane_3 .view-event-list .libary-tag div {display:inline;margin:0 5px 0 0;}
+.pane-event_list-panel_pane_1 .view-event-list .library-tag div,
+.pane-event_list-panel_pane_3 .view-event-list .library-tag div {display:inline;margin:0 5px 0 0;}
 .pane-event_list-panel_pane_1 .view-event-list ul,
 .pane-event_list-panel_pane_3 .view-event-list ul{clear:both;}
   .pane-event_list-panel_pane_1 .view-event-list li,

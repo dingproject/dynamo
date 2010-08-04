@@ -51,7 +51,7 @@ li a.active{}
 .taxonomy,
 .meta,
 .view-empty,
-.view-event-list .libary-tag,
+.view-event-list .library-tag,
 .view .field-library-ref-nid,
 .view .created, 
 .view .name
@@ -104,7 +104,7 @@ li a.active{}
 .view-article-list p{padding:10px 0 0 0;}
 .node-article .content {padding:10px 0 0 0;}
 
-.libary-openstatus{	font-size:10px; line-height:17px; text-transform: uppercase; color:#fff;}
+.library-openstatus{	font-size:10px; line-height:17px; text-transform: uppercase; color:#fff;}
 
 #pagefooter{font-size:10px; line-height:13px;}
 #pagefooter h3,

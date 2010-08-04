@@ -20,7 +20,7 @@ if($id_node){
 
   <div class="content">
   
-    <div class="libary-openstatus <?php print $node->field_opening_hours_processed['status'];?>">
+    <div class="library-openstatus <?php print $node->field_opening_hours_processed['status'];?>">
         <?php print $node->field_opening_hours_processed['status_local'];?>
     </div>
 

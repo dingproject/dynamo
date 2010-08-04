@@ -20,7 +20,7 @@
 
 		<div class="meta">
 		  <?php print $date['date']; ?>
-		  <span class="libary-tag"><?php print $fields['field_library_ref_nid']->content; ?></span>, 
+		  <span class="library-tag"><?php print $fields['field_library_ref_nid']->content; ?></span>, 
 		  <span class="price"><?php print $date['price']; ?></span>
 		</div>    
     
