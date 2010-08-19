@@ -5,8 +5,9 @@
  * Template to render a row from the event_list view.
  */
 
+// Prepare a couple of variables.
 $start = date_make_date($fields['field_datetime_value']->raw);
-$price = ($fields['field_entry_price_value']->raw == 0) ? t('Free') : $fields['field_entry_price_value']->raw;
+$price = ($fields['field_entry_price_value']->raw < 1) ? t('Free') : intval($fields['field_entry_price_value']->raw) . ' kr.';
 ?>
 <div class="node-teaser clearfix">
 

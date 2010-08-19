@@ -1,33 +1,24 @@
-<!-- views-view-fields panel-pane -->
-<?php 
-  // Convert the date value to timestamp
-  $date = strtotime($fields['field_datetime_value']->raw . 'Z');
-  if (format_date($_SERVER['REQUEST_TIME'], 'custom', 'd-m-Y') == format_date($date, 'custom', 'd-m-Y') ) {
-    $is_today = "today";
-  }
+<?php
+// $Id$
 
-	/* Price */
-	if($fields['field_entry_price_value']->content > 0){
-		$price = check_plain($fields['field_entry_price_value']->raw) ." ". t('Kr');
-  	//print $fields['field_entry_price_value']->content;
-	}else{ 
-  	$price = t('Free');
-	}  
+// Prepare a couple of variables.
+$start = date_make_date($fields['field_datetime_value']->raw);
+$price = ($fields['field_entry_price_value']->raw < 1) ? t('Free') : intval($fields['field_entry_price_value']->raw) . ' kr.';
 ?>
 <div class="calendar-leafs">
 
   <div class="leaf <?php print $is_today ?>">
-    <div class="day"><?php print format_date($date, 'custom', 'l');?></div>
-    <div class="date"><?php print format_date($date, 'custom', 'j');?></div>
-    <div class="month"><?php print format_date($date, 'custom', 'M');?></div>
+    <div class="day"><?php print $start->format('l');?></div>
+    <div class="date"><?php print $start->format('j');?></div>
+    <div class="month"><?php print $start->format('M');?></div>
   </div>
 
   <div class="info">
     <span><?php print $fields['field_library_ref_nid']->content; ?></span>
     <h4><?php print $fields['title']->content; ?></h4>
-    <?php if (format_date($date, 'custom', 'Hi') != '0000') : ?>
+    <?php if ($start->format('Hi') != '0000'): ?>
     <span class="time">
-			<?php print format_date($date, 'custom', 'H:i'); ?> -
+			<?php print $start->format('H:i'); ?> -
     </span>
     <?php endif; ?>
     <?php print $price; ?>
