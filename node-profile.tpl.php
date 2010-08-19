@@ -1,20 +1,14 @@
 <?php
-/*
-ad a class="" if we have anything in the $classes var
-this is so we can have a cleaner output - no reason to have an empty <div class="" id=""> 
-*/
-if($classes){
-   $classes = ' class="' . $classes . ' clearfix"';
-}
+// $Id$
 
-if($id_node){
-  $id_node = ' id="' . $id_node . '"';  
-}
-?>
+/**
+ * @file
+ * Template to render profile nodes.
+ */
 
-<!-- node-profile .tpl-->
-<?php if ($page == 0){ ?>
-<div<?php print $id_node . $classes; ?>>
+if ($page == 0){ ?>
+
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
   <div class="picture">
     <?php
@@ -29,7 +23,6 @@ if($id_node){
   	<?php if($node->title){	?>	
       <h3><?php print l($node->title, 'node/'.$node->nid); ?></h3>
   	<?php } ?>
-
 
     <div class="subject">
       <?php print return_terms_from_vocabulary($node, "1"); ?> 
@@ -56,16 +49,13 @@ if($id_node){
 		  </div>  
 		<?php } ?>
 
-
-
   </div>
 
 </div>
 <?php }else{ 
 //Content
 ?>
-
-<div<?php print $id_node . $classes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
 
   <div class="subject">
@@ -82,11 +72,6 @@ if($id_node){
 
 	<?php // print l(t('contact'), 'user/' . $node->uid . '/contact', $options= array('attributes' => array('class' =>'contact')) );?>	
 		
-
-
-
-
-
 </div>
 <?php } ?>
-<!-- /node.tpl-->
+

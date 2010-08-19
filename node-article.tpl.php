@@ -1,21 +1,14 @@
 <?php
-/*
-ad a class="" if we have anything in the $classes var
-this is so we can have a cleaner output - no reason to have an empty <div class="" id=""> 
-*/
+// $Id$
 
-if($classes){
-   $classes = ' class="' . $classes . ' clearfix"';
-}
+/**
+ * @file
+ * Template to render feature nodes.
+ */
 
-if($id_node){
-  $id_node = ' id="' . $id_node . '"';  
-}
-?>
+if ($page == 0){ ?>
 
-<!--node- article.tpl-->
-<?php if ($page == 0) { ?>
-<div <?php print $id_node . $classes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
   <div class="picture"><?php print $list_image; ?></div>
 
@@ -61,7 +54,7 @@ if($id_node){
 
 </div>
 <?php } else { ?>
-<div<?php print $id_node . $classes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
   <div class="subject">
     <?php print return_terms_from_vocabulary($node, "1"); ?> 
   </div>
@@ -103,4 +96,4 @@ if($id_node){
 
 </div>
 <?php } ?> 
-<!-- /node.tpl-->
+

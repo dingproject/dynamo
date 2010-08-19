@@ -1,20 +1,13 @@
 <?php
-/*
-ad a class="" if we have anything in the $classes var
-this is so we can have a cleaner output - no reason to have an empty <div class="" id=""> 
-*/
-if($classes){
-   $classes = ' class="' . $classes . ' clearfix"';
-}
+// $Id$
 
-if($id_node){
-  $id_node = ' id="' . $id_node . '"';  
-}
-?>
+/**
+ * @file
+ * Template to render topic nodes.
+ */
 
-<!-- node.tpl-->
-<?php if ($page == 0){ ?>
-<div<?php print $id_node . $classes; ?>>
+if ($page == 0){ ?>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
   <div class="picture">
     <?php
@@ -61,7 +54,7 @@ if($id_node){
 //Content
 ?>
 
-<div<?php print $id_node . $classes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
   <div class="subject">
     <?php print return_terms_from_vocabulary($node, "1"); ?> 
@@ -116,4 +109,4 @@ if($id_node){
 
 </div>
 <?php } ?>
-<!-- /node.tpl-->
+

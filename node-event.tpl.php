@@ -1,21 +1,14 @@
 <?php
-/*
-ad a class="" if we have anything in the $classes var
-this is so we can have a cleaner output - no reason to have an empty <div class="" id=""> 
-*/
-if($classes){
-   $classes = ' class="' . $classes . ' clearfix"';
-}
+// $Id$
 
-if($id_node){
-  $id_node = ' id="' . $id_node . '"';  
-}
+/**
+ * @file
+ * Template to render event nodes.
+ */
 
-?>
+if ($page == 0){ ?>
 
-<!-- node-event.tpl-->
-<?php if ($page == 0){ ?>
-<div<?php print $id_node . $classes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
   <div class="picture"><?php print $list_image; ?></div>
 
@@ -53,8 +46,7 @@ if($id_node){
 <?php } else {
 //Content
 ?>
-
-<div<?php print $id_node . $classes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
 	<?php if($node->title){	?>	
 	  <h2><?php print $title;?></h2>
@@ -97,3 +89,4 @@ if($id_node){
 	<?php } ?>
 </div>
 <?php } ?>
+
