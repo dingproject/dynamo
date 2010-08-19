@@ -3,7 +3,7 @@
 
 /**
  * @file
- * Template to render feature nodes.
+ * Template to render article nodes.
  */
 
 if ($page == 0){ ?>
