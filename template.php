@@ -545,3 +545,19 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
   return $output;
 }
 
+/**
+ * Shortcut function to help with the laborious date_format_date syntax.
+ *
+ * @param $date
+ *   DateTime object.
+ * @param $format
+ *   Custom time format.
+ * @param $langcode
+ *   Language for use when formatting. Defaults to Danish.
+ * @return
+ *   Formatted date string.
+ */
+function dynamo_datef($date, $format, $langcode = 'da') {
+  return date_format_date($date, 'custom', $format, $langcode);
+}
+
