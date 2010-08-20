@@ -9,11 +9,8 @@
 if ($page == 0){ ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
-  <?php 
 
-  if ($list_image != "&nbsp;"){ ?>
-    <div class="picture"><?php print $list_image; ?></div>
-  <?php } ?>
+  <div class="picture"><?php print $field_list_image[0]['view']; ?></div>
   
   <div class="content">
     <div class="subject">
