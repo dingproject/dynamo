@@ -9,13 +9,7 @@
 if ($page == 0){ ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
-  <div class="picture">
-    <?php
- 		if($field_image_rendered){
-			print $field_image_rendered; 	
-		}
-	?>
-  </div>
+  <div class="picture"><?php print $field_list_image[0]['view']; ?></div>
 
   <div class="content">
 

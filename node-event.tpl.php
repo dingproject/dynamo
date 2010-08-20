@@ -6,11 +6,11 @@
  * Template to render event nodes.
  */
 
-if ($page == 0){ ?>
+if ($page == 0): ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
-  <div class="picture"><?php print $list_image; ?></div>
+  <div class="picture"><?php print $field_list_image[0]['view']; ?></div>
 
   <div class="content">
 
@@ -43,7 +43,7 @@ if ($page == 0){ ?>
   </div>
 
 </div>
-<?php } else {
+<?php else:
 //Content
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
@@ -65,6 +65,7 @@ if ($page == 0){ ?>
       <?php endif; ?>
 			<span class="event-price"><?php print $event_info['price']; ?>  </span>
 		</div>
+
 		<?php print $content ?>
 	</div>
 		
@@ -88,5 +89,5 @@ if ($page == 0){ ?>
     <?php  print $links; ?>
 	<?php } ?>
 </div>
-<?php } ?>
+<?php endif; ?>
 

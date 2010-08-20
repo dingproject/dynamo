@@ -6,7 +6,7 @@
  * Template to render nodes.
  */
 
-if ($page == 0){ ?>
+if ($page == 0) { ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
