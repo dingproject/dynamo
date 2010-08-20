@@ -1,38 +1,40 @@
 <?php
-/* =====================================
-  Dynamo
-  template.php
-* ------------------------------------- */
+// $Id$
+
 /**
-* Implementation of hook_theme().
-*/
+ * @file
+ * Template functions for Dynamo theme.
+ */
+
+/**
+ * Implementation of hook_theme().
+ */
 function dynamo_theme($existing, $type, $theme, $path) {
- return array(
-	'ting_search_form' => array(
-		'arguments'=> array('form' => NULL),
-		),
-	'user_login_block' => array(
-		'arguments' => array ('form' => NULL),
-		),
-	'comment_form' => array(
-		'arguments' => array ('form' => NULL),
-		),
- );
+  return array(
+    'ting_search_form' => array(
+      'arguments'=> array('form' => NULL),
+    ),
+    'user_login_block' => array(
+      'arguments' => array ('form' => NULL),
+    ),
+    'comment_form' => array(
+      'arguments' => array ('form' => NULL),
+    ),
+  );
 }
 
 /**
  * Preprocess page template variables.
  */
-
 function dynamo_preprocess_page(&$vars){
   //adds a class to the body with the last path of the url
   $body_classes = array($vars['body_classes']);
   $path = explode('/', $_SERVER['REQUEST_URI']);
-  
+
   $body_classes[] = mothership_id_safe('ding-' . arg(0) . ' ' . arg(1));
   $body_classes[] = mothership_id_safe('ding-' . end($path));
   $body_classes[] = mothership_id_safe('ding-' . arg(2));
-  
+
   // Concatenate with spaces
   $vars['body_classes'] = implode(' ', $body_classes);
 }
@@ -57,7 +59,7 @@ function dynamo_breadcrumb($breadcrumb) {
     // Append the page title to the breadcrumb.
     $breadcrumb[] = menu_get_active_title();
     $output = '<div id="path">' . t('You are here:');
-    $output .= ' <div class="breadcrumb">'. implode(' » ', $breadcrumb) .'</div>';
+    $output .= ' <div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
     $output .= '</div>';
     return $output;
   }
@@ -65,42 +67,38 @@ function dynamo_breadcrumb($breadcrumb) {
 
 /*forms*/
 function dynamo_user_login_block($form){
-	$form['submit']['#type'] 	= "image_button" ;
-	$form['submit']['#src'] 	= drupal_get_path('theme','dynamo')."/images/accountlogin.png";
-	$form['submit']['#attributes']['class'] 	= "";
+  $form['submit']['#type'] = "image_button" ;
+  $form['submit']['#src'] = drupal_get_path('theme','dynamo')."/images/accountlogin.png";
+  $form['submit']['#attributes']['class'] = '';
 
 
-	$name = drupal_render($form['name']); 
-	$pass =  	drupal_render($form['pass']); 
-	$submit =  	drupal_render($form['submit']); 
-	$remember =	drupal_render($form['remember_me']); 
-	
-	return 	$name . $pass .$submit . $remember . drupal_render($form);
+  $name = drupal_render($form['name']);
+  $pass = drupal_render($form['pass']);
+  $submit = drupal_render($form['submit']);
+  $remember = drupal_render($form['remember_me']);
+
+  return  $name . $pass . $submit . $remember . drupal_render($form);
 }
 
 function dynamo_ting_search_form($form){
-	$form['submit']['#type'] 	= "image_button" ;
-	$form['submit']['#src'] 	= drupal_get_path('theme','dynamo')."/images/searchbutton.png";
-	$form['submit']['#attributes']['class'] 	= "";
+  $form['submit']['#type'] = "image_button" ;
+  $form['submit']['#src'] = drupal_get_path('theme','dynamo')."/images/searchbutton.png";
+  $form['submit']['#attributes']['class'] = '';
 
-	return drupal_render($form);	
+  return drupal_render($form);
 }
 
 function dynamo_comment_form($form){
-	$form['comment_filter']['format']['#collapsed'] = FALSE;
-	unset($form['notify_clearit']);
-	unset($form['comment_filter']['format']);
-	// $form['_author']['#value'] = '<span>' . $form['_author']['#value'] .'</span>'; // adds a span around
-	// $form['submit']['#type'] 	= "image_button" ;
-	// $form['submit']['#src'] 	= drupal_get_path('theme','mdkate')."/images/foo.gif";
-	// $form['submit']['#attributes']['class'] 	= "";
+  $form['comment_filter']['format']['#collapsed'] = FALSE;
+  unset($form['notify_clearit']);
+  unset($form['comment_filter']['format']);
 
-	$submit = drupal_render($form['submit']);
-	$preview = drupal_render($form['preview']);
-	$theform = drupal_render($form);
-	return  $theform .'<div class="form-buttons">' . $submit . $preview .'</div>';
+  $submit = drupal_render($form['submit']);
+  $preview = drupal_render($form['preview']);
+  $theform = drupal_render($form);
+  return  $theform . '<div class="form-buttons">' . $submit . $preview . '</div>';
 
-	return drupal_render($form);
+  return drupal_render($form);
 }
 
 /**
@@ -114,66 +112,47 @@ function dynamo_panels_pane($content, $pane, $display) {
     }
     if (!empty($content->css_class)) {
       $classstr = ' ' . $content->css_class;
-    } 
-    //  $output = "<div class=\"panel-pane $classstr\"$idstr>\n";
+    }
+
     $output = "<div class=\"panel-pane pane-$pane->subtype $classstr \"$idstr>\n";
 
-      if (!empty($content->title)) {
+    if (!empty($content->title)) {
 
-        if($pane->subtype == "event_list-panel_pane_1"  OR $pane->subtype == "recommendation_list"){
-          $output .= "<h1>$content->title</h1>\n";        
-        }elseif( 
-          $pane->subtype == "topic_list" OR 
-          $pane->subtype == "event_list" OR 
-          $pane->subtype == "library_feature_detail_list" OR
-          $pane->subtype == "node_content"
-        ){
-          $output .= '<h2 class="panel-title">'. $content->title .'</h2>';
-        }else{
-          $output .= "<h3>$content->title</h3>\n";        
-        }
-
-
-/*
-        if(
-          $pane->subtype == "event_list-panel_pane_1"  OR
-          $pane->subtype == "recommendation_list"
-        ){
-          $output .= "<h1>$content->title</h1>\n";        
-        }elseif( 
-          $pane->subtype == "topic_list" OR 
-          $pane->subtype == "event_list" OR 
-          $pane->subtype == "library_feature_detail_list" OR
-          $pane->subtype == "node_content"
-        ){
-          $output .= '<h2 class="panel-title">'. $content->title .'</h2>';
-        }else{
-          $output .= "<h3>$content->title</h3>\n";        
-        }
-*/
+      if($pane->subtype == "event_list-panel_pane_1"  OR $pane->subtype == "recommendation_list"){
+        $output .= "<h1>$content->title</h1>\n";
       }
-
-      if (!empty($content->feeds)) {
-        $output .= "<div class=\"feed\">" . implode(' ', $content->feeds) . "</div>\n";
+      elseif(
+        $pane->subtype == "topic_list" OR
+        $pane->subtype == "event_list" OR
+        $pane->subtype == "library_feature_detail_list" OR
+        $pane->subtype == "node_content"
+      ) {
+        $output .= '<h2 class="panel-title">'. $content->title .'</h2>';
       }
-
-      //  $output .= "<div class=\"content\">$content->content</div>\n";
-      $output .= $content->content;
-
-      if (!empty($content->links)) {
-        $output .= "<div class=\"links\">" . theme('links', $content->links) . "</div>\n";
+      else {
+        $output .= "<h3>$content->title</h3>\n";
       }
+    }
 
-      if (!empty($content->more)) {
-        if (empty($content->more['title'])) {
-          $content->more['title'] = t('more');
-        }
-        $output .= "<div class=\"panels more-link\">" . l($content->more['title'], $content->more['href']) . "</div>\n";
-      }
-      if (user_access('view pane admin links') && !empty($content->admin_links)) {
-        $output .= "<div class=\"admin-links panel-hide\">" . theme('links', $content->admin_links) . "</div>\n";
-      }
+    if (!empty($content->feeds)) {
+      $output .= "<div class=\"feed\">" . implode(' ', $content->feeds) . "</div>\n";
+    }
 
+    $output .= $content->content;
+
+    if (!empty($content->links)) {
+      $output .= "<div class=\"links\">" . theme('links', $content->links) . "</div>\n";
+    }
+
+    if (!empty($content->more)) {
+      if (empty($content->more['title'])) {
+        $content->more['title'] = t('more');
+      }
+      $output .= "<div class=\"panels more-link\">" . l($content->more['title'], $content->more['href']) . "</div>\n";
+    }
+    if (user_access('view pane admin links') && !empty($content->admin_links)) {
+      $output .= "<div class=\"admin-links panel-hide\">" . theme('links', $content->admin_links) . "</div>\n";
+    }
 
     $output .= "</div>\n";
     return $output;
@@ -188,7 +167,7 @@ function dynamo_panels_default_style_render_panel($display, $panel_id, $panes, $
   foreach ($panes as $pane_id => $content) {
     // Add the separator if we've already displayed a pane.
     if ($print_separator) {
-     // $output .= '<div class="panel-separator"></div>';
+      // $output .= '<div class="panel-separator"></div>';
     }
     $output .= $text = panels_render_pane($content, $display->content[$pane_id], $display);
 
@@ -206,23 +185,18 @@ function dynamo_panels_default_style_render_panel($display, $panel_id, $panes, $
 function return_terms_from_vocabulary($node, $vid){
   $terms = taxonomy_node_get_terms_by_vocabulary($node, $vid, $key = 'tid');
 
-//	$vocabolary = taxonomy_get_vocabulary($vid);
-  $vocabolary = taxonomy_vocabulary_load($vid);
+  $vocabulary = taxonomy_vocabulary_load($vid);
 
-//	$content ='<div class="vocabolary_terms">';
-//	$content .='<div class="vocabolary">'.$vocabolary->name.'</div>';
-		$termslist = '';
-		if ($terms) {
-			$content .= '<div class="terms">';
-			foreach ($terms as $term) {
-				$termslist = $termslist.l($term->name, 'taxonomy/term/'.$term->tid) . ' | ';
-			//	$termslist = $termslist .$term->name  .' | ';			
-			}
-			$content.= trim ($termslist," |").'</div>';
-		}
-//	$content.='</div>';
+  $termslist = '';
+  if ($terms) {
+    $content .= '<div class="terms">';
+    foreach ($terms as $term) {
+      $termslist = $termslist.l($term->name, 'taxonomy/term/'.$term->tid) . ' | ';
+    }
+    $content.= trim ($termslist," |").'</div>';
+  }
 
-	return $content;
+  return $content;
 }
 
 
@@ -344,7 +318,7 @@ function dynamo_pager($tags = array(), $limit = 10, $element = 0, $parameters = 
           'data' => '…',
         );
       }
-  */  
+ */
       // Now generate the actual pager piece.
       for (; $i <= $pager_last && $i <= $pager_max; $i++) {
         if ($i < $pager_current) {
@@ -373,7 +347,7 @@ function dynamo_pager($tags = array(), $limit = 10, $element = 0, $parameters = 
           'data' => '…',
         );
       }
-      */
+       */
     }
     // End generation.
     if ($li_next) {
@@ -400,18 +374,18 @@ function dynamo_pager($tags = array(), $limit = 10, $element = 0, $parameters = 
  * Documentation: http://www.kat-format.dk/danMARC2/Danmarc2.5c.htm#pgfId=1575053
  */
 function format_danmarc2($string){
-	$string = str_replace('Indhold:','',$string);	
-	$string = str_replace(' ; ','<br/>',$string);	
-	$string = str_replace(' / ','<br/>',$string);	 
+  $string = str_replace('Indhold:','',$string);
+  $string = str_replace(' ; ','<br/>',$string);
+  $string = str_replace(' / ','<br/>',$string);
 
-	return $string;
+  return $string;
 }
 
 /**
  * Implementation of theme rss feed icon
- * 
+ *
  * @param string $url
- * @return string 
+ * @return string
  */
 function dynamo_feed_icon($url) {
   if ($image = theme('image', drupal_get_path('theme', 'dynamo').'/images/feed.png', t('RSS feed'), t('RSS feed'))) {
