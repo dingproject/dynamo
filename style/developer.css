@@ -257,3 +257,8 @@ body.page-node .ding-node .field-teaser {
   font-weight: bold;
 }
 
+/** Event metadata **/
+.node-event .meta div {
+  display: inline;
+}
+

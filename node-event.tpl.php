@@ -59,12 +59,9 @@ if ($page == 0): ?>
   ?>
 
   <div class="content">
-    <div class="event-info">
-      <span class="event-date"><?php print $event_info['date']; ?></span>
-      <?php if ($event_info['time']): ?>
-        <span class="time"><?php print $event_info['time']; ?></span>
-      <?php endif; ?>
-      <span class="event-price"><?php print $event_info['price']; ?>  </span>
+    <div class="meta">
+      <?php print $field_datetime_rendered ?>
+      <?php print $field_entry_price_rendered ?>
     </div>
 
     <?php print $content ?>
