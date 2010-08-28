@@ -5,10 +5,11 @@
  * @file
  * Template to render event nodes.
  */
-
-if ($page == 0): ?>
-
+?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
+
+<?php if ($page == 0): ?>
+
 
   <div class="picture"><?php print $field_list_image[0]['view']; ?></div>
 
@@ -41,14 +42,9 @@ if ($page == 0): ?>
   <?php endif; ?>
   </div>
 
-  </div>
-
-</div>
 <?php else:
 //Content
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
-
   <?php if($node->title){ ?>
     <h2><?php print $title;?></h2>
   <?php } ?>
@@ -84,8 +80,8 @@ if ($page == 0): ?>
   </div>
 
   <?php if ($links){ ?>
-    <?php  print $links; ?>
+    <?php print $links; ?>
   <?php } ?>
-</div>
 <?php endif; ?>
+</div>
 
