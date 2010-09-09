@@ -89,8 +89,8 @@
 	.collection .content{font-size:10px; line-height:14px;}
 .collection .creator{font-weight:bold;}
 .collection .content ul li {margin:0 0 0 5px; background-image:none; padding:3px;}
-	.collection .cart{width:70px; float:left;}
-		.collection .cart li{width:80px; float:left;}
+	.collection .buttons {width:70px; float:left;}
+		.collection .buttons li{width:80px; float:left;}
 
 .ting-overview .picture{width:180px; display:block; }
 .ting-overview .button{float:left;}

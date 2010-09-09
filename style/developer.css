@@ -136,58 +136,58 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 }
 
 
-/* Jesper K: alma låner status side */
-.pane-alma_user_reservations_details .col-selection,
-.pane-alma_user_loans_details .col-selection,
-.pane-alma_user_debts_details .col-selection { width: 35px; }
+/* Jesper K: låner status side */
+.pane-ding_library_user_reservations_details .col-selection,
+.pane-ding_library_user_loans_details .col-selection,
+.pane-ding_library_user_debts_details .col-selection { width: 35px; }
 
-.pane-alma_user_reservations_details .col-image,
-.pane-alma_user_loans_details .col-image { width: 35px; }
+.pane-ding_library_user_reservations_details .col-image,
+.pane-ding_library_user_loans_details .col-image { width: 35px; }
 
-.pane-alma_user_reservations_details .col-reservation,
-.pane-alma_user_reservations_details .col-valied-to,
-.pane-alma_user_reservations_details .col-pickup-by,
-.pane-alma_user_loans_details .col-loan-date,
-.pane-alma_user_loans_details .col-due-date,
-.pane-alma_user_debts_details .col-date { width: 70px;}
+.pane-ding_library_user_reservations_details .col-reservation,
+.pane-ding_library_user_reservations_details .col-valied-to,
+.pane-ding_library_user_reservations_details .col-pickup-by,
+.pane-ding_library_user_loans_details .col-loan-date,
+.pane-ding_library_user_loans_details .col-due-date,
+.pane-ding_library_user_debts_details .col-date { width: 70px;}
 
-.pane-alma_user_reservations_details .col-pickup-branch { width: 100px;}
-.pane-alma_user_reservations_details .col-queue-number { width: 70px;}
-.pane-alma_user_reservations_details .col-pickup-number { width: 30px;}
+.pane-ding_library_user_reservations_details .col-pickup-branch { width: 100px;}
+.pane-ding_library_user_reservations_details .col-queue-number { width: 70px;}
+.pane-ding_library_user_reservations_details .col-pickup-number { width: 30px;}
 
-.pane-alma_user_debts_details .col-amount { width: 60px;}
-.pane-alma_user_debts_details td.amount {
+.pane-ding_library_user_debts_details .col-amount { width: 60px;}
+.pane-ding_library_user_debts_details td.amount {
   text-align: right;
   padding-right: 4px;
 }
 
-.pane-alma_user_debts_details td.note,
-.pane-alma_user_debts_details td.date {
+.pane-ding_library_user_debts_details td.note,
+.pane-ding_library_user_debts_details td.date {
   padding-right: 16px;
 }
 
-#alma-user-forms-debts-details td .form-item {
+#ding-library-user-forms-debts-details td .form-item {
   margin:0;
   padding:0;
 }
 
-#alma-user-forms-debts-details tbody td {
+#ding-library-user-forms-debts-details tbody td {
   border-bottom:1px solid #D1D9D7;
   padding:5px;
 }
 
-.pane-alma_user_reservations_details td.queue_no {
+.pane-ding_library_user_reservations_details td.queue_no {
   text-align: right;
   padding-right: 4px;
 }
 
-.pane-alma_user_reservations_details td.pickup_expire_date {
+.pane-ding_library_user_reservations_details td.pickup_expire_date {
   text-align: right;
   padding-right: 4px;
 }
 
-.pane-alma_user_loans_details table caption,
-.pane-alma_user_reservations_details table caption {
+.pane-ding_library_user_loans_details table caption,
+.pane-ding_library_user_reservations_details table caption {
   font-size: 14px;
   line-height: 20px;
   padding: 5px 0 5px 0;
@@ -195,26 +195,27 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
   color:#790f21;
 }
 
-.pane-alma_user_loans_details table,
-.pane-alma_user_reservations_details table { margin-bottom: 16px; }
+.pane-ding_library_user_loans_details table,
+.pane-ding_library_user_reservations_details table { margin-bottom: 16px; }
 
-.pane-alma_user_reservations_details h3, .pane-alma_user_loans_details h3{ color: #790f21;}
-.pane-alma_user_reservations_details h3 { padding-top: 25px; }
+.pane-ding_library_user_reservations_details h3, 
+.pane-ding_library_user_loans_details h3{ color: #790f21;}
+.pane-ding_library_user_reservations_details h3 { padding-top: 25px; }
 
-.pane-alma_user_reservations_details .update-controls-button .edit-update{
+.pane-ding_library_user_reservations_details .update-controls-button .edit-update{
   height: 25px;
   margin-right: 24px;
   float: left;
   clear: none;
 }
 
-.pane-alma_user_reservations_details .update-controls-button .edit-remove{
+.pane-ding_library_user_reservations_details .update-controls-button .edit-remove{
   height: 25px;
   float: left;
   clear: none;
 }
 
-.pane-alma_user_reservations_details .update-controls-button .edit-remove #edit-remove {
+.pane-ding_library_user_reservations_details .update-controls-button .edit-remove #edit-remove {
   border: 0;
   background-color: #FFF;
   height: 24px;
@@ -224,8 +225,8 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
   background: transparent url('../images/trash.png') no-repeat 0 50%;
 }
 
-#alma-user-forms-loan-details td.image,
-#alma-user-forms-reservation-details td.image {
+#ding-library-user-forms-loan-details td.image,
+#ding-library-user-forms-reservation-details td.image {
   overflow: hidden;
   text-align: center;
 }
