@@ -45,6 +45,15 @@ function dynamo_preprocess_page(&$vars){
 function dynamo_preprocess_node(&$variables) {
   // Added by mikl, since the classes coming from mothership are broken.
   $variables['classes'] .= ' ding-node';
+  
+  // FIXME
+  // kasperg: This logic does not belong in the theme layer.
+  // Consider moving this to a Panels pane and place it on
+  // the appropriate pages.
+  $similar_nodes = similarterms_list(variable_get('ding_similarterms_vocabulary_id', 0));
+  if (count($similar_nodes)) {
+    $variables['similarterms'] = theme('similarterms', variable_get('similarterms_display_options', 'title_only'), $similar_nodes);
+  }
 }
 
 /**
