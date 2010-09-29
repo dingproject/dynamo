@@ -21,7 +21,7 @@ $price = ($fields['field_entry_price_value']->raw < 1) ? t('Free') : intval($fie
 		<h2><?php print $fields['title']->content; ?></h2>
 
 		<div class="meta">
-      <?php print dynamo_datef($start, 'j. F Y'); ?>
+      <?php print date_format_date($start, 'short'); ?>
 		  <span class="library-tag"><?php print $fields['field_library_ref_nid']->content; ?></span>, 
 		  <span class="price"><?php print $price; ?></span>
 		</div>    
