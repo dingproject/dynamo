@@ -555,6 +555,26 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
 }
 
 /**
+ * Overrides mothership filefield icon which in versions up to 1.2 
+ * contains an errorneous " before the alt attribute.
+ * 
+ * This causes Drupal search to not index all content after the icon.
+ */
+function dynamo_filefield_icon($file) {
+  if (is_object($file)) {
+    $file = (array) $file;
+  }
+  $mime = check_plain($file['filemime']);
+
+  $dashed_mime = strtr($mime, array('/' => '-'));
+
+  if ($icon_url = filefield_icon_url($file)) {
+    $icon = '<img alt="'. $mime .' icon" src="'. $icon_url .'" />';
+  }
+  return $icon;
+}
+
+/**
  * Shortcut function to help with the laborious date_format_date syntax.
  *
  * @param $date
