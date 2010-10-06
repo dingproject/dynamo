@@ -561,3 +561,25 @@ function dynamo_datef($date, $format, $langcode = 'da') {
   return date_format_date($date, 'custom', $format, $langcode);
 }
 
+function dynamo_checkbox($element) {
+  if (!$element['#disabled']) {
+    _form_set_class($element, array('checkbox'));
+    $checkbox = '<input ';
+    $checkbox .= 'type="checkbox" ';
+    $checkbox .= 'name="'. $element['#name'] .'" ';
+    $checkbox .= 'id="'. $element['#id'] .'" ' ;
+    $checkbox .= 'value="'. $element['#return_value'] .'" ';
+    $checkbox .= $element['#value'] ? ' checked="checked" ' : ' ';
+    $checkbox .= drupal_attributes($element['#attributes']) .' />';
+
+    if (!is_null($element['#title'])) {
+      $checkbox = '<label class="form-option" for="'. $element['#id'] .'">'. $checkbox .' '. $element['#title'] .'</label>';
+    }
+
+    unset($element['#title']);
+    return theme('form_element', $element, $checkbox);
+  }
+  else {
+    return theme('image', path_to_theme() . '/images/checkbox-blocked.jpg', $element['#title'], $element['#title']);
+  }
+}
