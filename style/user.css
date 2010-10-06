@@ -32,7 +32,7 @@ body.page-user .panel-left .view{left:0;}
 	.pane-ding_library_user_personal_info .vcard dl dt{width:120px; margin:0 10px 0 0; float:left; font-weight:bold;}
 	.pane-ding_library_user_personal_info .vcard dl dd{width:300px; }
 	.pane-ding_library_user_personal_info .vcard dl dd.adr{ display:block;}
-	.pane-ding_library_user_personal_info .vcard dl dd,	
+	.pane-ding_library_user_personal_info .vcard dl dd,
 	.pane-ding_library_user_personal_info .vcard dl dt{border-bottom: 1px solid #eee; font-size:13px; line-height:20px;}
 
 .pane-ding_library_user_personal_info ul.item-list {clear:both; margin:20px 0;}
@@ -45,19 +45,19 @@ body.page-user .panel-left .view{left:0;}
 #ding-library-user-forms-library-settings{margin:0 0 20px 20px; width:500px;}
 	#ding-library-user-forms-library-settings label{float:left; margin:0 20px 0 0;}
 	#ding-library-user-forms-library-settings .form-item-select{padding:10px 0; border-bottom: 1px solid #eee;}
-	
+
 form#ding-library-user-forms-library-settings .container-inline-date{padding:10px 0 0 0; border-bottom: 1px solid #eee;}
 	form#ding-library-user-forms-library-settings .container-inline-date .form-item-date_popup  {padding:0;}
 	form#ding-library-user-forms-library-settings .container-inline-date .form-item-date_popup .form-item{padding:0;}
 	form#ding-library-user-forms-library-settings .container-inline-date .form-item-date_popup label{width:250px;}
 #ding-library-user-forms-library-settings .form-button{margin:10px 0 0 0;}
-	
+
 /* user/[UID]/edit*/
 	/*	define the width*/
 body.page-user #content-main form{margin:0 0 30px 0;}
 	#user-profile-form{margin:0 0 50px 0px; width:500px;}
 /*	#user-profile-form .form-item{margin:0 0 0 20px;}*/
-	
+
 	#user-profile-form .account legend{font-weight:bold;font-weight:bold; width:500px; padding:0 0 10px 0;}
 	#user-profile-form fieldset{width:500px; margin:20px 0; padding:5px 0; color:#666; background:#f8f8f8;  border-bottom: 1px solid #ccc;}
 	#user-profile-form fieldset.account{padding:0 15px 0 5px;}
@@ -68,7 +68,7 @@ body.page-user #content-main form{margin:0 0 30px 0;}
   #user-profile-form fieldset .form-item { padding: 10px; }
   #user-profile-form fieldset .form-item .form-item { padding-left: 0; padding-right: 0 }
 #user-profile-form .form-description{margin: 0 0 10px 0px; font-size:10px; }
-		#user-profile-form .account .form-description{margin: 0 0 10px 0px; width:400px;}	
+		#user-profile-form .account .form-description{margin: 0 0 10px 0px; width:400px;}
 
 	a.popups-processed{background:#ddd; -moz-border-radius: 3px; -webkit-border-radius: 3px; padding:2px 5px;}
 	a.popups-processed:hover{background:#bbb;}
@@ -79,52 +79,52 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 /* user/[UID]/status */
 	.pane-ding_library_user_debts_notice {}
 		.pane-ding_library_user_debts_notice em{font-weight: bold;}
-		.pane-ding_library_user_debts_notice a{font-weight: bold;} 
-	
-	.pane-ding_library_user_loans_details{} 
+		.pane-ding_library_user_debts_notice a{font-weight: bold;}
+
+	.pane-ding_library_user_loans_details{}
 
 	#ding-library-user-forms-loan-details{margin:20px 0;}
-	#ding-library-user-forms-loan-details li{list-style-type: none; clear:both;} 
+	#ding-library-user-forms-loan-details li{list-style-type: none; clear:both;}
 	#ding-library-user-forms-loan-details h4{margin:10px 0 0 0;}
 
 	#ding-library-user-forms-loan-details li div{display:inline; padding:0 20px 5px 0; }
 	#ding-library-user-forms-loan-details div.select div{padding:0;}
 
 	#ding-library-user-forms-loan-details li.loan,
-	#ding-library-user-forms-reservation-details li{
+	#ding-reservation-list-form li{
 		margin:0px 0 5px 0px; padding:2px 0 2px 10px;  border-bottom: 1px solid #ccc; width:650px; background:none; height:25px;
 	}
-	
-		#ding-library-user-forms-reservation-details ul.reservations ul.labels li{float:left;;}
-		#ding-library-user-forms-reservation-details ul.reservations .labels li{font-weight:bold;}
-		#ding-library-user-forms-reservation-details ul.reservations ul.reservation{padding:5px 0;  clear:both;}
-		#ding-library-user-forms-reservation-details ul.reservations ul.reservation li{ margin:0; float:left;}
+
+		#ding-reservation-list-form ul.reservations ul.labels li{float:left;;}
+		#ding-reservation-list-form ul.reservations .labels li{font-weight:bold;}
+		#ding-reservation-list-form ul.reservations ul.reservation{padding:5px 0;  clear:both;}
+		#ding-reservation-list-form ul.reservations ul.reservation li{ margin:0; float:left;}
 		/*fields width*/
-			#ding-library-user-forms-reservation-details li.select{width:50px; text-align:center; overflow:hidden;}
-			#ding-library-user-forms-reservation-details li.title{width:250px; overflow:hidden;} 
-			#ding-library-user-forms-reservation-details li.expires{width:100px; overflow:hidden;}
-			#ding-library-user-forms-reservation-details li.pickup-branch{width:150px; overflow:hidden;}
-			#ding-library-user-forms-reservation-details li.queue{width:50px; overflow:hidden;}
+			#ding-reservation-list-form li.select{width:50px; text-align:center; overflow:hidden;}
+			#ding-reservation-list-form li.title{width:250px; overflow:hidden;}
+			#ding-reservation-list-form li.expires{width:100px; overflow:hidden;}
+			#ding-reservation-list-form li.pickup-branch{width:150px; overflow:hidden;}
+			#ding-reservation-list-form li.queue{width:50px; overflow:hidden;}
 
-		#ding-library-user-forms-reservation-details .container-inline-date,
-		#ding-library-user-forms-reservation-details #edit-new-pickup-branch-wrapper{	width:400px; 		}
-		
+		#ding-reservation-list-form .container-inline-date,
+		#ding-reservation-list-form #edit-new-pickup-branch-wrapper{	width:400px; 		}
 
-	#ding-library-user-forms-reservation-details .container-inline-date{padding:10px 0;}
-	#ding-library-user-forms-reservation-details  .container-inline-date .form-item {padding:0;}
-	#ding-library-user-forms-reservation-details .form-item{padding:0 0 10px 0;}
-	#ding-library-user-forms-reservation-details .form-item label{float:left; padding:0 10px 0 0;}
 
-	#ding-library-user-forms-reservation-details .form-description{font-size:10px; color:#999;}
+	#ding-reservation-list-form .container-inline-date{padding:10px 0;}
+	#ding-reservation-list-form  .container-inline-date .form-item {padding:0;}
+	#ding-reservation-list-form .form-item{padding:0 0 10px 0;}
+	#ding-reservation-list-form .form-item label{float:left; padding:0 10px 0 0;}
+
+	#ding-reservation-list-form .form-description{font-size:10px; color:#999;}
 	.form-button{padding:10px 0 0 0px;}
 
 #contact-mail-user{width:700px;}
-	
-	
+
+
 
 /*låner tamtam*/
-#ding-library-user-forms-loan-details td .form-item, 
-#ding-library-user-forms-reservation-details td .form-item  {margin:0;padding:0;}
+#ding-library-user-forms-loan-details td .form-item,
+#ding-reservation-list-form td .form-item  {margin:0;padding:0;}
 #ding-library-user-forms-loan-details table{font-size:11px; width: 680px;}
 	#ding-library-user-forms-loan-details tbody td{border-bottom: 1px solid #D1D9D7; padding:5px;}
 	#ding-library-user-forms-loan-details td.image img,
@@ -134,38 +134,38 @@ body.page-user #content-main form{margin:0 0 30px 0;}
   #ding-library-user-forms-loan-details .form-button{ float: left; margin: 0 10px 10px 0; }
   #ding-library-user-forms-loan-details .loan_date,
   #ding-library-user-forms-loan-details .due_date { white-space: nowrap; }
-  
+
   .pane-ding_library_user_reservations_details { clear: left; }
 
-#ding-library-user-forms-reservation-details table{font-size:11px; width: 680px;}
-#ding-library-user-forms-reservation-details table tbody td{border-bottom: 1px solid #eee; padding:5px;}
-#ding-library-user-forms-reservation-details td.image img{ width:20px; overflow:hidden;}
+#ding-reservation-list-form table{font-size:11px; width: 680px;}
+#ding-reservation-list-form table tbody td{border-bottom: 1px solid #eee; padding:5px;}
+#ding-reservation-list-form td.image img{ width:20px; overflow:hidden;}
 
-#ding-library-user-forms-reservation-details .pickup_expire_date,
-#ding-library-user-forms-reservation-details .create_date,
-#ding-library-user-forms-reservation-details .valid_to { white-space: nowrap; }
+#ding-reservation-list-form .pickup_expire_date,
+#ding-reservation-list-form .create_date,
+#ding-reservation-list-form .valid_to { white-space: nowrap; }
 
-#ding-library-user-forms-reservation-details .date-clear-block,
-#ding-library-user-forms-reservation-details #edit-new-pickup-branch-wrapper {
+#ding-reservation-list-form .date-clear-block,
+#ding-reservation-list-form #edit-new-pickup-branch-wrapper {
   clear: none;
   float: left;
 }
 
-#ding-library-user-forms-reservation-details .update-controls { margin-top: 10px; }
-#ding-library-user-forms-reservation-details .date-clear-block { width: 250px; }
-#ding-library-user-forms-reservation-details #edit-new-pickup-branch-wrapper { width: 400px; }
+#ding-reservation-list-form .update-controls { margin-top: 10px; }
+#ding-reservation-list-form .date-clear-block { width: 250px; }
+#ding-reservation-list-form #edit-new-pickup-branch-wrapper { width: 400px; }
 
   #reservations-fetchable th.count-0 {width:380px;}
   #reservations-fetchable th.count-1 {width:50px;}
   #reservations-fetchable th.count-2 {width:100px;}
-  #reservations-fetchable th.count-3 {width:100px;}      
-  
-  #reservations-active th.count-0 {width:50px;}      
-  #reservations-active th.count-1 {width:100px;}      
+  #reservations-fetchable th.count-3 {width:100px;}
+
+  #reservations-active th.count-0 {width:50px;}
+  #reservations-active th.count-1 {width:100px;}
   #reservations-active th.count-2 {width:200px;}
-  #reservations-active th.count-3 {width:0px;}      
-  #reservations-active th.count-4 {width:50px;}      
-  #reservations-active th.count-5 {width:50px;}  
+  #reservations-active th.count-3 {width:0px;}
+  #reservations-active th.count-4 {width:50px;}
+  #reservations-active th.count-5 {width:50px;}
   #reservations-active th.count-6 {width:50px;}
 
 #ding_library_user_forms_debts_details .date { white-space: nowrap; }
