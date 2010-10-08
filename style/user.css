@@ -19,25 +19,22 @@ body.page-user .panel-left .view{left:0;}
 .panel-twocol-left-stacked .content-right .panel-pane .record-list{margin:0 0 0 0px;}
 /*.panel-twocol-left-stacked .content-right .panel-pane h3{margin:0 0 0 10px;}*/
 
-.pane-ding_library_user_personal_info  h3{}
-
-
 .pane-ding_library_user_reservations_details{margin:60px 0 0 0;}
 
 /* vcard*/
-.pane-ding_library_user_personal_info .vcard {margin: 0 0 0 0px;}
-.pane-ding_library_user_personal_info .vcard h4{clear:both;}
-.pane-ding_library_user_personal_info .vcard dl{display:block; clear:both; margin:0 0 0 0px;}
-	.pane-ding_library_user_personal_info	.vcard h4{padding:5px 0}
-	.pane-ding_library_user_personal_info .vcard dl dt{width:120px; margin:0 10px 0 0; float:left; font-weight:bold;}
-	.pane-ding_library_user_personal_info .vcard dl dd{width:300px; }
-	.pane-ding_library_user_personal_info .vcard dl dd.adr{ display:block;}
-	.pane-ding_library_user_personal_info .vcard dl dd,
-	.pane-ding_library_user_personal_info .vcard dl dt{border-bottom: 1px solid #eee; font-size:13px; line-height:20px;}
+.userprofile .vcard {margin: 0 0 0 0px;}
+.userprofile .vcard h4{clear:both;}
+.userprofile .vcard dl{display:block; clear:both; margin:0 0 0 0px;}
+	.userprofile	.vcard h4{padding:5px 0}
+	.userprofile .vcard dl dt{width:120px; margin:0 10px 0 0; float:left; font-weight:bold;}
+	.userprofile .vcard dl dd{width:300px; }
+	.userprofile .vcard dl dd.adr{ display:block;}
+	.userprofile .vcard dl dd,
+	.userprofile .vcard dl dt{border-bottom: 1px solid #eee; font-size:13px; line-height:20px;}
 
-.pane-ding_library_user_personal_info ul.item-list {clear:both; margin:20px 0;}
-.pane-ding_library_user_personal_info ul.item-list li{display:inline; padding:0;}
-.pane-ding_library_user_personal_info ul.item-list li a{background:#eee; padding:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.userprofile ul.item-list {clear:both; margin:20px 0;}
+.userprofile ul.item-list li{display:inline; padding:0; margin: 0;}
+.userprofile ul.item-list li a{background:#eee; padding:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 
 .pane-ding_library_user_library_settings{margin:20px 0 0 0;}
 .pane-ding_library_user_library_settings form#ding-library-user-forms-library-settings{margin:0 0 20px 0px; width:500px;}
