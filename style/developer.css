@@ -138,19 +138,19 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 
 /* Jesper K: låner status side */
 .pane-ding_reservation_list_form .col-selection,
-.pane-bookings_details .col-selection,
+.pane-ding_booking_list .col-selection,
 .pane-ding_library_user_loan_list_form .col-selection,
 .pane-ding_debt_list_form .col-selection { width: 35px; }
 
 .pane-ding_reservation_list_form .col-image,
-.pane-bookings_details .col-image,
+.pane-ding_booking_list_form .col-image,
 .pane-ding_library_user_loan_list_form .col-image { width: 35px; }
 
 .pane-ding_reservation_list_form .col-reservation,
 .pane-ding_reservation_list_form .col-valied-to,
 .pane-ding_reservation_list_form .col-pickup-by,
-.pane-bookings_details .col-start-date,
-.pane-bookings_details .col-end-date,
+.pane-ding_booking_list_form .col-start-date,
+.pane-ding_booking_list_form .col-end-date,
 .pane-ding_library_user_loan_list_form .col-loan-date,
 .pane-ding_library_user_loan_list_form .col-due-date,
 .pane-ding_debt_list_form .col-date { width: 70px;}
@@ -160,7 +160,7 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 .pane-ding_reservation_list_form .col-pickup-number { width: 30px;}
 
 
-.pane-bookings_details .col-pickup-branch { width: 100px;}
+.pane-ding_booking_list_form .col-pickup-branch { width: 100px;}
 
 .pane-ding_debt_list_form .col-amount { width: 60px;}
 .pane-ding_debt_list_form td.amount {
@@ -184,7 +184,7 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 }
 
 .pane-ding_reservation_list_form td.queue_no,
-.pane-bookings_details td.count {
+.pane-ding_booking_list_form td.count {
   text-align: right;
   padding-right: 4px;
 }
@@ -195,7 +195,7 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 }
 
 .pane-ding_library_user_loan_list_form table caption,
-.pane-bookings_details table caption,
+.pane-ding_booking_list_form table caption,
 .pane-ding_reservation_list_form table caption {
   font-size: 14px;
   line-height: 20px;
@@ -205,14 +205,14 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 }
 
 .pane-ding_library_user_loan_list_form table,
-.pane-bookings_details table,
+.pane-ding_booking_list_form table,
 .pane-ding_reservation_list_form table { margin-bottom: 16px; }
 
 .pane-ding_reservation_list_form h3,
-.pane-bookings_details h3,
+.pane-ding_booking_list_form h3,
 .pane-ding_library_user_loan_list_form h3{ color: #790f21;}
 .pane-ding_reservation_list_form h3,
-.pane-bookings_details h3 { padding-top: 25px; }
+.pane-ding_booking_list_form h3 { padding-top: 25px; }
 
 .pane-ding_reservation_list_form .update-controls-button .edit-update{
   height: 25px;
