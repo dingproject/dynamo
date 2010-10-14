@@ -13,7 +13,7 @@ body.page-user .panel-left .view{left:0;}
 .contact{padding: 3px 10px; margin:0 20px 0 0;}
 
 
-.pane-ding_library_user_debts_notice{color:#840; background:#fe6;border-color:#ed5; padding:10px;}
+.pane-ding_debt_notice{color:#840; background:#fe6;border-color:#ed5; padding:10px;}
 
 /* user/[UID]/profile */
 .panel-twocol-left-stacked .content-right .panel-pane .record-list{margin:0 0 0 0px;}
@@ -74,9 +74,9 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 	#node-form th{font-weight:bold;}
 
 /* user/[UID]/status */
-	.pane-ding_library_user_debts_notice {}
-		.pane-ding_library_user_debts_notice em{font-weight: bold;}
-		.pane-ding_library_user_debts_notice a{font-weight: bold;}
+	.pane-ding_debt_notice {}
+		.pane-ding_debt_notice em{font-weight: bold;}
+		.pane-ding_debt_notice a{font-weight: bold;}
 
 	.pane-ding_library_user_loans_details{}
 
@@ -165,4 +165,4 @@ body.page-user #content-main form{margin:0 0 30px 0;}
   #reservations-active th.count-5 {width:50px;}
   #reservations-active th.count-6 {width:50px;}
 
-#ding_library_user_forms_debts_details .date { white-space: nowrap; }
+#ding_debt_list_form .date { white-space: nowrap; }

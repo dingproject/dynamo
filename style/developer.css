@@ -140,7 +140,7 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 .pane-ding_library_user_reservations_details .col-selection,
 .pane-bookings_details .col-selection,
 .pane-ding_library_user_loans_details .col-selection,
-.pane-ding_library_user_debts_details .col-selection { width: 35px; }
+.pane-ding_debt_list_form .col-selection { width: 35px; }
 
 .pane-ding_library_user_reservations_details .col-image,
 .pane-bookings_details .col-image,
@@ -153,7 +153,7 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 .pane-bookings_details .col-end-date,
 .pane-ding_library_user_loans_details .col-loan-date,
 .pane-ding_library_user_loans_details .col-due-date,
-.pane-ding_library_user_debts_details .col-date { width: 70px;}
+.pane-ding_debt_list_form .col-date { width: 70px;}
 
 .pane-ding_library_user_reservations_details .col-pickup-branch { width: 100px;}
 .pane-ding_library_user_reservations_details .col-queue-number { width: 70px;}
@@ -162,23 +162,23 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 
 .pane-bookings_details .col-pickup-branch { width: 100px;}
 
-.pane-ding_library_user_debts_details .col-amount { width: 60px;}
-.pane-ding_library_user_debts_details td.amount {
+.pane-ding_debt_list_form .col-amount { width: 60px;}
+.pane-ding_debt_list_form td.amount {
   text-align: right;
   padding-right: 4px;
 }
 
-.pane-ding_library_user_debts_details td.note,
-.pane-ding_library_user_debts_details td.date {
+.pane-ding_debt_list_form td.note,
+.pane-ding_debt_list_form td.date {
   padding-right: 16px;
 }
 
-#ding-library-user-forms-debts-details td .form-item {
+#ding-debt-list-form td .form-item {
   margin:0;
   padding:0;
 }
 
-#ding-library-user-forms-debts-details tbody td {
+#ding-debt-list-form tbody td {
   border-bottom:1px solid #D1D9D7;
   padding:5px;
 }
