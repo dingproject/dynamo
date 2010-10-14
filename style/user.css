@@ -78,16 +78,16 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 		.pane-ding_debt_notice em{font-weight: bold;}
 		.pane-ding_debt_notice a{font-weight: bold;}
 
-	.pane-ding_library_user_loans_details{}
+	.pane-ding_library_user_loan_list_form{}
 
-	#ding-library-user-forms-loan-details{margin:20px 0;}
-	#ding-library-user-forms-loan-details li{list-style-type: none; clear:both;}
-	#ding-library-user-forms-loan-details h4{margin:10px 0 0 0;}
+	#ding-library-user-loan-list-form{margin:20px 0;}
+	#ding-library-user-loan-list-form li{list-style-type: none; clear:both;}
+	#ding-library-user-loan-list-form h4{margin:10px 0 0 0;}
 
-	#ding-library-user-forms-loan-details li div{display:inline; padding:0 20px 5px 0; }
-	#ding-library-user-forms-loan-details div.select div{padding:0;}
+	#ding-library-user-loan-list-form li div{display:inline; padding:0 20px 5px 0; }
+	#ding-library-user-loan-list-form div.select div{padding:0;}
 
-	#ding-library-user-forms-loan-details li.loan,
+	#ding-library-user-loan-list-form li.loan,
 	#ding-reservation-list-form li{
 		margin:0px 0 5px 0px; padding:2px 0 2px 10px;  border-bottom: 1px solid #ccc; width:650px; background:none; height:25px;
 	}
@@ -120,17 +120,17 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 
 
 /*låner tamtam*/
-#ding-library-user-forms-loan-details td .form-item,
+#ding-library-user-loan-list-form td .form-item,
 #ding-reservation-list-form td .form-item  {margin:0;padding:0;}
-#ding-library-user-forms-loan-details table{font-size:11px; width: 680px;}
-	#ding-library-user-forms-loan-details tbody td{border-bottom: 1px solid #D1D9D7; padding:5px;}
-	#ding-library-user-forms-loan-details td.image img,
+#ding-library-user-loan-list-form table{font-size:11px; width: 680px;}
+	#ding-library-user-loan-list-form tbody td{border-bottom: 1px solid #D1D9D7; padding:5px;}
+	#ding-library-user-loan-list-form td.image img,
   #ding-cart-forms-cart-details td.image img {width:20px; overflow:hidden;}
-	#ding-library-user-forms-loan-details table .form-item-checkbox{display:inline;}
+	#ding-library-user-loan-list-form table .form-item-checkbox{display:inline;}
 
-  #ding-library-user-forms-loan-details .form-button{ float: left; margin: 0 10px 10px 0; }
-  #ding-library-user-forms-loan-details .loan_date,
-  #ding-library-user-forms-loan-details .due_date { white-space: nowrap; }
+  #ding-library-user-loan-list-form .form-button{ float: left; margin: 0 10px 10px 0; }
+  #ding-library-user-loan-list-form .loan_date,
+  #ding-library-user-loan-list-form .due_date { white-space: nowrap; }
 
   .pane-ding_reservation_list_form { clear: left; }
 
