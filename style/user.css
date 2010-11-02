@@ -13,50 +13,48 @@ body.page-user .panel-left .view{left:0;}
 .contact{padding: 3px 10px; margin:0 20px 0 0;}
 
 
-.pane-alma_user_debts_notice{color:#840; background:#fe6;border-color:#ed5; padding:10px;}
+.pane-ding_debt_notice{color:#840; background:#fe6;border-color:#ed5; padding:10px;}
 
 /* user/[UID]/profile */
 .panel-twocol-left-stacked .content-right .panel-pane .record-list{margin:0 0 0 0px;}
 /*.panel-twocol-left-stacked .content-right .panel-pane h3{margin:0 0 0 10px;}*/
 
-.pane-alma_user_personal_info  h3{}
-
-
-.pane-alma_user_reservations_details{margin:60px 0 0 0;}
+.pane-ding_reservation_list_form{margin:60px 0 0 0;}
 
 /* vcard*/
-.pane-alma_user_personal_info .vcard {margin: 0 0 0 0px;}
-.pane-alma_user_personal_info .vcard h4{clear:both;}
-.pane-alma_user_personal_info .vcard dl{display:block; clear:both; margin:0 0 0 0px;}
-	.pane-alma_user_personal_info	.vcard h4{padding:5px 0}
-	.pane-alma_user_personal_info .vcard dl dt{width:120px; margin:0 10px 0 0; float:left; font-weight:bold;}
-	.pane-alma_user_personal_info .vcard dl dd{width:300px; }
-	.pane-alma_user_personal_info .vcard dl dd.adr{ display:block;}
-	.pane-alma_user_personal_info .vcard dl dd,	.pane-alma_user_personal_info .vcard dl dt{border-bottom: 1px solid #eee; font-size:13px; line-height:20px;}
+.userprofile .vcard {margin: 0 0 0 0px;}
+.userprofile .vcard h4{clear:both;}
+.userprofile .vcard dl{display:block; clear:both; margin:0 0 0 0px;}
+	.userprofile	.vcard h4{padding:5px 0}
+	.userprofile .vcard dl dt{width:120px; margin:0 10px 0 0; float:left; font-weight:bold;}
+	.userprofile .vcard dl dd{width:300px; }
+	.userprofile .vcard dl dd.adr{ display:block;}
+	.userprofile .vcard dl dd,
+	.userprofile .vcard dl dt{border-bottom: 1px solid #eee; font-size:13px; line-height:20px;}
 
-.pane-alma_user_personal_info ul.item-list {clear:both; margin:20px 0;}
-.pane-alma_user_personal_info ul.item-list li{display:inline; padding:0;}
-.pane-alma_user_personal_info ul.item-list li a{background:#eee; padding:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.userprofile ul.item-list {clear:both; margin:20px 0;}
+.userprofile ul.item-list li{display:inline; padding:0; margin: 0;}
+.userprofile ul.item-list li a{background:#eee; padding:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 
-.pane-alma_user_library_settings{margin:20px 0 0 0;}
-.pane-alma_user_library_settings form#alma-user-forms-library-settings{margin:0 0 20px 0px; width:500px;}
+.pane-ding_library_user_library_settings{margin:20px 0 0 0;}
+.pane-ding_library_user_library_settings form{margin:0 0 20px 0px; width:500px;}
 
-#alma-user-forms-library-settings{margin:0 0 20px 20px; width:500px;}
-	#alma-user-forms-library-settings label{float:left; margin:0 20px 0 0;}
-	#alma-user-forms-library-settings .form-item-select{padding:10px 0; border-bottom: 1px solid #eee;}
-	
-form#alma-user-forms-library-settings .container-inline-date{padding:10px 0 0 0; border-bottom: 1px solid #eee;}
-	form#alma-user-forms-library-settings .container-inline-date .form-item-date_popup  {padding:0;}
-	form#alma-user-forms-library-settings .container-inline-date .form-item-date_popup .form-item{padding:0;}
-	form#alma-user-forms-library-settings .container-inline-date .form-item-date_popup label{width:250px;}
-#alma-user-forms-library-settings .form-button{margin:10px 0 0 0;}
-	
+.pane-ding_library_user_library_settings form{margin:0 0 20px 20px; width:500px;}
+	.pane-ding_library_user_library_settings form label{float:left; margin:0 20px 0 0;}
+	.pane-ding_library_user_library_settings form .form-item-select{padding:10px 0; border-bottom: 1px solid #eee;}
+
+pane-ding_library_user_library_settings form .container-inline-date{padding:10px 0 0 0; border-bottom: 1px solid #eee;}
+	pane-ding_library_user_library_settings form .container-inline-date .form-item-date_popup  {padding:0;}
+	pane-ding_library_user_library_settings form .container-inline-date .form-item-date_popup .form-item{padding:0;}
+	pane-ding_library_user_library_settings form .container-inline-date .form-item-date_popup label{width:250px;}
+.pane-ding_library_user_library_settings form .form-button{margin:10px 0 0 0;}
+
 /* user/[UID]/edit*/
 	/*	define the width*/
 body.page-user #content-main form{margin:0 0 30px 0;}
 	#user-profile-form{margin:0 0 50px 0px; width:500px;}
 /*	#user-profile-form .form-item{margin:0 0 0 20px;}*/
-	
+
 	#user-profile-form .account legend{font-weight:bold;font-weight:bold; width:500px; padding:0 0 10px 0;}
 	#user-profile-form fieldset{width:500px; margin:20px 0; padding:5px 0; color:#666; background:#f8f8f8;  border-bottom: 1px solid #ccc;}
 	#user-profile-form fieldset.account{padding:0 15px 0 5px;}
@@ -67,7 +65,7 @@ body.page-user #content-main form{margin:0 0 30px 0;}
   #user-profile-form fieldset .form-item { padding: 10px; }
   #user-profile-form fieldset .form-item .form-item { padding-left: 0; padding-right: 0 }
 #user-profile-form .form-description{margin: 0 0 10px 0px; font-size:10px; }
-		#user-profile-form .account .form-description{margin: 0 0 10px 0px; width:400px;}	
+		#user-profile-form .account .form-description{margin: 0 0 10px 0px; width:400px;}
 
 	a.popups-processed{background:#ddd; -moz-border-radius: 3px; -webkit-border-radius: 3px; padding:2px 5px;}
 	a.popups-processed:hover{background:#bbb;}
@@ -76,103 +74,95 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 	#node-form th{font-weight:bold;}
 
 /* user/[UID]/status */
-	.pane-alma_user_debts_notice {}
-		.pane-alma_user_debts_notice em{font-weight: bold;}
-		.pane-alma_user_debts_notice a{font-weight: bold;} 
-	
-	.pane-alma_user_loans_details{} 
+	.pane-ding_debt_notice {}
+		.pane-ding_debt_notice em{font-weight: bold;}
+		.pane-ding_debt_notice a{font-weight: bold;}
 
-	#alma-user-forms-loan-details{margin:20px 0;}
-	#alma-user-forms-loan-details li{list-style-type: none; clear:both;} 
-	#alma-user-forms-loan-details h4{margin:10px 0 0 0;}
+	.pane-ding_library_user_loan_list_form{}
 
-	#alma-user-forms-loan-details li div{display:inline; padding:0 20px 5px 0; }
-	#alma-user-forms-loan-details div.select div{padding:0;}
+	#ding-library-user-loan-list-form{margin:20px 0;}
+	#ding-library-user-loan-list-form li{list-style-type: none; clear:both;}
+	#ding-library-user-loan-list-form h4{margin:10px 0 0 0;}
 
-	#alma-user-forms-loan-details li.loan,
-	#alma-user-forms-reservation-details li{
+	#ding-library-user-loan-list-form li div{display:inline; padding:0 20px 5px 0; }
+	#ding-library-user-loan-list-form div.select div{padding:0;}
+
+	#ding-library-user-loan-list-form li.loan,
+	#ding-reservation-list-form li{
 		margin:0px 0 5px 0px; padding:2px 0 2px 10px;  border-bottom: 1px solid #ccc; width:650px; background:none; height:25px;
 	}
-	
-		#alma-user-forms-reservation-details ul.reservations ul.labels li{float:left;;}
-		#alma-user-forms-reservation-details ul.reservations .labels li{font-weight:bold;}
-		#alma-user-forms-reservation-details ul.reservations ul.reservation{padding:5px 0;  clear:both;}
-		#alma-user-forms-reservation-details ul.reservations ul.reservation li{ margin:0; float:left;}
+
+		#ding-reservation-list-form ul.reservations ul.labels li{float:left;;}
+		#ding-reservation-list-form ul.reservations .labels li{font-weight:bold;}
+		#ding-reservation-list-form ul.reservations ul.reservation{padding:5px 0;  clear:both;}
+		#ding-reservation-list-form ul.reservations ul.reservation li{ margin:0; float:left;}
 		/*fields width*/
-			#alma-user-forms-reservation-details li.select{width:50px; text-align:center; overflow:hidden;}
-			#alma-user-forms-reservation-details li.title{width:250px; overflow:hidden;} 
-			#alma-user-forms-reservation-details li.expires{width:100px; overflow:hidden;}
-			#alma-user-forms-reservation-details li.pickup-branch{width:150px; overflow:hidden;}
-			#alma-user-forms-reservation-details li.queue{width:50px; overflow:hidden;}
+			#ding-reservation-list-form li.select{width:50px; text-align:center; overflow:hidden;}
+			#ding-reservation-list-form li.title{width:250px; overflow:hidden;}
+			#ding-reservation-list-form li.expires{width:100px; overflow:hidden;}
+			#ding-reservation-list-form li.pickup-branch{width:150px; overflow:hidden;}
+			#ding-reservation-list-form li.queue{width:50px; overflow:hidden;}
 
-		#alma-user-forms-reservation-details .container-inline-date,
-		#alma-user-forms-reservation-details #edit-new-pickup-branch-wrapper{	width:400px; 		}
-		
+		#ding-reservation-list-form .container-inline-date,
+		#ding-reservation-list-form #edit-new-pickup-branch-wrapper{	width:400px; 		}
 
-	#alma-user-forms-reservation-details .container-inline-date{padding:10px 0;}
-	#alma-user-forms-reservation-details  .container-inline-date .form-item {padding:0;}
-	#alma-user-forms-reservation-details .form-item{padding:0 0 10px 0;}
-	#alma-user-forms-reservation-details .form-item label{float:left; padding:0 10px 0 0;}
 
-	#alma-user-forms-reservation-details .form-description{font-size:10px; color:#999;}
+	#ding-reservation-list-form .container-inline-date{padding:10px 0;}
+	#ding-reservation-list-form  .container-inline-date .form-item {padding:0;}
+	#ding-reservation-list-form .form-item{padding:0 0 10px 0;}
+	#ding-reservation-list-form .form-item label{float:left; padding:0 10px 0 0;}
+
+	#ding-reservation-list-form .form-description{font-size:10px; color:#999;}
 	.form-button{padding:10px 0 0 0px;}
 
 #contact-mail-user{width:700px;}
-	
-	
+
+
 
 /*låner tamtam*/
-#alma-user-forms-loan-details td .form-item, #alma-user-forms-reservation-details td .form-item  {margin:0;padding:0;}
-#alma-user-forms-loan-details table{font-size:11px; width: 680px;}
-	#alma-user-forms-loan-details tbody td{border-bottom: 1px solid #D1D9D7; padding:5px;}
-	#alma-user-forms-loan-details td.image img,
-  #alma-cart-forms-cart-details td.image img {width:20px; overflow:hidden;}
-	#alma-user-forms-loan-details table .form-item-checkbox{display:inline;}
+#ding-library-user-loan-list-form td .form-item,
+#ding-reservation-list-form td .form-item  {margin:0;padding:0;}
+#ding-library-user-loan-list-form table{font-size:11px; width: 680px;}
+	#ding-library-user-loan-list-form tbody td{border-bottom: 1px solid #D1D9D7; padding:5px;}
+	#ding-library-user-loan-list-form td.image img,
+  #ding-cart-list-form td.image img {width:20px; overflow:hidden;}
+	#ding-library-user-loan-list-form table .form-item-checkbox{display:inline;}
 
-  #alma-user-forms-loan-details .form-button{ float: left; margin: 0 10px 10px 0; }
-  #alma-user-forms-loan-details .loan_date,
-  #alma-user-forms-loan-details .due_date { white-space: nowrap; }
-  
-  .pane-alma_user_reservations_details { clear: left; }
+  #ding-library-user-loan-list-form .form-button{ float: left; margin: 0 10px 10px 0; }
+  #ding-library-user-loan-list-form .loan_date,
+  #ding-library-user-loan-list-form .due_date { white-space: nowrap; }
 
-/*
+  .pane-ding_reservation_list_form { clear: left; }
 
-	form#alma-user-forms-reservation-details table thead th.count-0	{width:50px;}
-  form#alma-user-forms-reservation-details table thead th.count-0.titel	{width:380px;}
-	form#alma-user-forms-reservation-details table thead th.count-1	{width:380px;}  
-	form#alma-user-forms-reservation-details table thead th.count-2	{width:100px;}  	
-	form#alma-user-forms-reservation-details table thead th.count-3	{width:100px;}  	
-	form#alma-user-forms-reservation-details table thead th.count-4	{width:30px;}  			
-*/
-#alma-user-forms-reservation-details table{font-size:11px; width: 680px;}
-#alma-user-forms-reservation-details table tbody td{border-bottom: 1px solid #eee; padding:5px;}
-#alma-user-forms-reservation-details td.image img{ width:20px; overflow:hidden;}
+#ding-reservation-list-form table{font-size:11px; width: 680px;}
+#ding-reservation-list-form table tbody td{border-bottom: 1px solid #eee; padding:5px;}
+#ding-reservation-list-form td.image img{ width:20px; overflow:hidden;}
 
-#alma-user-forms-reservation-details .pickup_expire_date,
-#alma-user-forms-reservation-details .create_date,
-#alma-user-forms-reservation-details .valid_to { white-space: nowrap; }
+#ding-reservation-list-form .pickup_expire_date,
+#ding-reservation-list-form .create_date,
+#ding-reservation-list-form .valid_to { white-space: nowrap; }
 
-#alma-user-forms-reservation-details .date-clear-block,
-#alma-user-forms-reservation-details #edit-new-pickup-branch-wrapper {
+#ding-reservation-list-form .date-clear-block,
+#ding-reservation-list-form #edit-new-pickup-branch-wrapper {
   clear: none;
   float: left;
 }
 
-#alma-user-forms-reservation-details .update-controls { margin-top: 10px; }
-#alma-user-forms-reservation-details .date-clear-block { width: 250px; }
-#alma-user-forms-reservation-details #edit-new-pickup-branch-wrapper { width: 400px; }
+#ding-reservation-list-form .update-controls { margin-top: 10px; }
+#ding-reservation-list-form .date-clear-block { width: 250px; }
+#ding-reservation-list-form #edit-new-pickup-branch-wrapper { width: 400px; }
 
   #reservations-fetchable th.count-0 {width:380px;}
   #reservations-fetchable th.count-1 {width:50px;}
   #reservations-fetchable th.count-2 {width:100px;}
-  #reservations-fetchable th.count-3 {width:100px;}      
-  
-  #reservations-active th.count-0 {width:50px;}      
-  #reservations-active th.count-1 {width:100px;}      
+  #reservations-fetchable th.count-3 {width:100px;}
+
+  #reservations-active th.count-0 {width:50px;}
+  #reservations-active th.count-1 {width:100px;}
   #reservations-active th.count-2 {width:200px;}
-  #reservations-active th.count-3 {width:0px;}      
-  #reservations-active th.count-4 {width:50px;}      
-  #reservations-active th.count-5 {width:50px;}  
+  #reservations-active th.count-3 {width:0px;}
+  #reservations-active th.count-4 {width:50px;}
+  #reservations-active th.count-5 {width:50px;}
   #reservations-active th.count-6 {width:50px;}
 
-#alma_user_forms_debts_details .date { white-space: nowrap; }
+#ding_debt_list_form .date { white-space: nowrap; }

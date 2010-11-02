@@ -25,12 +25,13 @@
 .ting-item .content{width:410px;float:left;}
   .ting-item .content .picture{float:left; width:85px;}
   .ting-item .content .info{float:left; width:300px;}
-.ting-item .cart{width:95px; float:left;}
+.ting-item .ting-object-buttons {width:95px; float:left;}
   /*status*/
-  .ting-item .alma-status{font-size:10px; text-align:center; line-height:10px; padding:3px 0; margin:10px 0 0 0; background-color: #eee; width:100px; }
-    .ting-item .alma-status.waiting, #content .alma-cart-buttons a.disabled {color: #777; cursor:default; text-decoration:none !important;}
-    .ting-item .alma-status.available {background-color: #71bf44;  color: white;}
-    .ting-item .alma-status.unavailable{  background-color: #6B0046;  color: white;}
+  .ting-item .ting-status{font-size:10px; text-align:center; line-height:10px; padding:3px 0; margin:10px 0 0 0; background-color: #eee; width:100px; }
+    .ting-item .ting-status.waiting, 
+		#content .ting-object-buttons a.disabled {color: #777; cursor:default; text-decoration:none !important;}
+    .ting-item .ting-status.available {background-color: #71bf44;  color: white;}
+    .ting-item .ting-status.unavailable{  background-color: #6B0046;  color: white;}
 
 /* 
   buttons
@@ -81,7 +82,7 @@ body.ding-ting-object .pane-recommendation_list, body.ding-ting-collection .pane
   padding: 10px 0;
 }
 
-#periodical-issue-list .year .alma-cart-buttons li {
+#periodical-issue-list .year .ding-cart-buttons li {
   padding: 0 5px;
 }
 
@@ -90,7 +91,7 @@ body.ding-ting-object .pane-recommendation_list, body.ding-ting-collection .pane
 }
 
 #periodical-issue-list .year div.title,
-#periodical-issue-list .alma-cart-buttons{
+#periodical-issue-list .ding-cart-buttons{
   display: inline-block;
   font-weight: normal;
 }
