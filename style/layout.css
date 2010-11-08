@@ -10,7 +10,7 @@ body.admin{background-position: 0 30px }
 #page{width:994px; margin: 0 auto;}
 #page{overflow:hidden;} /*might have consequenses*/
 
-/* sitename */	
+/* sitename */
 #site-name {text-indent: -9999em; margin: 0px 17px 0 660px; padding:9px 0 0 0; height:30px;}
 	body.admin-menu #site-name {margin: 12px 17px 0 660px;}
 	#site-name a{height:30px; width:312px; display: block; overflow:hidden; background:transparent url(../images/logo.png) no-repeat 0 0;}
@@ -34,7 +34,7 @@ body.admin{background-position: 0 30px }
 --------------------------------------*/
 #ting-search-form{padding:55px 0 0 0; background:transparent url(../images/search.png) no-repeat 0 0;}
 	#ting-search-form .form-text{height:20px; width:468px; margin:0 10px 0 0; padding:4px 0 0 25px; color:#929292; background:#fff url(../images/magnifier.png) no-repeat 9px 5px; border: 1px solid #999; font-size:13px; float:left;}
-	#ting-search-form label{margin:3px 0 0 30px; font-size:13px; font-weight:normal;} 
+	#ting-search-form label{margin:3px 0 0 30px; font-size:13px; font-weight:normal;}
 	#ting-search-form #edit-keys-wrapper{margin:0;}
 	#ting-search-form .form-image-button{float:left; display:block; height:29px; width:94px; }
   #ting-search-form div.example {display: block; color: #e5e5e5; font-size:10px; }
@@ -76,12 +76,12 @@ body.admin{background-position: 0 30px }
 		#account-profile .username {width:230px; height:20px; overflow:hidden; }
 		#account-profile .username a{font-size:12px; background:transparent url(../images/arrow.png) no-repeat right center; padding:0 5px 0 0;}
 
-	/**/	
+	/**/
 	#account-profile .cart{width:60px; height:46px; padding:0 12px 0 0; height:60px;float:left; background:transparent url(../images/bg-account-cart.gif) no-repeat left top; text-align:center;}
 		#account-profile .cart div.count{font-size:25px; margin:6px 0 0 20px;}
 		#account-profile .cart a{display:block; font-size:9px; margin:5px 0 0 0;}
 
-	/* material status */	
+	/* material status */
 	#account-profile ul{width:177px; float:left; background:transparent url(../images/bg-account-divider.gif) no-repeat left top;}
 		#account-profile ul li{clear:both; background:transparent url(../images/bg-account-divider.gif) no-repeat left bottom;}
 		#account-profile ul li div{font-size:11px; float:left; overflow:hidden;}
@@ -96,24 +96,24 @@ body.admin{background-position: 0 30px }
 		#account-profile ul div.status span.default{background:transparent none}
 
 /*
-  Menu 
+  Menu
 --------------------------------------*/
 #navigation{margin:0; overflow:hidden; height:30px; text-transform: uppercase;}
 	#navigation li {padding:0 0px 0 10px; margin:0 20px; height:30px; list-style: none; float:left; position: relative;}
 	#navigation li.first{margin:0 20px 0 0; padding:0 0px 0 20px;}
 	#navigation li a{margin:0; padding:6px 0 0 0; display: block; float:left; font-weight:normal;}
 	#navigation a { display: block; color: #D1E02B; border-bottom:1px dotted #9CB333; }
-	#navigation li.active a, 
+	#navigation li.active a,
 	#navigation a:hover {color:#eee; border-bottom: 0 none; text-decoration: none !important; } /** Need to override text decoration in typography.css **/
 
-/* left navigation */	
+/* left navigation */
 #content-left{border-right: 1px solid #d1d9d7;}
 	#content-left li{border: 1px solid #d1d9d7;  height:20px; margin:0 0 4px 0; padding:4px 0 0 10px;}
 	#content-left li.active{background:#f1f5f4;}
 
 
-		
-/* 
+
+/*
   body
 --------------------------------------*/
 #pagebody{background:transparent url(../images/bg-page.png) repeat-y 0 0;}
@@ -125,21 +125,21 @@ body.admin{background-position: 0 30px }
 	#content-right{width:230px;float:left;}
   #content-inner{min-height:500px; height:auto !important; height:500px; margin:0 0 0 20px;}
 
-/* 
-footer 
---------------------------------------*/	
+/*
+footer
+--------------------------------------*/
 #pagefooter{background:transparent url(../images/bg-footer.png) no-repeat 0 bottom; padding:0 0 20px 0;}
-	#pagefooter-inner{padding:0px 32px 0 17px; background:transparent url(../images/bg-footer.png) no-repeat 0 top;}	
+	#pagefooter-inner{padding:0px 32px 0 17px; background:transparent url(../images/bg-footer.png) no-repeat 0 top;}
 		#pagefooter-inner div.left{width:196px; min-height:200px; padding:10px 20px 0 20px; background:transparent url(../images/bg-footer-divider.png) no-repeat left 0;}
 		#pagefooter-inner div.first{background-image:none;}
-		#pagefooter ul li a{background:transparent url(../images/pil.png) no-repeat left center; padding:0 0 0 10px;}		
+		#pagefooter ul li a{background:transparent url(../images/pil.png) no-repeat left center; padding:0 0 0 10px;}
 
 
 #content-main form{margin:20px 0 0 0;}
   form#comment-form{margin:0 0 0 0;}
 
 
-/* 
+/*
 Panels basic content layouts
 all content based on search results are in the search.css
 --------------------------------------*/
@@ -194,7 +194,7 @@ all content based on search results are in the search.css
 	.panel-threecol-33-34-33-stacked .panel-bottom{width:960px; clear:both;}
 
 /*panel-twocol-left-stacked  */
-.panel-twocol-left-stacked .content-left{width:680px; margin:0 15px 0 0;} 
+.panel-twocol-left-stacked .content-left{width:680px; margin:0 15px 0 0;}
 	.panel-twocol-left-stacked .panel-top{padding:0 0 20px 0px; background:transparent url(../images/bg-divider.png) no-repeat left bottom; }
 	.panel-twocol-left-stacked .panel-left{width:680px;}
 	.panel-twocol-left-stacked .panel-bottom{width:680px;}
@@ -225,7 +225,7 @@ body.node-type-page .panel-threecol-left-stacked-right .content-middle{width:680
 
 
 /* =====================================
-nav tabs for the events & 
+nav tabs for the events &
 /*--------------------------------------*/
 .tab-navigation,
 .page-arrangementer  .panel-left ul,
@@ -240,22 +240,23 @@ nav tabs for the events &
 .ding-arrangementer .panel-left ul.item-list,
 .tab-navigation ul
 {
-  background:transparent url(../images/bg-tab-navigation-right.png) no-repeat right top;	
+  background:transparent url(../images/bg-tab-navigation-right.png) no-repeat right top;
 }
 
-.tab-navigation li,
+.tab-navigation ul.item-list li,
 .page-arrangementer .panel-left ul li,
 .ding-arrangementer .panel-left ul li,
 .ding-ting-collection .panel-left ul li,
-.tab-navigation ul li  
+.tab-navigation ul li
 {
-  width:115px;padding:3px 4px 6px 10px; margin:0 0 4px 0; font-size:9px; line-height:13px;text-transform: uppercase;  background:#fff url(../images/bg-tab.gif) repeat-y scroll top right; 	border: 1px solid #d1d9d7; 	border-right: 0px solid #d1d9d7;	
+  width:115px;padding:3px 4px 6px 10px; margin:0 0 4px 0; font-size:9px; line-height:13px;text-transform: uppercase;  background:#fff url(../images/bg-tab.gif) repeat-y scroll top right; 	border: 1px solid #d1d9d7; 	border-right: 0px solid #d1d9d7;
 }
 
-.tab-navigation li.active,
+.tab-navigation ul li.active,
+.tab-navigation ul li.ui-tabs-selected,
 .page-arrangementer .panel-left ul li.active,
 .ding-arrangementer .panel-left ul li.active,
-.ding-ting-collection .panel-left ul li.active  
+.ding-ting-collection .panel-left ul li.active
 {
   border: 1px solid #d1d9d7;	background:#f3f5f5;
 }
@@ -263,7 +264,7 @@ nav tabs for the events &
 .page-ting .content-left ul li a,
 .page-arrangementer .panel-left ul li a,
 .ding-arrangementer .panel-left ul li a,
-.ding-ting-collection .panel-left ul li a  
+.ding-ting-collection .panel-left ul li a
 {
   color:#333; display:block;
 }
@@ -278,8 +279,8 @@ body.ding-arrangementer .panel-middle,
   min-height:400px;
 }
 
-body.page-arrangementer .panel-middle .panel-pane, 
-body.ding-arrangementer .panel-middle .panel-pane, 
+body.page-arrangementer .panel-middle .panel-pane,
+body.ding-arrangementer .panel-middle .panel-pane,
 .tab-navigation-main-inner
 {
   padding:20px;
