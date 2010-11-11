@@ -82,17 +82,15 @@
 .ting-item ul.buttons li a:hover{text-decoration: none; color:#FC6; background: transparent url(../images/sprite-knapper-reservering.png) no-repeat left -180px;}
 
 /*green button*/
-.ting-item ul.buttons li.last{background-position:right -30px}
-.ting-item ul.buttons li.last:hover{background-position:right -150px}
-.ting-item ul.buttons li.last a{background-position: left -90px;}
-.ting-item ul.buttons li.last a:hover, .button-green a:focus{color:#008000;background-position: left -210px;}
-
-/* view online button*/
-.ting-item ul.orange-button li a.view-online,
-.ting-overview ul.orange-button li a.view-online {background-position: 0 -60px;}
-.ting-item ul.orange-button li.first {background-position: 100% 0%;}
-.ting-item ul.orange-button li.first:hover {background-position: right -120px; }
-.ting-item ul.orange-button li a.view-online:hover {color:#FC6; background-position: left -180px;}
+.ting-item ul.buttons li.add-to-cart,
+.ting-item ul.buttons li.view-online {background-position:right -30px}
+.ting-item ul.buttons li.add-to-cart:hover,
+.ting-item ul.buttons li.view-online:hover {background-position:right -150px}
+.ting-item ul.buttons li.add-to-cart a,
+.ting-item ul.buttons li.view-online a {background-position: left -90px;}
+.ting-item ul.buttons li.add-to-cart a:hover,
+.ting-item ul.buttons li.view-online a:hover,
+.button-green a:focus{color:#008000;background-position: left -210px;}
 
 /*
   recommendations - others did loan ...
