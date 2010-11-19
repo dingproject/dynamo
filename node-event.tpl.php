@@ -37,7 +37,7 @@
 
 
   <?php // adding warning for event that has already occurred
-  if ($event_info['past_event']): ?>
+  if ($past_event): ?>
     <div class="alert"><?php print t('NB! This event occurred in the past.'); ?></div>
   <?php endif; ?>
   </div>
@@ -51,8 +51,9 @@
 
   <?php
     // adding warning for event that has already occurred
-    print $alertbox;
-  ?>
+  if ($past_event): ?>
+    <div class="alert"><?php print t('NB! This event occurred in the past.'); ?></div>
+  <?php endif; ?>
 
   <div class="content">
     <div class="meta">
