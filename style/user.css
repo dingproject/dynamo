@@ -104,8 +104,7 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 			#ding-reservation-list-form li.queue{width:50px; overflow:hidden;}
 
 		#ding-reservation-list-form .container-inline-date,
-		#ding-reservation-list-form #edit-new-pickup-branch-wrapper{	width:400px; 		}
-
+		#ding-reservation-list-form #edit-options-pickup-branch-wrapper {	position: static;	}
 
 	#ding-reservation-list-form .container-inline-date{padding:10px 0;}
 	#ding-reservation-list-form  .container-inline-date .form-item {padding:0;}
