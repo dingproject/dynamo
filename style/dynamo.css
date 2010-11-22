@@ -2,7 +2,7 @@
 	dynamo.css
 	widgets and elements used throughout the site
 	------------------------------------
-	
+
 	------------------------------------
 	colors:
 	------------------------------------
@@ -17,7 +17,7 @@
 
 /*--------------------------------------*/
 /*table colors */
-table thead th{background:#ddd; font-weight:bold; padding:3px; border-bottom: 1px solid #ccc;}	
+table thead th{background:#ddd; font-weight:bold; padding:3px; border-bottom: 1px solid #ccc;}
 tr.odd{background:#efefef;}
 tr.odd td{padding:5px;}
 tr.odd a{}
@@ -59,24 +59,24 @@ ul.pager li{margin:0 10px 0 0;}
 	#pager a.prev{background:transparent url(../images/arrow-pre.png) no-repeat left center; padding:0 0 0  5px;}
 	#pager a.next{background:transparent url(../images/arrow.png) no-repeat right center; padding:0 5px 0 0;}
 
-  #pager div.nav a, 
+  #pager div.nav a,
   #pager div.navwide a{
     display:block;
-  }	
+  }
 	#pager div.nav a.hidden, .pager div.nav a.hidden{display:none;}
 
   body.page-arrangementer .panel-middle .view-event-list ul.pager li,
-	#pager div.navwide, 
-  #pager div.nav, 
+	#pager div.navwide,
+  #pager div.nav,
 	ul.pager li,
 	ul.pager li.pager-next,
-	ul.pager li.pager-item,	
+	ul.pager li.pager-item,
 	ul.pager li.pager-last,
 	ul.pager li.pager-previous,
 	ul.pager li.pager-first,
-	.panel-left	ul.pager li.pager-first	
+	.panel-left	ul.pager li.pager-first
 	{
-	  width:54px; height:28px; padding:3px 2px 0 2px; font-size:9px; float:left; text-align:center; 
+	  width:54px; height:28px; padding:3px 2px 0 2px; font-size:9px; float:left; text-align:center;
 	  background:transparent url(../images/bg-pager-link-nav.gif) no-repeat left top;
 	}
 
@@ -119,7 +119,7 @@ Panels BOX css styles
 	.ding-box-wide ul.item-list li.odd{background:#f3f5f5;}
 	.ding-box-wide ul.item-list li.even{background:#fff;}
 
-
+	.ding-box-wide p {font-size: 10px; font-weight:bold; margin:0 10px; padding:0 10px; }
 
 	.ding-box-pane .odd{background:#f3f5f5;}
 	.ding-box-pane .even{background:#fff;}
@@ -130,7 +130,7 @@ Panels BOX css styles
 .pane-tagadelic-2{width:228px; padding:8px 0 4px 20px; margin:0; background:transparent url(../images/sprite-box.png) no-repeat -0px -0px; overflow:hidden;}
 
 /* =====================================
-Campaigns 
+Campaigns
 /*--------------------------------------*/
 .campaign-text{width:228px; background:transparent url(../images/sprite-box.png) repeat-y 0px 0; overflow:hidden; margin:0 0 10px 0;}
 	.campaign-inner{width:228px; background:transparent url(../images/sprite-box.png) no-repeat -700px bottom; overflow:hidden;}
@@ -149,7 +149,7 @@ Campaigns
 /**/
 .view-user-comments-list .subject a,
 .view-user-comments-list .subject a:link,
-.view-user-comments-list .subject a:visited, 
+.view-user-comments-list .subject a:visited,
 .view-user-comments-list .subject a:active{
   background:none; color:#9CB333; text-transform: none; font-size:10px;
 }
@@ -169,7 +169,7 @@ basic elements
 	.node .content ul li{list-style: disc outside url();background:none; padding:5px 0; }
 	.node .content a,.node .content a:link, .node .content a:visited,.node .content a:active {text-decoration: none;}
 	.node .content a:hover,.node .content a:focus {text-decoration: underline; background:#C9D3D7; }
-	.subject a,.subject a:link, .subject a:visited,.subject a:active {text-decoration: none; color:#fff;}	
+	.subject a,.subject a:link, .subject a:visited,.subject a:active {text-decoration: none; color:#fff;}
 
 	/*i know its evil to use important and i feel very dirty ...*/
 	.node .content table{width:99% !important; margin:10px 0 !important; border: 1px solid #eee;}
@@ -187,7 +187,7 @@ basic elements
 	.node .taxonomy{padding:10px 0;}
 	.node .taxonomy ul{margin:0;}
 	.node .taxonomy ul.links li{padding:0 5px 0 0;}
-	.node-page .content{margin:10px 0 0 0;}		
+	.node-page .content{margin:10px 0 0 0;}
 	.more-link a, a.more-link {background:transparent url(../images/arrow.png) no-repeat right center; padding:0 5px 0 0; }
 
 
