@@ -554,6 +554,57 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
 }
 
 /**
+ * Override mothership form element to add class to wrapper if the
+ * form element has triggered a validation error. 
+ */
+function dynamo_form_element($element, $value) {
+  // This is also used in the installer, pre-database setup.
+  $t = get_t();
+  
+  // Add an error class to the .form-item wrapper
+  // Inspired by http://fourkitchens.com/blog/2009/06/10/advanced-drupal-form-theming-take-control-error-styling-form-item-error-class
+  $error = '';
+  $exempt_elements = array('checkbox', 'radio', 'password_confirm');
+  if (dynamo_get_error($element) && !in_array($element['#type'], $exempt_elements)) {
+    $error .= 'form-item-error';
+    $error .= ' form-item-error-'. $element['#type']; // Optional 
+  }
+  
+  //add a more specific form-item-$type and error state
+  $output = "<div class=\"form-item form-item-" . $element['#type'] .' '.$error." \" ";
+  // TODO cant this be dublicated on a page?
+  //and then its not unique
+  if (!empty($element['#id'])) {
+    $output .= ' id="'. $element['#id'] .'-wrapper"';
+  }
+    
+  $output .= ">\n";
+  $required = !empty($element['#required']) ? '<span class="form-required" title="'. $t('This field is required.') .'">*</span>' : '';
+
+  if (!empty($element['#title'])) {
+    $title = $element['#title'];
+    if (!empty($element['#id'])) {
+      $output .= ' <label for="'. $element['#id'] .'">'. $t('!title: !required', array('!title' => filter_xss_admin($title), '!required' => $required)) ."</label>\n";
+    }
+    else {
+      $output .= ' <label>'. $t('!title: !required', array('!title' => filter_xss_admin($title), '!required' => $required)) ."</label>\n";
+    }
+  }
+
+  //TODO test to see if this is clean text - then we might need a <span>
+  //if we need to catch the content with
+  $output .= "$value\n";
+
+  if (!empty($element['#description'])) {
+    $output .= '<div class="form-description">'. $element['#description'] ."</div>\n";
+  }
+
+  $output .= "</div>\n";
+
+  return $output;
+}
+
+/**
  * Overrides mothership filefield icon which in versions up to 1.2 
  * contains an errorneous " before the alt attribute.
  * 
@@ -609,5 +660,21 @@ function dynamo_checkbox($element) {
   }
   else {
     return theme('image', path_to_theme() . '/images/checkbox-blocked.jpg', $element['#title'], $element['#title']);
+  }
+}
+
+/**
+ * Variation of form_get_error which will check child elements for some element types.
+ * @see form_get_error
+ */
+function dynamo_get_error($element) {
+  if ($element['#type'] == 'date_popup') {
+  	foreach(element_children($element) as $child) {
+  		if ($errors = form_get_error($element[$child])) {
+  			return $errors;
+  		}
+  	}
+  } else {
+  	return form_get_error($element);
   }
 }
