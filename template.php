@@ -530,11 +530,10 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
         // Add odd/even class
         $class = $flip[$class];
 
-        // TODO: This code looks broken. I've added the is_array check
-        // to prevent errors, but I don't know if it'll ever be true.
-        // mikl, 2010-05-24
         if (is_array($attributes['class'])) {
           array_push($attributes['class'], $class);
+        } else {
+        	$attributes['class'] .= ' '.$class;
         }
 
         // Build row
