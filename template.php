@@ -648,6 +648,22 @@ function dynamo_checkbox($element) {
 }
 
 /**
+ * Overrides default date popup implementation by removing the id attribute
+ * from the parent label. It generates a for="[id]" attribute refering to
+ * a non-existing element. This is invalid XHTML.
+ *  
+ * @see theme_date_popup 
+ */
+function dynamo_date_popup($element) {
+  //Remove the id causing the invalid for attribute to be generated.
+  unset($element['#id']);
+
+  //Run default date popup implementation.
+  return theme_date_popup($element);
+}
+
+
+/**
  * Variation of form_get_error which will check child elements for some element types.
  * @see form_get_error
  */
