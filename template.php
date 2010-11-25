@@ -624,22 +624,6 @@ function dynamo_filefield_icon($file) {
   return $icon;
 }
 
-/**
- * Shortcut function to help with the laborious date_format_date syntax.
- *
- * @param $date
- *   DateTime object.
- * @param $format
- *   Custom time format.
- * @param $langcode
- *   Language for use when formatting. Defaults to Danish.
- * @return
- *   Formatted date string.
- */
-function dynamo_datef($date, $format, $langcode = 'da') {
-  return date_format_date($date, 'custom', $format, $langcode);
-}
-
 function dynamo_checkbox($element) {
   if (!$element['#disabled']) {
     _form_set_class($element, array('checkbox'));
@@ -677,4 +661,20 @@ function dynamo_get_error($element) {
   } else {
   	return form_get_error($element);
   }
+}
+
+/**
+ * Shortcut function to help with the laborious date_format_date syntax.
+ *
+ * @param $date
+ *   DateTime object.
+ * @param $format
+ *   Custom time format.
+ * @param $langcode
+ *   Language for use when formatting. Defaults to Danish.
+ * @return
+ *   Formatted date string.
+ */
+function dynamo_datef($date, $format, $langcode = 'da') {
+  return date_format_date($date, 'custom', $format, $langcode);
 }
