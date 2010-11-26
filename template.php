@@ -31,9 +31,18 @@ function dynamo_preprocess_page(&$vars){
   $body_classes = array($vars['body_classes']);
   $path = explode('/', $_SERVER['REQUEST_URI']);
 
-  $body_classes[] = mothership_id_safe('ding-' . arg(0) . ' ' . arg(1));
-  $body_classes[] = mothership_id_safe('ding-' . end($path));
-  $body_classes[] = mothership_id_safe('ding-' . arg(2));
+  $args = arg();
+  if (isset($args[0])) {
+    $body_classes[] = mothership_id_safe('ding-' . $args[0]);
+    if (isset($args[1])) {
+      $body_classes[] = mothership_id_safe('ding-' . $args[0] . ' ' . $args[1]);
+    }
+  }
+  if (count($args) > 1) {
+    $body_classes[] = mothership_id_safe('ding-' . end($args));
+    if (isset($args[2]))
+    $body_classes[] = mothership_id_safe('ding-' . $args[2]);
+  }
 
   // Concatenate with spaces
   $vars['body_classes'] = implode(' ', $body_classes);
