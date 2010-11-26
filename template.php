@@ -539,11 +539,10 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
         // Add odd/even class
         $class = $flip[$class];
 
-        // TODO: This code looks broken. I've added the is_array check
-        // to prevent errors, but I don't know if it'll ever be true.
-        // mikl, 2010-05-24
         if (is_array($attributes['class'])) {
           array_push($attributes['class'], $class);
+        } else {
+        	$attributes['class'] .= ' '.$class;
         }
 
         // Build row
@@ -560,6 +559,57 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
   }
 
   $output .= "</table>\n";
+  return $output;
+}
+
+/**
+ * Override mothership form element to add class to wrapper if the
+ * form element has triggered a validation error. 
+ */
+function dynamo_form_element($element, $value) {
+  // This is also used in the installer, pre-database setup.
+  $t = get_t();
+  
+  // Add an error class to the .form-item wrapper
+  // Inspired by http://fourkitchens.com/blog/2009/06/10/advanced-drupal-form-theming-take-control-error-styling-form-item-error-class
+  $error = '';
+  $exempt_elements = array('checkbox', 'radio', 'password_confirm');
+  if (dynamo_get_error($element) && !in_array($element['#type'], $exempt_elements)) {
+    $error .= 'form-item-error';
+    $error .= ' form-item-error-'. $element['#type']; // Optional 
+  }
+  
+  //add a more specific form-item-$type and error state
+  $output = "<div class=\"form-item form-item-" . $element['#type'] .' '.$error." \" ";
+  // TODO cant this be dublicated on a page?
+  //and then its not unique
+  if (!empty($element['#id'])) {
+    $output .= ' id="'. $element['#id'] .'-wrapper"';
+  }
+    
+  $output .= ">\n";
+  $required = !empty($element['#required']) ? '<span class="form-required" title="'. $t('This field is required.') .'">*</span>' : '';
+
+  if (!empty($element['#title'])) {
+    $title = $element['#title'];
+    if (!empty($element['#id'])) {
+      $output .= ' <label for="'. $element['#id'] .'">'. $t('!title: !required', array('!title' => filter_xss_admin($title), '!required' => $required)) ."</label>\n";
+    }
+    else {
+      $output .= ' <label>'. $t('!title: !required', array('!title' => filter_xss_admin($title), '!required' => $required)) ."</label>\n";
+    }
+  }
+
+  //TODO test to see if this is clean text - then we might need a <span>
+  //if we need to catch the content with
+  $output .= "$value\n";
+
+  if (!empty($element['#description'])) {
+    $output .= '<div class="form-description">'. $element['#description'] ."</div>\n";
+  }
+
+  $output .= "</div>\n";
+
   return $output;
 }
 
@@ -583,22 +633,6 @@ function dynamo_filefield_icon($file) {
   return $icon;
 }
 
-/**
- * Shortcut function to help with the laborious date_format_date syntax.
- *
- * @param $date
- *   DateTime object.
- * @param $format
- *   Custom time format.
- * @param $langcode
- *   Language for use when formatting. Defaults to Danish.
- * @return
- *   Formatted date string.
- */
-function dynamo_datef($date, $format, $langcode = 'da') {
-  return date_format_date($date, 'custom', $format, $langcode);
-}
-
 function dynamo_checkbox($element) {
   if (!$element['#disabled']) {
     _form_set_class($element, array('checkbox'));
@@ -620,4 +654,52 @@ function dynamo_checkbox($element) {
   else {
     return theme('image', path_to_theme() . '/images/checkbox-blocked.jpg', $element['#title'], $element['#title']);
   }
+}
+
+/**
+ * Overrides default date popup implementation by removing the id attribute
+ * from the parent label. It generates a for="[id]" attribute refering to
+ * a non-existing element. This is invalid XHTML.
+ *  
+ * @see theme_date_popup 
+ */
+function dynamo_date_popup($element) {
+  //Remove the id causing the invalid for attribute to be generated.
+  unset($element['#id']);
+
+  //Run default date popup implementation.
+  return theme_date_popup($element);
+}
+
+
+/**
+ * Variation of form_get_error which will check child elements for some element types.
+ * @see form_get_error
+ */
+function dynamo_get_error($element) {
+  if ($element['#type'] == 'date_popup') {
+  	foreach(element_children($element) as $child) {
+  		if ($errors = form_get_error($element[$child])) {
+  			return $errors;
+  		}
+  	}
+  } else {
+  	return form_get_error($element);
+  }
+}
+
+/**
+ * Shortcut function to help with the laborious date_format_date syntax.
+ *
+ * @param $date
+ *   DateTime object.
+ * @param $format
+ *   Custom time format.
+ * @param $langcode
+ *   Language for use when formatting. Defaults to Danish.
+ * @return
+ *   Formatted date string.
+ */
+function dynamo_datef($date, $format, $langcode = 'da') {
+  return date_format_date($date, 'custom', $format, $langcode);
 }

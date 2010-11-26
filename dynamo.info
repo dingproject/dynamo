@@ -39,6 +39,7 @@ stylesheets[all][]  = style/search.css
 stylesheets[all][]  = style/ting.css
 stylesheets[all][]  = style/user.css
 stylesheets[all][]  = style/developer.css
+stylesheets[print][]  = style/print.css
 
 ;------------------ conditional styles---------------------
 ie stylesheets[if IE 7][all][] = style/ie7.css
