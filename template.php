@@ -54,7 +54,7 @@ function dynamo_preprocess_page(&$vars){
 function dynamo_preprocess_node(&$variables) {
   // Added by mikl, since the classes coming from mothership are broken.
   $variables['classes'] .= ' ding-node';
-  
+
   // FIXME
   // kasperg: This logic does not belong in the theme layer.
   // Consider moving this to a Panels pane and place it on
@@ -564,21 +564,21 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
 
 /**
  * Override mothership form element to add class to wrapper if the
- * form element has triggered a validation error. 
+ * form element has triggered a validation error.
  */
 function dynamo_form_element($element, $value) {
   // This is also used in the installer, pre-database setup.
   $t = get_t();
-  
+
   // Add an error class to the .form-item wrapper
   // Inspired by http://fourkitchens.com/blog/2009/06/10/advanced-drupal-form-theming-take-control-error-styling-form-item-error-class
   $error = '';
   $exempt_elements = array('checkbox', 'radio', 'password_confirm');
   if (dynamo_get_error($element) && !in_array($element['#type'], $exempt_elements)) {
     $error .= 'form-item-error';
-    $error .= ' form-item-error-'. $element['#type']; // Optional 
+    $error .= ' form-item-error-'. $element['#type']; // Optional
   }
-  
+
   //add a more specific form-item-$type and error state
   $output = "<div class=\"form-item form-item-" . $element['#type'] .' '.$error." \" ";
   // TODO cant this be dublicated on a page?
@@ -586,7 +586,7 @@ function dynamo_form_element($element, $value) {
   if (!empty($element['#id'])) {
     $output .= ' id="'. $element['#id'] .'-wrapper"';
   }
-    
+
   $output .= ">\n";
   $required = !empty($element['#required']) ? '<span class="form-required" title="'. $t('This field is required.') .'">*</span>' : '';
 
@@ -614,9 +614,9 @@ function dynamo_form_element($element, $value) {
 }
 
 /**
- * Overrides mothership filefield icon which in versions up to 1.2 
+ * Overrides mothership filefield icon which in versions up to 1.2
  * contains an errorneous " before the alt attribute.
- * 
+ *
  * This causes Drupal search to not index all content after the icon.
  */
 function dynamo_filefield_icon($file) {
@@ -652,7 +652,11 @@ function dynamo_checkbox($element) {
     return theme('form_element', $element, $checkbox);
   }
   else {
-    return theme('image', path_to_theme() . '/images/checkbox-blocked.jpg', $element['#title'], $element['#title']);
+    $alt = '';
+    if (isset($element['#disabled_text'])) {
+      $alt = $element['#disabled_text'];
+    }
+    return theme('image', path_to_theme() . '/images/checkbox-blocked.jpg', $alt, $alt);
   }
 }
 
@@ -660,8 +664,8 @@ function dynamo_checkbox($element) {
  * Overrides default date popup implementation by removing the id attribute
  * from the parent label. It generates a for="[id]" attribute refering to
  * a non-existing element. This is invalid XHTML.
- *  
- * @see theme_date_popup 
+ *
+ * @see theme_date_popup
  */
 function dynamo_date_popup($element) {
   //Remove the id causing the invalid for attribute to be generated.
