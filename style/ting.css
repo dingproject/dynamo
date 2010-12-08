@@ -109,9 +109,14 @@ body.ding-ting-object .pane-recommendation_list, body.ding-ting-collection .pane
 #periodical-issue-list .year ul li {
   clear: left;
   padding: 10px 0;
+  vertical-align: middle;
 }
 
-#periodical-issue-list .year .ding-cart-buttons li {
+#periodical-issue-list .year ul {
+  vertical-align: middle;
+}
+
+#periodical-issue-list .year .buttons li {
   padding: 0 5px;
 }
 
@@ -120,7 +125,7 @@ body.ding-ting-object .pane-recommendation_list, body.ding-ting-collection .pane
 }
 
 #periodical-issue-list .year div.title,
-#periodical-issue-list .ding-cart-buttons{
+#periodical-issue-list .buttons{
   display: inline-block;
   font-weight: normal;
 }
