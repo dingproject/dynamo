@@ -24,7 +24,7 @@
 #ting-object .ting-overview p { color: #646765; }
 #ting-object .ting-overview .creator { color: #878787; margin-bottom: 10px; }
 #ting-object .ting-overview .byline { font-weight: normal; font-style: italic; }
-#ting-object .buttons { clear: both; }
+#ting-object .ting-object-buttons { clear: both; }
 #ting-object .object-information .abstract { padding-bottom: 12px; }
 #ting-object .object-information .title { font-weight: normal; }
 #ting-object .object-information .title:after { content: ":"; }
