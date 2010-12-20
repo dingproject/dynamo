@@ -81,6 +81,7 @@ body.page-user #content-main form{margin:0 0 30px 0;}
 	.pane-ding_library_user_loan_list_form{}
 
 	#ding-library-user-loan-list-form{margin:20px 0;}
+  #ding-library-user-loan-list-form div{position: static;}
 	#ding-library-user-loan-list-form li{list-style-type: none; clear:both;}
 	#ding-library-user-loan-list-form h4{margin:10px 0 0 0;}
 
