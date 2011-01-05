@@ -232,7 +232,7 @@ nav tabs for the events &
 .ding-arrangementer .panel-left ul,
 .ding-ting-collection .panel-left ul .tab-navigation ul
 {
-  width:130px; float:left;  min-height:400px; padding:0 0 0 0px;
+  width:130px; float:left;  min-height:400px; padding:0 0 0 0px; overflow: hidden;
 }
 
 .tab-navigation,
