@@ -647,17 +647,19 @@ function dynamo_checkbox($element) {
     if (!is_null($element['#title'])) {
       $checkbox = '<label class="form-option" for="'. $element['#id'] .'">'. $checkbox .' '. $element['#title'] .'</label>';
     }
-
-    unset($element['#title']);
-    return theme('form_element', $element, $checkbox);
   }
   else {
-    $alt = '';
-    if (isset($element['#disabled_text'])) {
-      $alt = $element['#disabled_text'];
+    $alt = (isset($element['#disabled_text'])) ? $element['#disabled_text'] : '';
+    
+    $checkbox = theme('image', path_to_theme() . '/images/checkbox-blocked.jpg', $alt, $alt);
+    if (!is_null($element['#title'])) {
+      $checkbox = '<span class="form-option form-label">'. $checkbox .' '. $element['#title'] .'</span>';
     }
-    return theme('image', path_to_theme() . '/images/checkbox-blocked.jpg', $alt, $alt);
   }
+  
+  unset($element['#title']);
+  
+  return theme('form_element', $element, $checkbox);
 }
 
 /**

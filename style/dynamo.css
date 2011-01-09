@@ -28,6 +28,8 @@ tr.even a{}
 /*forms and labels*/
 form{clear: both;}
 form div{position:relative }
+form .form-label{ display: block;font-weight: bold; }
+form .form-label img { margin: 0 0.5ex; }
 #search label, #account label{position:absolute; top:0; left:0; color:#000;}
 #account #edit-remember-me-wrapper label {color: #e5e5e5;}
 form div.description{font-size:10px; line-height:12px; color:#999; padding:5px; width:400px;}
