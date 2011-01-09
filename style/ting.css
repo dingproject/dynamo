@@ -26,13 +26,14 @@
   .ting-item .content .picture{float:left; width:85px;}
   .ting-item .content .info{float:left; width:300px;}
 .ting-item .ting-object-buttons {float:left;}
-#ting-collection .ting-item .ting-object-buttons {width:95px;}
-  /*status*/
-  .ting-item .ting-status{display: inline; font-size:10px; text-align:center; line-height:10px; padding:3px 25px; margin:10px 0 0 0; background-color: #eee; }
-    .ting-item .ting-status.waiting,
-		#content .ting-object-buttons a.disabled {color: #777; cursor:default; text-decoration:none !important;}
-    .ting-item .ting-status.available {background-color: #71bf44;  color: white;}
-    .ting-item .ting-status.unavailable{  background-color: #6B0046;  color: white;}
+
+/*status*/
+.ting-item .ting-status{display: inline; font-size:10px; text-align:center; line-height:10px; padding:3px 25px; margin:10px 0 0 0; background-color: #eee; }
+  .ting-item .ting-status.waiting,
+#content .ting-object-buttons a.disabled {color: #777; cursor:default; text-decoration:none !important;}
+.ting-item .ting-status.available {background-color: #71bf44;  color: white;}
+.ting-item .ting-status.unavailable{  background-color: #6B0046;  color: white;}
+
 
 /* ui.tabs reset */
 .tab-navigation.ui-tabs-nav {
@@ -92,6 +93,8 @@
 .ting-item ul.buttons li.add-to-cart a:hover,
 .ting-item ul.buttons li.view-online a:hover,
 .button-green a:focus{color:#008000;background-position: left -210px;}
+
+#ting-collection .ting-item .ting-object-buttons {width:95px;}
 
 /*
   recommendations - others did loan ...
