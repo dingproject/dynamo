@@ -34,6 +34,7 @@
 .ting-item .ting-status.available {background-color: #71bf44;  color: white;}
 .ting-item .ting-status.unavailable{  background-color: #6B0046;  color: white;}
 
+#ting-collection .ting-status {line-height:29px;}
 
 /* ui.tabs reset */
 .tab-navigation.ui-tabs-nav {
