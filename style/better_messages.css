@@ -6,8 +6,8 @@
  */
 
 #better-messages-dynamo {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
@@ -23,31 +23,31 @@
 #better-messages-dynamo #messages-inner { padding: 10px; }
 
 #better-messages-dynamo .messages-label {
-	color: white;
-	font-size: 16px;
-	font-weight: bold;
-	line-height: 15px;
-	margin-bottom: 3px;
-	padding: 5px 10px;
-	text-transform:uppercase;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 15px;
+  margin-bottom: 3px;
+  padding: 5px 10px;
+  text-transform:uppercase;
 }
 
 #better-messages-dynamo .body {
-	background-color: white;
+  background-color: white;
   color: #444;
-	padding:5px;
+  padding:5px;
 }
 #better-messages-dynamo .footer {
-	border-top:1px solid #ddd;
-	margin-top:10px;
-	padding-top:5px;
-	text-align:right;
+  border-top:1px solid #ddd;
+  margin-top:10px;
+  padding-top:5px;
+  text-align:right;
 }
 
-#better-messages-dynamo a.message-close { 
+#better-messages-dynamo a.message-close {
   color: white;
-	display: block;
-	float: right;
+  display: block;
+  float: right;
   font-size: 16px;
   font-weight: bold;
 }
