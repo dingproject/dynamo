@@ -10,6 +10,11 @@ jQuery(function($) {
     $('#drupal-messages').slideUp();
   });
 
+  // Hide the standard message container if Better Messages is in action.
+  if (Drupal.settings.betterMessages) {
+    $('#drupal-messages').hide();
+  }
+
   // In-field labels for the login form.
   $("#pageheader label").inFieldLabels({
     fadeOpacity:"0.2",

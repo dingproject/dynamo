@@ -38,6 +38,7 @@ stylesheets[all][]  = style/biblo.css
 stylesheets[all][]  = style/search.css
 stylesheets[all][]  = style/ting.css
 stylesheets[all][]  = style/user.css
+stylesheets[all][]  = style/better_messages.css
 stylesheets[all][]  = style/developer.css
 stylesheets[print][]  = style/print.css
 

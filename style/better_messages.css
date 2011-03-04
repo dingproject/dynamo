@@ -1,0 +1,84 @@
+/**
+ * @file
+ * Copy of better_messages.css from the better_messages module.
+ *
+ * Provides our own theme for it.
+ */
+
+#better-messages-dynamo {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow:rgba(0,0,0,0.3) 0 5px 5px 0;
+  -webkit-box-shadow:rgba(0,0,0,0.3) 0 5px 5px 0;
+  -o-box-shadow:rgba(0,0,0,0.3) 0 5px 5px 0;
+  box-shadow:rgba(0,0,0,0.3) 0 5px 5px 0;
+}
+
+#better-messages-dynamo #messages-inner { padding: 10px; }
+
+#better-messages-dynamo .messages-label {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 15px;
+	margin-bottom: 3px;
+	padding: 5px 10px;
+	text-transform:uppercase;
+}
+
+#better-messages-dynamo .body {
+	background-color: white;
+  color: #444;
+	padding:5px;
+}
+#better-messages-dynamo .footer {
+	border-top:1px solid #ddd;
+	margin-top:10px;
+	padding-top:5px;
+	text-align:right;
+}
+
+#better-messages-dynamo a.message-close { 
+  color: white;
+	display: block;
+	float: right;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#better-messages-dynamo a.message-close:hover { text-decoration: underline; }
+
+#better-messages-dynamo span.message-timer {
+  float:left;
+  line-height:22px;
+}
+
+#better-messages-dynamo .messages {
+  padding:10px;
+  margin-bottom:5px;
+  overflow:auto;
+  max-height:400px;
+}
+
+#better-messages-dynamo div.status {
+  border:1px solid #77DD77;
+}
+
+#better-messages-dynamo div.error {
+  border:1px solid #DD7777;
+}
+
+#better-messages-dynamo div.warning {
+  border:1px solid #F0C020;
+}
+
+h2.error {background-color:#DD7777;}
+h2.warning {background-color:#F0C020;}
+h2.status {background-color:#77DD77;}
+
