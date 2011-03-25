@@ -174,3 +174,6 @@ body.ding-ting-object .pane-recommendation_list, body.ding-ting-collection .pane
 #periodical-issue-list a {
     color: #9CB333;
 }
+#periodical-issue-list .buttons a {
+    color: #fff;
+}
