@@ -1,4 +1,4 @@
-<?php 
+<?php
 // $Id$
 
 /**
@@ -17,27 +17,27 @@ $price = ($fields['field_entry_price_value']->raw < 1) ? t('Free') : intval($fie
   </div>
 
   <div class="info">
-  
-		<h2><?php print $fields['title']->content; ?></h2>
 
-		<div class="meta">
-      <?php print date_format_date($start, 'short'); ?>
-		  <span class="library-tag"><?php print $fields['field_library_ref_nid']->content; ?></span>, 
-		  <span class="price"><?php print $price; ?></span>
-		</div>    
-    
-		<p> 
-		 <?php 
-	 			if ($fields['field_teaser_value']->content) {
-					print $fields['field_teaser_value']->content; 
+    <h2><?php print $fields['title']->content; ?></h2>
+
+    <div class="meta">
+      <?php print $fields['field_datetime_value']->content; ?>
+      <span class="library-tag"><?php print $fields['field_library_ref_nid']->content; ?></span>,
+      <span class="price"><?php print $price; ?></span>
+    </div>
+
+    <p>
+     <?php
+        if ($fields['field_teaser_value']->content) {
+          print $fields['field_teaser_value']->content;
         }
         else {
-					print $fields['body']->content;       
-	 			}
- 			?>
-		</p> 
-		
-    <?php print $fields['edit_node']->content; ?>  
+          print $fields['body']->content;
+        }
+      ?>
+    </p>
+
+    <?php print $fields['edit_node']->content; ?>
   </div>
 </div>
 
