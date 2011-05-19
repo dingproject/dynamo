@@ -109,7 +109,7 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
   .library-info .library-map-inner{width:194px; height:140px; background:#eee;}
 
 /*opening hours*/
-  .pane-library_hours .office-hours-week .even, .pane-library_hours .office-hours-week .odd{width:190px; padding:0 10px; margin:0 10px;}
+  .pane-library_hours .office-hours-week .even, .pane-library_hours .office-hours-week .odd{padding:0 10px; margin:0 10px;}
   .pane-library_hours .office-hours-week .week-info{margin:0 0 0 20px;}
   .week-info a.prev{ color:#757575;}
   .week-info a.next{color:#757575;}
