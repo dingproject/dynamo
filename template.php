@@ -62,6 +62,30 @@ function dynamo_preprocess_node(&$variables) {
   if (count($similar_nodes)) {
     $variables['similarterms'] = theme('similarterms', variable_get('similarterms_display_options', 'title_only'), $similar_nodes);
   }
+
+  // Variables for node-campaign.tpl.php
+  if ($variables['type'] == 'campaign') {
+    $node = $variables['node'];
+
+    if ($node->campaign_type == "image-only") {
+      // Render the image as a link to the campaign destination.
+      $variables['campaign_image'] = l($node->field_campaign_image['0']['view'], $node->field_campaign_link['0']['url'], $options = array(
+        'html'=>TRUE,
+        'query' => $node->field_campaign_link['0']['query'],
+      ));
+    }
+    elseif ($node->campaign_type == "text-only") {
+      // Render the text as a link to the campaign destination.
+      $variables['campaign_text'] = l(filter_xss($node->content['body']['#value']),  $node->field_campaign_link['0']['url'], $options = array(
+        'html'=>TRUE,
+        'query' => $node->field_campaign_link['0']['query'],
+      ));
+    }
+    else {
+      // Just expose the main body field as a variable.
+      $variables['body'] = $node->content['body']['#value'];
+    }
+  }
 }
 
 /**
@@ -708,3 +732,4 @@ function dynamo_get_error($element) {
 function dynamo_datef($date, $format, $langcode = 'da') {
   return date_format_date($date, 'custom', $format, $langcode);
 }
+
