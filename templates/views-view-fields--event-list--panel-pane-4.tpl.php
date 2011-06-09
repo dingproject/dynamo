@@ -1,5 +1,4 @@
 <?php
-// $Id$
 
 // Prepare a couple of variables.
 $start = date_make_date($fields['field_datetime_value']->raw);

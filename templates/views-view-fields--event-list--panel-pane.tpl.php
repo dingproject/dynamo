@@ -1,5 +1,4 @@
 <?php
-// $Id$
 
 /**
  * Template to render a row from the event_list view.

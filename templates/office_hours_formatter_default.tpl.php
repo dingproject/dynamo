@@ -1,4 +1,4 @@
-<?php // $Id$
+<?php
 /**
  * Template for the default format of office hours.
  *

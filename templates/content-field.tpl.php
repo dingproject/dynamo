@@ -1,5 +1,4 @@
 <?php
-// $Id: content-field.tpl.php,v 1.1.2.5 2008/11/03 12:46:27 yched Exp $
 
 /**
  * @file content-field.tpl.php
