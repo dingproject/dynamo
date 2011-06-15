@@ -670,9 +670,7 @@ function dynamo_checkbox($element) {
  * @see theme_date_popup
  */
 function dynamo_date_popup($element) {
-  //Remove the id causing the invalid for attribute to be generated.
-  unset($element['#id']);
-
+  $element['#id']=$element['date']['#id'];
   //Run default date popup implementation.
   return theme_date_popup($element);
 }
