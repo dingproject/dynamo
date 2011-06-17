@@ -212,7 +212,7 @@ body.ding-status      .panel-twocol-left-stacked .panel-left{width:695px;}
 
 /*panel-threecol-left-stacked-right*/
 .panel-threecol-left-stacked-right .content-left{width:680px; margin:0 15px 0 0;}
-.panel-threecol-left-stacked-right .panel-left{width:220px; float:left;}
+.panel-threecol-left-stacked-right .panel-left{width:210px; float:left;}
 .panel-threecol-left-stacked-right .panel-middle{width:470px; float:left;}
 
 body.ding-arrangementer .panel-threecol-left-stacked-right .panel-left{width:130px;}
