@@ -43,14 +43,14 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
       border-bottom: 1px solid white;
       border-left: 1px solid white;
       color: white;
+      float: right;
       padding: 0 5px;
       position: absolute;
       right: 0;
       top: 0;
-      width: 40px;
     }
-    .node-teaser-library .picture .open{background:#71bf44; width:30px;}
-    .node-teaser-library .picture .closed{background:#6b0046;  width:44px;}
+    .node-teaser-library .picture .open{background:#71bf44;}
+    .node-teaser-library .picture .closed{background:#6b0046;}
 
   /*adresse*/
   .node-teaser-library .vcard div{clear:both;}
