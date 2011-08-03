@@ -34,10 +34,23 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
   li.first .node-teaser-library{background: none; padding:10px 0}
     .node-teaser-library .content h3{padding:0 0 5px 0;}
     .node-teaser-library .content .link-card{padding:0 0 3px 0;}
-    /*lib status*/
-    .node-teaser-library .content .library-openstatus{padding:0 5px; color:#fff; width:40px;}
-    .node-teaser-library .content .open{background:#71bf44; width:30px;}
-    .node-teaser-library .content .closed{background:#6b0046;  width:44px}
+
+  /** Library open status on top of picture **/
+  .node-teaser-library .picture {
+    position: relative;
+  }
+    .node-teaser-library .picture .library-openstatus{
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      color: white;
+      padding: 0 5px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40px;
+    }
+    .node-teaser-library .picture .open{background:#71bf44; width:30px;}
+    .node-teaser-library .picture .closed{background:#6b0046;  width:44px;}
 
   /*adresse*/
   .node-teaser-library .vcard div{clear:both;}
