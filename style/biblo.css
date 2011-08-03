@@ -50,7 +50,7 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
       top: 0;
     }
     .node-teaser-library .picture .open{background:#71bf44;}
-    .node-teaser-library .picture .closed{background:#6b0046;}
+    .node-teaser-library .picture .closed{display: none;}
 
   /*adresse*/
   .node-teaser-library .vcard div{clear:both;}
