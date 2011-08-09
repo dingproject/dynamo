@@ -4,7 +4,8 @@
  * Template to render library nodes.
  */
 
-if ($page == 0) { ?>
+// Teaser view.
+if ($page == 0): ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
@@ -28,21 +29,24 @@ if ($page == 0) { ?>
         <a class="view-on-map-link" href="/biblioteker?lat=<?php echo $node->location['latitude'] ?>&lon=<?php echo $node->location['longitude'] ?>" id="biblo-<?php print $node->nid ?>">Se på kort</a>
       </div>
 
-      <?php if($node->location['phone']){ ?>
+      <?php if ($node->location['phone']): ?>
       <div class="tel">
         <span class="type"><?php print t('Phone'); ?>:</span> <span><?php print $node->location['phone']; ?></span>
       </div>
-      <?php } ?>
-      <?php if($node->location['fax']){ ?>
+      <?php endif; ?>
+
+      <?php if ($node->location['fax']): ?>
       <div class="tel">
         <span class="type"><?php print t('Fax'); ?>:</span> <span><?php print $node->location['fax']; ?></span>
       </div>
-      <?php } ?>
-      <?php if($node->field_email['0']['view']){ ?>
+      <?php endif; ?>
+
+      <?php if ($node->field_email['0']['view']): ?>
       <div class="email">
         <span class="type"><?php print t('E-mail'); ?>:</span> <span><?php print $node->field_email['0']['view']; ?></span>
       </div>
-      <?php } ?>
+      <?php endif; ?>
+
       <div class="geo">
       	<?php print t('Position'); ?>:
       	<span class="latitude"><?php echo $node->location['latitude'] ?></span>, 
@@ -55,7 +59,7 @@ if ($page == 0) { ?>
   <?php print $node->field_opening_hours['0']['view'];?>
 </div>
 
-<?php }else{ 
+<?php else: 
 //Content
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
@@ -63,11 +67,11 @@ if ($page == 0) { ?>
 	<h1><?php print $title;?></h1>
 		
 	<div class="meta">
-  	<?php if ($picture) { ;?>
+  	<?php if ($picture): ;?>
 			<span class="author-picture">
 		  		<?php print $picture; ?>  
 			</span>
-		<?php } ?>
+		<?php endif; ?>
 
 
 		<span class="time">
@@ -79,20 +83,20 @@ if ($page == 0) { ?>
 
 
 
-		<?php if (count($taxonomy)){ ?>
+		<?php if (count($taxonomy)): ?>
 		  <div class="taxanomy">
 	   	  <?php print $terms ?> 
 		  </div>  
-		<?php } ?>
+		<?php endif; ?>
 	</div>
 
 	<div class="content">
 		<?php print $content ?>
 	</div>
 		
-	<?php if ($links){ ?>
-    <?php  print $links; ?>
-	<?php } ?>
+	<?php if ($links): ?>
+    <?php print $links; ?>
+	<?php endif; ?>
 </div>
-<?php } ?>
+<?php endif; ?>
 
