@@ -31,6 +31,8 @@ ul.search-results li{display:none;}
 .panel-threecol-33-34-33-stacked .panel-right {width:229px; overflow:hidden;}
 .ting-search-carousel{position:relative; left:0px;}
 
+/** Layout bug on library map **/
+.panel-left .view {position: static;}
 
 /* ___________ IE6 IFRAME FIX ________ */
 .ui-datepicker-cover {
