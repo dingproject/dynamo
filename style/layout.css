@@ -54,10 +54,14 @@ body.admin{background-position: 0 30px }
 	#user-login-form label{margin:1px 0 0 5px;}
 
   /* prefix #user-login-form as these fields are used in other forms */
-	#user-login-form #edit-name-wrapper{width:215px;}
-	  #user-login-form #edit-name-wrapper input{width:215px;}
-	#user-login-form #edit-pass-wrapper{width:155px; float:left;}
-		#user-login-form #edit-pass-wrapper input{width:155px;}
+	#user-login-form #edit-name-wrapper,
+  #user-login-form #edit-name-1-wrapper {width:215px;}
+    #user-login-form #edit-name-wrapper input,
+   #user-login-form #edit-name-1-wrapper input{width:215px;}
+	#user-login-form #edit-pass-wrapper,
+  #user-login-form #edit-pass-1-wrapper{width:155px; float:left;}
+    #user-login-form #edit-pass-wrapper input,
+    #user-login-form #edit-pass-1-wrapper input{width:155px;}
 	#edit-remember-me-wrapper{width:155px; float:left;}
 		#edit-remember-me-wrapper label{color:#fff; margin:0;}
 	#user-login-form .form-image-button{width:60px;height:20px; padding:0; margin:0px 0 0 8px; display:block; float:left;overflow:hidden;}
