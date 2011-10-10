@@ -26,7 +26,7 @@ if ($page == 0): ?>
       </div>
 
       <div class="link-card">
-        <a class="view-on-map-link" href="/biblioteker?lat=<?php echo $node->location['latitude'] ?>&lon=<?php echo $node->location['longitude'] ?>" id="biblo-<?php print $node->nid ?>">Se på kort</a>
+        <a class="view-on-map-link" href="/biblioteker?lat=<?php echo $node->location['latitude'] ?>&amp;lon=<?php echo $node->location['longitude'] ?>" id="biblo-<?php print $node->nid ?>">Se på kort</a>
       </div>
 
       <?php if ($node->location['phone']): ?>
