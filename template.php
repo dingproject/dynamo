@@ -428,8 +428,11 @@ function format_danmarc2($string){
  * @param string $url
  * @return string
  */
-function dynamo_feed_icon($url) {
-  if ($image = theme('image', drupal_get_path('theme', 'dynamo').'/images/feed.png', t('RSS feed'), t('RSS feed'))) {
+function dynamo_feed_icon($url,$title='') {
+  if(!isset($title)) {
+    $title=t('RSS feed');
+  }
+  if ($image = theme('image', drupal_get_path('theme', 'dynamo').'/images/feed.png', $title, $title)) {
     // Transform view expose query string in to drupal style arguments -- ?library=1 <-> /1
     if ($pos = strpos($url, '?')) {
       $base = substr($url, 0, $pos);
@@ -448,7 +451,7 @@ function dynamo_feed_icon($url) {
       }
       $url = $base.$parm;
     }
-    return '<a href="'. check_url($url) .'" class="feed-icon">'. $image .'<span>'. t('RSS') .'</span></a>';
+   return l($image .'<span>'. t('RSS') .'</span>',$url,array('html'=>true,'attributes'=>array('class'=>'feed-icon','title'=>$title)));
   }
 }
 
@@ -693,9 +696,7 @@ function dynamo_checkbox($element) {
  * @see theme_date_popup
  */
 function dynamo_date_popup($element) {
-  //Remove the id causing the invalid for attribute to be generated.
-  unset($element['#id']);
-
+  $element['#id']=$element['date']['#id'];
   //Run default date popup implementation.
   return theme_date_popup($element);
 }
