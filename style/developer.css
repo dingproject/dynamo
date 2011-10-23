@@ -28,8 +28,6 @@
 #ting-object .object-information .abstract { padding-bottom: 12px; }
 #ting-object .object-information .title { font-weight: normal; }
 #ting-object .object-information .title:after { content: ":"; }
-#ting-object .object-information .item-list { border-top: 0; padding: 0; }
-#ting-object .object-information .item-list span { display: block; }
 
 /* christian: show ting objects and collections on blog items etc. */
 .field-ting-refs{ padding:20px 0 0 0px; width: 650px;}
@@ -64,8 +62,6 @@ ul.field-ting-refs li { clear:both; margin:0 0 20px 0; padding:10px 0 10px 10px;
 #ting-search-summary, #content-search-summary { color: #666; margin-top: 20px; font-size: 11px; font-family: verdana; margin-left: 5px; }
 #ting-search-summary span, #content-search-summary span { font-weight: bold; }
 
-
-a.alternative:link, a.alternative:visited { color: #000; }
 /*.more-link { background: transparent url(../images/pil.png) no-repeat scroll right center; padding:0 12px 0 0; } "remove", morten said */
 
 /* mikl: A few tweaks for the search results page */
