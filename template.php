@@ -573,7 +573,7 @@ function dynamo_table($header, $rows, $attributes = array(), $caption = NULL) {
         if (is_array($attributes['class'])) {
           array_push($attributes['class'], $class);
         } else {
-        	$attributes['class'] .= ' '.$class;
+          $attributes['class'] .= ' '.$class;
         }
 
         // Build row
@@ -681,15 +681,15 @@ function dynamo_checkbox($element) {
   }
   else {
     $alt = (isset($element['#disabled_text'])) ? $element['#disabled_text'] : '';
-    
+
     $checkbox = theme('image', path_to_theme() . '/images/checkbox-blocked.jpg', $alt, $alt);
     if (!is_null($element['#title'])) {
       $checkbox = '<span class="form-option form-label">'. $checkbox .' '. $element['#title'] .'</span>';
     }
   }
-  
+
   unset($element['#title']);
-  
+
   return theme('form_element', $element, $checkbox);
 }
 
@@ -713,13 +713,13 @@ function dynamo_date_popup($element) {
  */
 function dynamo_get_error($element) {
   if ($element['#type'] == 'date_popup') {
-  	foreach(element_children($element) as $child) {
-  		if ($errors = form_get_error($element[$child])) {
-  			return $errors;
-  		}
-  	}
+    foreach(element_children($element) as $child) {
+      if ($errors = form_get_error($element[$child])) {
+        return $errors;
+      }
+    }
   } else {
-  	return form_get_error($element);
+    return form_get_error($element);
   }
 }
 
