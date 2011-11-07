@@ -451,7 +451,12 @@ function dynamo_feed_icon($url,$title='') {
       }
       $url = $base.$parm;
     }
-   return l($image .'<span>'. t('RSS') .'</span>',$url,array('html'=>true,'attributes'=>array('class'=>'feed-icon','title'=>$title)));
+    // Use plain HTML here just like in theme_feed_icon().
+    // We already have a working url. If we use l() it will be converted twice.
+    return '<a href="' . check_url($url) . '" title="' . $title . '" class="feed-icon">' .
+             $image .
+             '<span>'. t('RSS') .'</span>' .
+           '</a>';
   }
 }
 
