@@ -1,5 +1,9 @@
-<!-- views-view-fields article-list.tpl.php -->
-
+<?php
+/**
+ * @file
+ * Template to render blog teasers on the tema site page.
+ */
+?>
 <div class="node-teaser clearfix">
   
   <div class="picture">
@@ -49,3 +53,4 @@
     <?php } ?>
   </div>
 </div>
+

@@ -1,6 +1,9 @@
-<!-- views-view-fields tema-overview.tpl.php -->
-
-
+<?php
+/**
+ * @file
+ * Template to render tema site teasers on the overview page.
+ */
+?>
 <div class="clearfix">
   <div class="picture">
     <?php if ($fields['field_list_image_fid']->content) {
@@ -23,3 +26,4 @@
     } ?>
   </div>
 </div>
+

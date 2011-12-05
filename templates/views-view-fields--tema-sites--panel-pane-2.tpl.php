@@ -1,5 +1,9 @@
-<!-- views-view-fields panel-pane -->
-<?php 
+<?php
+/**
+ * @file
+ * Template to render events on the tema site page.
+ */
+
   // Prepare a couple of variables.
   $start = date_make_date($fields['field_datetime_value']->raw);
   $price = ($fields['field_entry_price_value']->raw < 1) ? t('Free') : intval($fields['field_entry_price_value']->raw) . ' kr.';
@@ -29,3 +33,4 @@
   </div>
 
 </div>  
+
