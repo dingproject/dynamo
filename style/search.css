@@ -102,11 +102,12 @@
 .object-otherversions {background:transparent url(../images/bg-divider.png) no-repeat left top; margin:20px 0 0 0; padding:5px 0 0 0;}
 
 .ting-details { font-size:10px; }
-  .ting-details .title { width:80px; display:block; float:left; clear: left; font-weight: normal; }
-    .ting-details .ting-properties > * { clear: both; }
+  .ting-details .title { width:80px; display:block; float:left; font-weight: normal; }
+  .ting-details .item-list{ }
     .ting-details .ting-properties .item-list { display:block; clear:none; border:none; padding: 0 0 2px;}
     .ting-details .ting-properties .item-list .item-list { margin-left: 85px; }
-    .ting-details .item-list span { display: block; }
+    .ting-details .ting-properties .item-list span { display: block; }
+    .ting-details .ting-properties .item-list span a { display: inline; }
     .ting-details .ting-subjects .item-list .item-list span { display: inline; margin-right: 10px; }
-    .ting-details .ting-subjects .item-list a { display: inline; }  
+    .ting-details .ting-subjects .item-list a { display: inline; }
 
