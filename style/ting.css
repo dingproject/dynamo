@@ -6,8 +6,7 @@
 #ting-collection .ting-overview p { color: #646765; } /* default text color, morten?! */
 #ting-collection .ting-overview .creator { color: #878787; margin-bottom: 10px; }
 #ting-collection .ting-overview .byline { font-weight: normal; font-style: italic; }
-#ting-collection .ting-overview .terms .title { font-weight: normal; }
-#ting-collection .ting-overview .terms { font-size: 11px; color: #878787;}
+#ting-collection .ting-overview .ting-details { font-size: 11px; color: #878787;}
 #ting-collection .ting-overview .material-links { font-size: 11px; background-color: #E7ECEB; padding: 10px; margin-top: 15px; }
 #ting-collection .ting-overview .material-links .title { display: block; font-weight: bold; color: #000; }
 #ting-collection .ting-item .picture{float:left; margin:0 10px 10px 0;}
@@ -25,6 +24,9 @@
 .ting-item .content{width:410px;float:left;}
   .ting-item .content .picture{float:left; width:85px;}
   .ting-item .content .info{float:left; width:300px;}
+  .ting-item .content .ting-creators{color: #000;}
+.ting-item .ting-overview .label { font-weight: bold; }
+.ting-item .ting-overview a { display: auto; }
 .ting-item .ting-object-buttons {float:left;}
 
 /*status*/
