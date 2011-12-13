@@ -101,9 +101,8 @@
   .object-information .additional-details { margin: 10px 0; }
 .object-otherversions {background:transparent url(../images/bg-divider.png) no-repeat left top; margin:20px 0 0 0; padding:5px 0 0 0;}
 
-.ting-details { clear:both; font-size:10px; }
+.ting-details { font-size:10px; }
   .ting-details .title { width:80px; display:block; float:left; clear: left; font-weight: normal; }
-  .ting-details .item-list{ clear: both; }
     .ting-details .ting-properties > * { clear: both; }
     .ting-details .ting-properties .item-list { display:block; clear:none; border:none; padding: 0 0 2px;}
     .ting-details .ting-properties .item-list .item-list { margin-left: 85px; }
