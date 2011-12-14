@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Template to render events on the tema site page.
+ * Template to render event teasers on the tema site page.
  */
 
   // Prepare a couple of variables.
