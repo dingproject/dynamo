@@ -243,11 +243,9 @@ nav tabs for the events &
   background:transparent url(../images/bg-tab-navigation-right.png) no-repeat right top;
 }
 
-.tab-navigation ul.item-list li,
+.tab-navigation > ul.item-list li,
 .page-arrangementer .panel-left ul li,
-.ding-arrangementer .panel-left ul li,
-.ding-ting-collection .panel-left ul li,
-.tab-navigation ul li
+.ding-arrangementer .panel-left ul li
 {
   width:115px;padding:3px 4px 6px 10px; margin:0 0 4px 0; font-size:9px; line-height:13px;text-transform: uppercase;  background:#fff url(../images/bg-tab.gif) repeat-y scroll top right; 	border: 1px solid #d1d9d7; 	border-right: 0px solid #d1d9d7;
 }
