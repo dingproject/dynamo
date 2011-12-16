@@ -158,6 +158,9 @@ function dynamo_panels_pane($content, $pane, $display) {
     $output = "<div class=\"panel-pane pane-$pane->subtype $classstr \"$idstr>\n";
 
     if (!empty($content->title)) {
+      // Support translation of panel panes.
+      // Inspired by http://drupal.org/node/568740#comment-3479074.
+      $content->title = t($content->title);
 
       if($pane->subtype == "event_list-panel_pane_1"  OR $pane->subtype == "recommendation_list"){
         $output .= "<h1>$content->title</h1>\n";
