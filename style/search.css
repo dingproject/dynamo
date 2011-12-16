@@ -51,11 +51,8 @@
 		#ting-search-result .types li,.types li{background-color:#eee; color:#aaa;}
 		#ting-search-result .types li.available,.types li.available{background-color:#71bf44; color:#fff;}
 		#ting-search-result .types li.out,.types li.out{background-color: #f85f26; color:#fff;}
-		#ting-search-result .types li.reserved,ul.types li.reserved{ background-color: #560036; /*#bc0028*/ color:#fff;}	
-		
-		#ting-search-result .subjects li{clear:none; display:inline; float:left; margin:0 10px 0 0; padding:0; background:none; }
-		#ting-search-result .subjects h4{float: left; margin: 0 10px 0 0; font-size: 10px; color:#bbb;}
-		#ting-search-result .subjects li{display:inline; font-size: 10px; color:#bbb;}
+		#ting-search-result .types li.reserved,ul.types li.reserved{ background-color: #560036; /*#bc0028*/ color:#fff;}
+		#ting-search-result .ting-details {color:#bbb;}
 
 #content-result .taxonomy ul li{float:left; background:none; padding:0 10px 0 0;}
 #content-result .taxonomy ul {display:block;}
@@ -98,11 +95,19 @@
 .ting-overview .right-column{width:310px;}
 
 .object-information{width:490px; padding:10px; margin:20px 0; clear:both; background:#e8eceb; font-size:10px; color:#050505;}
-	.object-information	.item-list{clear:both; border-top: 1px solid #CCCECE; padding:10px 0 20px 0;}
-		.object-information .title{width:80px; display:block; float:left; font-weight: bold;}
+	.object-information	.item-list{clear:both;}
 		.object-information span.item-list{width:300px; display:block; float:left; clear:none; border:none; padding:0;}
-	.object-information h3{width:100px; display:block; float:left; font-weight: normal;}
-	.object-information .subject span{display:block;}
+  .object-information h3{width:100px; display:block; float:left; font-weight: normal;}
+  .object-information .additional-details { margin: 10px 0; }
 .object-otherversions {background:transparent url(../images/bg-divider.png) no-repeat left top; margin:20px 0 0 0; padding:5px 0 0 0;}
 
+.ting-details { font-size:10px; }
+  .ting-details .title { width:80px; display:block; float:left; font-weight: normal; }
+  .ting-details .item-list{ }
+    .ting-details .ting-properties .item-list { display:block; clear:none; border:none; padding: 0 0 2px;}
+    .ting-details .ting-properties .item-list .item-list { margin-left: 85px; }
+    .ting-details .ting-properties .item-list span { display: block; }
+    .ting-details .ting-properties .item-list span a { display: inline; }
+    .ting-details .ting-subjects .item-list .item-list span { display: inline; margin-right: 10px; }
+    .ting-details .ting-subjects .item-list a { display: inline; }
 
