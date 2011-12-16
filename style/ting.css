@@ -179,3 +179,9 @@ body.ding-ting-object .pane-recommendation_list, body.ding-ting-collection .pane
 #periodical-issue-list .buttons a {
     color: #fff;
 }
+
+/*
+  References - content refering a
+  ting object.
+------------------------------------*/
+#reference .node .content { width: 370px; }
