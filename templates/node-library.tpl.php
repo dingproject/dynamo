@@ -52,10 +52,11 @@ if ($page == 0): ?>
 
   </div>
   
+  <?php echo $opening_hours; ?>
 </div>
 
 <?php else: 
-//Content
+// Full node view.
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 

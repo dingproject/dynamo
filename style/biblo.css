@@ -29,7 +29,7 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
 .ding-library-map {width:680px;}
 .view-library-list .node-teaser-library{width:680px;}
 .view-library-list .node-teaser-library .picture{width:120px; height:120px; margin:0 20px 0 0; float:left; background:#eee;}
-.view-library-list .node-teaser-library .content{width:360px; margin:0 5px 0 0; float:left;}
+.view-library-list .node-teaser-library .content{width:340px; margin:0 5px 0 0; float:left;}
 
   li.first .node-teaser-library{background: none; padding:10px 0}
     .node-teaser-library .content h3{padding:0 0 5px 0;}
@@ -56,6 +56,19 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
   .node-teaser-library .vcard div{clear:both;}
   .node-teaser-library .vcard  span.type{width:60px; display:block; float:left;}
   .node-teaser-library .vcard .geo{display:none;}
+
+  /* Opening hours */
+  .node-teaser-library .opening-hours-week {
+    clear: right;
+    float: right;
+    font-size: 11px;
+    padding: 0;
+    width: 180px;
+  }
+
+  .node-teaser-library .opening-hours-week .header {
+    font-size: 10px;
+  }
 
 /*calender pane*/
 #event-list .panel-pane{margin:0 5px;}
