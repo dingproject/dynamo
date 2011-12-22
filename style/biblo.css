@@ -57,20 +57,6 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
   .node-teaser-library .vcard  span.type{width:60px; display:block; float:left;}
   .node-teaser-library .vcard .geo{display:none;}
 
-  /*opening hours*/
-  .office-hours-week .hours {clear: right; float: right;}
-  .node-teaser-library .office-hours-week{width:175px; float:left;}
-    .node-teaser-library .office-hours-week .week-info{background:#d1d9d7}
-    .node-teaser-library .office-hours-week .odd, .node-teaser-library .office-hours-week .even{padding:0 5px;}
-    .node-teaser-library .office-hours-week .day{width:70px; display:block; float:left; }
-    .node-teaser-library .office-hours-week .week-info strong{margin:0 5px; font-weight:normal; }
-    .node-teaser-library .office-hours-week .week-info{padding:0 0 0 5px; font-size:10px;}
-    .node-teaser-library .office-hours-week .week-info a.prev{margin:0; font-weight:bold;}
-    .node-teaser-library .office-hours-week .week-info a.prev{width:15px; height:20px;}
-    .node-teaser-library .office-hours-week .week-info a.next{width:15px; height:20px;}
-  /*opening hours lib page*/
-  .pane-library_hours .office-hours-week .day{width:100px; display:block; float:left; }
-
 /*calender pane*/
 #event-list .panel-pane{margin:0 5px;}
   #event-list h3{background:#d1d9d7; padding:0px 10px;margin:0 0 0 10px; font-size:12px; text-transform: uppercase;  }
@@ -120,14 +106,6 @@ body.ding-ting-object .panel-pane .node-teaser .content{width:370px; }
   .library-info .links{padding: 0 15px;}
   .library-info .library-map{width:228px; padding:15px 15px 10px 15px; overflow:hidden; background:transparent url(../images/sprite-box.png) no-repeat -700px bottom;}
   .library-info .library-map-inner{width:194px; height:140px; background:#eee;}
-
-/*opening hours*/
-  .pane-library_hours .office-hours-week .even, .pane-library_hours .office-hours-week .odd{padding:0 10px; margin:0 10px;}
-  .pane-library_hours .office-hours-week .week-info{margin:0 0 0 20px;}
-  .week-info a.prev{ color:#757575;}
-  .week-info a.next{color:#757575;}
-  .office-hours-week .odd{background:#f3f5f5;}
-  .office-hours-week .even{background:#fff;}
 
   /* biblo external links*/
   .pane-library_location ul.links {margin:10px 0 0 0;}
