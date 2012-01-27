@@ -86,6 +86,9 @@ function dynamo_preprocess_node(&$variables) {
       $variables['body'] = $node->content['body']['#value'];
     }
   }
+  elseif ($variables['type'] == 'library' && function_exists('opening_hours_theme')) {
+    $variables['opening_hours'] = theme('opening_hours_week', $variables['node']);
+  }
 }
 
 /**
