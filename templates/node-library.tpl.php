@@ -9,14 +9,15 @@ if ($page == 0): ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
-  <div class="picture"><?php print $field_list_image[0]['view']; ?></div>
-
-  <div class="content">
-  
+  <div class="picture">
     <div class="library-openstatus <?php print $node->field_opening_hours_processed['status'];?>">
         <?php print $node->field_opening_hours_processed['status_local'];?>
     </div>
 
+    <?php print $field_list_image[0]['view']; ?>
+  </div>
+
+  <div class="content">
     <div class="vcard">
       <h2 class="fn org"><?php print l($node->title, 'node/'.$node->nid); ?></h2>
       <div class="adr">

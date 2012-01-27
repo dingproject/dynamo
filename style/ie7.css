@@ -14,4 +14,7 @@ overflow:hidden;
 
 }
 
+/** Layout bug on library map **/
+.panel-left .view {position: static;}
+
 .jcarousel-skin-ting-search-carousel{width:670px;}
