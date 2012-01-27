@@ -280,3 +280,80 @@ body.page-node .ding-node .field-teaser {
   display: inline;
 }
 
+/** mikl: Tema-site based on code from AAKB **/
+
+.view-tema-overview li {
+  clear: left;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.view-tema-overview .last {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.view-tema-overview .field-list-image-fid {
+  float: left;
+  height: 120px;
+  margin: 0 10px 10px 0;
+  width: 120px;
+}
+
+.view-tema-overview .title a {
+  color: #444;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.view-tema-overview .title a:hover {
+  text-decoration: underline;
+}
+
+.pane-tema_header h1 {
+  margin-top: 10px;
+}
+
+.pane-tema_header .menu {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.pane-tema_header ul.menu li {
+  float: left;
+  margin:0 30px 0 0;
+}
+
+.tema-site .content-top {
+  background: none;
+}
+
+.content-top .pane-tema_header .active-trail {
+  font-weight: bold;
+}
+
+.tema-site .content-description {
+  background:transparent url(../images/bg-divider.png) no-repeat -20px bottom;
+  padding:8px 0 20px 0;
+  position:relative;
+}
+
+.content-top #static-page-tema-header,
+.content-top #event-tema-header,
+.content-top #blog-tema-header {
+  padding-bottom: 20px;
+}
+
+.panel-left .view-tema-sites-articles .info,
+.panel-left .view-tema-overview .info {
+  margin-left: 140px;
+}
+
+.panel-left .view-tema-overview .picture {
+  background:none repeat scroll 0 0 #eee;
+  float:left;
+  height:120px;
+  margin:0 20px 0 0;
+  width:120px;
+}
+
