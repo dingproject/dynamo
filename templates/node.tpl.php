@@ -1,104 +1,98 @@
-<?php
 
+<?php
 /**
  * @file
  * Template to render nodes.
  */
 
-if ($page == 0) { ?>
+ // For when the node is being displayed on a list, teaser mode.
+if ($page == 0): ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
 
-  <div class="picture"><?php print $list_image; ?></div>
+  <div class="picture"><?php print $field_list_image[0]['view']; ?></div>
 
   <div class="content">
-
     <div class="subject">
-      <?php print return_terms_from_vocabulary($node, "1"); ?> 
+      <?php print return_terms_from_vocabulary($node, "1"); ?>
     </div>
 
-  	<?php if($node->title){	?>	
-      <h3><?php print l($node->title, 'node/'.$node->nid); ?></h3>
-  	<?php } ?>
+    <?php if ($node->title): ?>
+      <h3><?php print l($node->title, 'node/' . $node->nid); ?></h3>
+    <?php endif; ?>
 
-  	<div class="meta">
-  		<span class="time">
-  			<?php print format_date($node->created, 'custom', "j F Y") ?> 
-  		</span>	
-  		<span class="author">
-				<?php print t('by') . ' ' . theme('username', $node); ?>
-  		</span>	
+    <div class="meta">
+      <span class="time">
+        <?php print format_date($node->created, 'custom', "j F Y") ?>
+      </span>
+      <span class="author">
+        <?php print t('by') . ' ' . theme('username', $node); ?>
+      </span>
 
-			<?php print $node->field_library_ref[0]['view'];  ?>
+      <?php print $node->field_library_ref[0]['view'];  ?>
 
-  	</div>
+    </div>
 
     <p>
-		<?php 
-			//field_teaser
-				if($node->field_teaser[0]['value']){
-					print $node->field_teaser[0]['value'];
-				}else{
-					print strip_tags($node->content['body']['#value']);	
-				}
-			?>
-		</p>
+    <?php
+      // Show the teaser field, if set, otherwise an HTML-stripped
+      // version of the body field.
+      if ($node->field_teaser[0]['value']):
+        print $node->field_teaser[0]['value'];
+      else:
+        print strip_tags($node->content['body']['#value']);
+      endif;
+      ?>
+    </p>
 
-		<?php if (count($taxonomy)){ ?>
-		  <div class="taxonomy">
-	   	  <?php print $terms ?> 
-		  </div>  
-		<?php } ?>
-
-
+    <?php if (count($taxonomy)): ?>
+      <div class="taxonomy">
+        <?php print $terms ?>
+      </div>
+    <?php endif; ?>
 
   </div>
 
 </div>
-<?php }else{ 
-//Content
+<?php
+// For when the node is displayed as the main page content.
+else:
 ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
   <div class="subject">
-    <?php print return_terms_from_vocabulary($node, "1"); ?> 
+    <?php print return_terms_from_vocabulary($node, "1"); ?>
   </div>
 
-	<?php if($node->title){	?>	
-	  <h2><?php print $title;?></h2>
-	<?php } ?>
+  <?php if($node->title): ?>
+    <h2><?php print $title;?></h2>
+  <?php endif; ?>
 
-	<div class="meta">
-	  
-		<?php print format_date($node->created, 'custom', "j F Y") ?> 
-    <i><?php print t('by'); ?></i> 
-		<span class="author"><?php print theme('username', $node); ?></span>	
-	</div>
+  <div class="meta">
+    <?php print format_date($node->created, 'custom', "j F Y") ?>
+    <i><?php print t('by'); ?></i>
+    <span class="author"><?php print theme('username', $node); ?></span>
+  </div>
 
-	<div class="content">
-		<?php print $content ?>
-	</div>
+  <div class="content">
+    <?php print $content ?>
+  </div>
 
-	<?php if (count($taxonomy)){ ?>
+  <?php if (count($taxonomy)): ?>
+    <div class="taxonomy">
+      <?php print $terms ?>
+    </div>
+  <?php endif ?>
 
-	  <div class="taxonomy">
-   	  <?php print $terms ?> 
-	  </div>  
-	<?php } ?>
-		
-
-  <?php if ($similarterms) { ?>
+  <?php if ($similarterms): ?>
     <div class="ding-box-wide similar">
       <h3><?php print t('Similar'); ?></h3>
       <?php print $similarterms; ?>
     </div>
-  <?php } ?>
+  <?php endif; ?>
 
-
-	<?php if ($links){ ?>
-    <?php  print $links; ?>
-	<?php } ?>
+  <?php  print $links; ?>
 
 </div>
-<?php } ?>
 
+<?php endif;
