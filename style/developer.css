@@ -361,3 +361,6 @@ body.page-node .ding-node .field-teaser {
   width:120px;
 }
 
+.view-tema-sites > ul > li {
+  margin-bottom: 10px;
+}
