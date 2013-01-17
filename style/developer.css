@@ -288,6 +288,10 @@ body.page-node .ding-node .field-teaser {
   padding-bottom: 10px;
 }
 
+.view-tema-overview .pager li {
+  clear: none;
+}
+
 .view-tema-overview .last {
   border-bottom: 0;
   margin-bottom: 0;
