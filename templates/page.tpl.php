@@ -1,7 +1,6 @@
 <?php
-
 /**
- * @file page.tpl.php
+ * @file
  * Main page template file for the dynamo theme.
  */
 ?>
@@ -18,9 +17,9 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $body_classes; ?><?php if (!empty($admin)) print ' '.admin;  ?>">
-<?php 
+<?php
 /*adds support for for the admin module*/
-  if (!empty($admin)) print $admin; 
+  if (!empty($admin)) print $admin;
 ?>
 
 <?php if ($help OR $messages) { ?>
@@ -49,7 +48,7 @@
 
         <div id="pageheader">
           <div id="pageheader-inner">
-            
+
             <div id="top" class="clearfix">
 
               <div id="search" class="left">
@@ -58,7 +57,7 @@
 
               <div id="account" class="left">
                 <?php print $account; ?>
-              </div>  
+              </div>
 
             </div>
 
@@ -73,7 +72,7 @@
             <?php print $breadcrumb; ?>
           </div>
         </div>
-        
+
         <div id="pagebody" class="clearfix">
           <div id="pagebody-inner" class="clearfix">
 
@@ -96,7 +95,7 @@
                 <div id="content-main">
                   <?php print $content; ?>
                 </div>
-                
+
                 <?php
                   if (arg(0) != 'user'  && $tabs){
                     print '<div class="tabs">' . $tabs . '</div>';
@@ -128,14 +127,14 @@
             </div>
 
             <div class="left">
-              <?php print $footer_three; ?>             
+              <?php print $footer_three; ?>
             </div>
 
             <div class="left">
-              <?php print $footer_four; ?>              
+              <?php print $footer_four; ?>
               <?php print $footer; ?>
             </div>
-      
+
           </div>
         </div>
 
