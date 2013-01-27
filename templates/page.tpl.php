@@ -10,7 +10,7 @@
   Dynamo!
 -->
 <head>
-<!--<meta http-equiv="X-UA-Compatible" content="IE=8; chrome=1" />-->
+  <meta http-equiv="X-UA-Compatible" content="IE=8; chrome=1" />
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
   <?php print $styles; ?>
