@@ -17,6 +17,11 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $body_classes; ?><?php if (!empty($admin)) print ' '.admin;  ?>">
+
+  <div id="skip-link">
+    <a href="#content-main" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+  </div>
+
 <?php
 /*adds support for for the admin module*/
   if (!empty($admin)) print $admin;
@@ -30,8 +35,7 @@
 
     <?php print $help ?>
     <?php print $messages ?>
-
-    </div>
+  </div>
 <?php } ?>
 
 <div id="container" class="clearfix">
